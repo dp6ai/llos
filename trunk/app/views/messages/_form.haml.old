@@ -1,0 +1,71 @@
+.message{:class => "padded"}
+
+  %p= t :brochure_title
+
+  = error_messages_for :message
+
+  - form_for(@message) do |f|
+
+    %p
+      =t :name
+      %br
+      = f.text_field :name
+
+    %p
+      =t :company_name
+      %br
+      = f.text_field :company_name
+
+    %p
+      =t :email
+      %br
+      = f.text_field :email
+
+    %p
+      =t :phone
+      %br
+      = f.text_field :phone
+
+      = f.hidden_field :subject, :value => brochures ?  t(:subject_default) : "Website Enquiry", :readonly => true
+
+    %p
+      =t :address
+      %br
+      = f.text_area :address, :class => "address"
+
+    %p
+      = f.check_box :callmeback, :checked => true
+      =t :callmeback
+
+    %p= t :are_you
+
+    %p
+      = f.check_box :member_of_public, :class => "indent" , :checked => true
+      =t :member_of_public
+
+    %p
+      = f.check_box :shop_owner, :class => "indent"
+      =t :shop_owner
+
+    %p
+      = f.check_box :architect, :class => "indent"
+      =t :architect
+
+    %p
+      = f.check_box :other, :class => "indent"
+      =t :other
+
+    %p
+      = f.text_field :other_detail, :class => "indent"
+
+    %p
+      = f.check_box :indoor, :checked => brochures, :class => "indent"
+      =t :indoor
+
+    %p
+      =t :body
+      %br
+      = f.text_area :body
+
+    %p
+      = f.submit t(brochures ?  :request_brochure : :send_email)

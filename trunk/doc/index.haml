@@ -1,0 +1,141 @@
+= breadcrumbs
+
+.browse{:class => "padded"}
+
+  #leftContent
+    #leftContentTop
+      -if !@product.blank?
+        #mainImg
+          = image_tag @product.image.url(:medium), :class => "medium", :title => @product.range_and_name
+    #leftContentBottom
+    -if !@product.blank?
+      #prodHead
+        #prodRange
+          %h2
+            = @product.product_range.name if !@product.product_range.blank?
+          %h2
+            \&nbsp;-&nbsp;
+        #prodTitle
+          %h2= @product.name
+      #prodBody
+        #prodBodyTop
+          #prodBodyLeft
+            #product
+              %h2.bold2
+                = t :product_code 
+                = @product.code 
+
+              %ul
+                - for pa in @product.product_attributes do
+                  %li
+                    %a.prodSpec
+                      = "#{t pa.product_attribute_field.name}:"
+                    %a.prodSpecVal
+                      = pa.value
+
+          #prodBodyRight
+            %a
+              = t :available_in
+            %ul
+              - for we in @product.product_weaves do
+                %li
+                  = link_to we.weave.name, we.weave.url
+            %a
+              = t :fabrics
+            %ul
+              - for fa in @product.product_fabrics do
+                %li
+                  = link_to fa.fabric.name, fa.fabric.url
+
+        #prodText
+          %p= textilize @product.description
+
+          - if logged_in?
+            %p
+              %span.bold Type Categories:
+              =h @product.type_list
+            %p
+              %span.bold Room Categories:
+              =h @product.room_list
+            %p
+              %span.bold Outdoor Categories:
+              =h @product.outdoor_list
+            %p
+              %span.bold Highlighted:
+              =h @product.highlighted
+            %p.admin
+              = "#{link_to 'New', new_admin_product_path()}"
+              = "/ #{link_to 'Edit', edit_admin_product_path(@product)}"
+              = "/ #{link_to 'Destroy', admin_product_path(@product), :confirm => 'Are you sure?', :method => :delete}"
+
+    - elsif !@selected_category.blank?
+      -if params[:category_kind] == "range"
+        .range_page_range
+          - if !@highlighted_product.blank?
+            = image_tag @highlighted_product.product_range.image.url(:medium), :class => "medium"
+            %h2= @highlighted_product.product_range.name
+            %p= @highlighted_product.product_range.description
+        .range_page_products
+          - for product in @products_in_range[0..4]
+            .product_summary
+              = link_to image_tag(product.image.url(:thumb), :class => highlight_this?(product,@selected,"thumb"), :title => product.range_and_name), browse_category_product_url(:category_kind => params[:category_kind].downcase, :category =>  params[:category].downcase, :product => seo(product.name.downcase), :id => product.id)
+
+          -#= will_paginate @products_in_range, :class => "digg_pagination" if @products_in_range.size > 0
+        .range_page_products
+          - if @products_in_range.size > 4
+            - for product in @products_in_range[5..10]
+              .product_summary
+                = link_to image_tag(product.image.url(:thumb), :class => highlight_this?(product,@selected,"thumb"), :title => product.range_and_name), browse_category_product_url(:category_kind => params[:category_kind].downcase, :category =>  params[:category].downcase, :product => seo(product.name.downcase), :id => product.id)
+            -#= will_paginate @products_in_range, :class => "digg_pagination" if @products_in_range.size > 0
+        -if @selected_category.products.blank?
+          %p No products found
+
+      -else
+        - for tagging in @selected_category.taggings
+          .product_summary
+            -#- if params[:category_kind] == "type" || params[:category_kind] == "room"
+            = link_to image_tag(tagging.taggable.image.url(:thumb), :class => "thumb", :title => tagging.taggable.range_and_name ), browse_category_selected_url(:category_kind => "range", :category => tagging.taggable.product_range.name, :selected_id => tagging.taggable.id) if !tagging.taggable.product_range.blank?
+            = link_to tagging.taggable.range_name, browse_category_selected_url(:category_kind => "range", :category =>  tagging.taggable.product_range.name, :selected_id => tagging.taggable.id), :class => "product_range_name" if !tagging.taggable.product_range.blank?
+            -#- else
+            -#  = link_to image_tag(tagging.taggable.image.url(:thumb), :class => "thumb", :title => tagging.taggable.range_and_name ), browse_category_product_url(:category_kind => params[:category_kind].downcase, :category =>  params[:category].downcase, :product => seo(tagging.taggable.name.downcase), :id => tagging.taggable.id)
+            -#  = link_to tagging.taggable.range_name, browse_category_product_url(:category_kind => params[:category_kind].downcase, :category =>  params[:category].downcase, :product => tagging.taggable.name.downcase, :id => tagging.taggable.id)
+        -if @selected_category.taggings.blank?
+          %p No products found
+
+    - else
+      #productshome
+        #producthomeimage
+          <img src="/images/LinenBaskets2.jpg" border="0" height="280" width="620" alt="weave picture"/>
+        #productstext
+          %p="Our furniture is hand-made in Spalding, Lincolnshire, where we also weave the unique twisted paper and steel Lloyd Loom fabric.   Visit <a href='/about/production'>production</a> to see the process."
+          %p="Our designs are inspired by classic Lloyd Loom furniture of the last century but we are constantly innovating, creating new shapes which use the tensile properties of the weave and the solid beech steam-bent frames."
+          %ul
+            %li="Each piece is individually hand-made and coloured so can be tailored to your specification. "
+            %li="All our components are from high quality eco-friendly sources."
+            %li="The weave is from 40% re-cycled paper."
+            %li="All timber is from sustainable FSC plantations."
+            %li="All paints and dyes are enironmentaly-friendly water-based products."
+            %li="And our products will last for a generation - which is even better than re-cycling!"
+
+          %p="To browse our products, use any of the drop down menus to the left."
+        #productsimages
+          -# <img src="/images/prodhome1.png" border="0" width="104" alt="weave picture" />
+          -# <img src="/images/prodhome2.png" border="0" width="104" alt="wood" />
+          -# <img src="/images/prodhome4.png" border="0" width="104" alt="painting" />
+
+  #rightContent
+    #thumbCont
+      #thumbsImgRight
+        -# other products in range as thumbs
+        - if !@products_in_range.blank?
+          - for product in @products_in_range[0..4]
+            .thumbnail
+              = link_to image_tag(product.image.url(:thumb), :class => highlight_this?(product,@product,"thumb"), :title => product.range_and_name), browse_category_product_url(:category_kind => params[:category_kind].downcase, :category =>  params[:category].downcase, :product => seo(product.name.downcase), :id => product.id)
+      #thumbsImgLeft
+        -# other products in range as thumbs
+        - if !@products_in_range.blank? && @products_in_range.size > 4
+          - for product in @products_in_range[5..10]
+            .thumbnail
+              = link_to image_tag(product.image.url(:thumb), :class => highlight_this?(product,@product,"thumb"), :title => product.range_and_name), browse_category_product_url(:category_kind => params[:category_kind].downcase, :category =>  params[:category].downcase, :product => seo(product.name.downcase), :id => product.id)
+    -#= will_paginate @products_in_range, :class => "digg_pagination" if @products_in_range.size > 0
+

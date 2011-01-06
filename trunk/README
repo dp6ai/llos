@@ -1,0 +1,26 @@
+Broken links to ranges
+
+select id, name from products where product_range_id not in (select pr.id from products p, product_ranges pr where p.product_range_id = pr.id);
+
++-----+--------------+-----------------------------+------------------+
+| id  | code         | name                        | product_range_id |
++-----+--------------+-----------------------------+------------------+
+| 124 | NC202 - B/O  | Chair                       |               40 |
+| 125 | NBS202 - B/O | Bar Height Stool            |               40 |
+| 126 | NS202 - B/O  | Stool                       |               40 |
+| 129 | NC401        | Chair                       |               42 |
+| 132 | NC403        | Chair                       |               43 |
+| 133 | NBS403       | Bar Height Stool            |               43 | 
+| 134 | NC404        | Highback Chair              |               43 |
+| 135 | NS404        | Stool                       |               43 |
+| 138 | OC08-10      | All Weather Chair           |               46 |
+| 139 | OC11-13      | All Weather Chair with Arms |               46 |
++-----+--------------+-----------------------------+------------------+
+
+ 124,125,126,129,132,133,134,135,138,139
+
+select * from product_ranges where id in (40,42,43,46);
+
+Empty set (0.00 sec)
+
+

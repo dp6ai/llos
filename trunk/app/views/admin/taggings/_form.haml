@@ -1,0 +1,19 @@
+= error_messages_for :tagging
+
+- form_for([:admin, @tagging]) do |f|
+  %p
+    %span.bold Category:
+    = @tagging.tag.name
+  %p
+    %span.bold Name:
+    = @tagging.taggable.name
+  %p
+    %span.bold Code:
+    = @tagging.taggable.code
+  %p
+    %span.bold Highlighted
+    %br
+    = collection_select(:tagging, :highlighted, [1,2,3,4,5], :to_i, :to_i, {:prompt => true})
+
+  %p
+    = f.submit "Submit"

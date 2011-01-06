@@ -1,0 +1,21 @@
+.product{:class => "padded"}
+  %p
+    %span.bold
+      Category:
+    =h @tagging.tag.name
+  %p
+    %span.bold
+      Name:
+    =h @tagging.taggable.name
+  %p
+    %span.bold
+      Code:
+    =h @tagging.taggable.code
+  %p
+    %span.bold
+      Highlighted:
+    =h @tagging.highlighted
+
+
+  = "#{link_to('Edit', edit_admin_tagging_path(@tagging))} /" if logged_in?
+  = link_to 'Back', admin_categories_path

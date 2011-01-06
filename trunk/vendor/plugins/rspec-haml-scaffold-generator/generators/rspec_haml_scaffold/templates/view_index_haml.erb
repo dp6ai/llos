@@ -1,0 +1,26 @@
+= breadcrumbs
+
+.<%= singular_name %>{:class => "padded"}
+
+  %h1 Listing <%= plural_name %>
+
+  %table
+    %tr
+  <% for attribute in attributes -%>
+    %th <%=attribute.column.human_name%>
+  <% end -%>
+
+  - i = 0
+  - for <%= singular_name %> in @<%= plural_name %>
+    %tr{:class => i % 2 == 0 ? "odd" : "even"}
+  <% for attribute in attributes -%>
+    %td=h <%= singular_name %>.<%= attribute.name %>
+  <% end %>
+
+      - i += 1
+
+      %td= link_to 'Show', <%= path_for(table_name, singular_name, "show").gsub(/@/, "") %>
+      %td= link_to 'Edit', <%= path_for(table_name, singular_name, "edit").gsub(/@/, "") %> if logged_in?
+      %td= link_to 'Destroy', <%= path_for(table_name, singular_name, "destroy").gsub(/@/, "") %>, :confirm => "Are you sure?", :method => :delete if logged_in?
+
+  = link_to 'New <%= singular_name.singularize %>', new_<%= table_name.singularize %>_path if logged_in?

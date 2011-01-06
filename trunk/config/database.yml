@@ -1,0 +1,19 @@
+# SQLite version 3.x
+#   gem install sqlite3-ruby (not necessary on OS X Leopard)       
+
+development:
+  adapter: mysql
+  encoding: utf8
+  database: llos_development
+  pool: 5
+  username: root
+  password: 
+
+production:
+  adapter: mysql
+  encoding: utf8
+  database: llos_production
+  pool: 5
+  username: root
+  password: llo5mysq18385
+

@@ -1,0 +1,29 @@
+.project{:class => "padded"}
+  %h1 New project
+
+  = error_messages_for :project
+
+  - form_for(@project, :html => { :multipart => true }) do |f|
+    %p
+      Preview Image
+      %br
+      = f.file_field :preview_image
+
+    %p
+      Image
+      %br
+      = f.file_field :image
+    %p
+      Title
+      %br
+      = f.text_field :title
+    %p
+      Description
+      = render :partial => "/layouts/textile"
+      %br
+      = f.text_area :description
+  
+    %p
+      = f.submit "Create"
+
+  = link_to 'Back', projects_path

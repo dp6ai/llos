@@ -1,0 +1,10 @@
+= breadcrumbs
+
+.message{:class => "padded"}
+
+  %p= t(:confirmation, :name => @message.name)
+
+  %p=link_to t(:indoor_brochure_link), "/downloads/Lloyd_Loom_Brochure.pdf"
+  =# %p=link_to t(:all_weather_brochure_link), "/downloads/all_weather_brochure.pdf"
+  =# %p=link_to t(:naturals_brochure_link), "/downloads/naturals_brochure.pdf"
+  =# MSP TODO (outside rails? serve via apache?)

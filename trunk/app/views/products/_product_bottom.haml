@@ -1,0 +1,61 @@
+
+#prodHead
+  #prodRange
+    %h2
+      = @product.product_range.name if !@product.product_range.blank?
+    %h2
+      \&nbsp;-&nbsp;
+  #prodTitle
+    %h2= @product.name
+#prodBody
+  #prodBodyTop
+    #prodBodyLeft
+      #product
+        %h2.bold2
+          = t :product_code
+          = @product.code
+
+        %ul
+          - for pa in @product.product_attributes do
+            %li
+              %a.prodSpec
+                = "#{t pa.product_attribute_field.name}:"
+              %a.prodSpecVal
+                = pa.value
+
+    #prodBodyRight
+      - if @product.product_weaves.size > 0
+        %a
+          = t :available_in
+        %ul
+          - for we in @product.product_weaves do
+            %li
+              = link_to we.weave.name, we.weave.url
+      - if @product.product_fabrics.size > 0
+        %a
+          = t :fabrics
+        %ul
+          - for fa in @product.product_fabrics do
+            %li
+              = link_to fa.fabric.name, fa.fabric.url
+
+  #prodText
+    %p= textilize @product.description
+
+    - if logged_in?
+      %p
+        %span.bold Type Categories:
+        =h @product.type_list
+      %p
+        %span.bold Room Categories:
+        =h @product.room_list
+      %p
+        %span.bold Outdoor Categories:
+        =h @product.outdoor_list
+      %p
+        %span.bold Highlighted:
+        =h @product.highlighted
+      %p.admin
+        = "#{link_to 'New', new_admin_product_path()}"
+        = "/ #{link_to 'Edit', edit_admin_product_path(@product)}"
+        = "/ #{link_to 'Destroy', admin_product_path(@product), :confirm => 'Are you sure?', :method => :delete}"

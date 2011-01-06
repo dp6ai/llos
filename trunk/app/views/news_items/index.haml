@@ -1,0 +1,23 @@
+= breadcrumbs
+
+.news_items{:class => "padded"}
+
+  - for news_item in @news_items
+    .news_item
+      .news_item_image
+        = link_to(image_tag(news_item.image.url, :class => "thumb"), news_path(news_item))
+
+      .news_item_text
+        .news_item_doc
+          = link_to(image_tag("/images/pdficon_small.gif", :alt => t(:doc_download)),news_item.doc.url) if news_item.doc.exists?
+        %h3.headline= link_to(news_item.headline, news_path(news_item))
+        = truncate(textilize_without_paragraph(news_item.content), :length => 600, :omission => "... #{link_to t(:permalink), news_path(news_item), :class => 'read_more'}")
+
+
+      .admin
+        = link_to 'Edit', edit_news_path(news_item) if logged_in?
+        = "/ #{link_to 'Destroy', news_path(news_item), :confirm => 'Are you sure?', :method => :delete, :confirm => "Are you sure?", :method => :delete}" if logged_in?
+
+  = link_to 'Add news item', new_news_item_path if logged_in?
+
+  = will_paginate @news_items, :class => "digg_pagination"

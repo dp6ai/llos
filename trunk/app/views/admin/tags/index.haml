@@ -1,0 +1,42 @@
+= breadcrumbs
+
+.categories{:class => "padded"}
+
+  - if !@categories.blank?
+    - last_kind = ""
+    - for category in @categories
+      - if category.kind != last_kind
+        %h2= "[#{category.kind}]"
+      .category
+        .grouping
+          .span{:style => "float:left"}= category.name
+          .admin
+            = "#{link_to 'Show', admin_category_path(category)}"
+            = "/ #{link_to 'Edit', edit_admin_category_path(category)}"  if logged_in?
+            = "/ #{link_to 'Destroy', admin_category_path(category), :confirm => 'Are you sure?', :method => :delete}" if logged_in?
+
+
+        - if !category.taggings.blank?
+          .products
+            %table{:class => "sortable"}
+              %tr
+                %th{ :class => "sortfirstasc"} Name
+                %th Code
+                %th Highlighted in Category?
+                %th{ :class => "nosort"}
+                %th{ :class => "nosort"}
+                %th{ :class => "nosort"}
+
+              - i = 0
+              - for tagging in category.taggings
+                %tr{:class => i % 2 == 0 ? "odd" : "even"}
+                  %td=h tagging.taggable.name
+                  %td=h tagging.taggable.code
+                  %td=h tagging.highlighted
+                  %td.adminlink= "#{link_to 'Show', admin_tagging_path(tagging)}"
+                  %td.adminlink="#{link_to 'Edit', edit_admin_tagging_path(tagging)}"  if logged_in?
+                  %td.adminlink="#{link_to 'Destroy', admin_tagging_path(tagging), :confirm => 'Are you sure?', :method => :delete}" if logged_in?
+
+                - i += 1
+      - last_kind = category.kind
+  = link_to 'New Category', new_admin_category_path if logged_in?

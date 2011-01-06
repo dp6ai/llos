@@ -1,0 +1,307 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+com:
+  # meta tags
+  meta_default_description: "Furniture makers" #MSP / KIPS TODO LLOS to provide
+  meta_default_keywords: "bespoke, furniture makers" #MSP / KIPS TODO LLOS to provide
+  meta_default_title: "Lloyd Loom of Spalding" #MSP / KIPS TODO LLOS to provide
+
+  meta_home_description: "Lloyd Loom of Spalding, the genuine British manufacturer of Lloyd Loom furniture, for your conservatory, kitchens and restaurants."
+  meta_home_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor"
+  meta_home_title: "Lloyd Loom of Spalding - The Genuine British Manufacturer of  Lloyd Loom Furniture"
+
+  meta_heritage_description: "A brief look at Lloyd Loom of Spalding, the genuine British manufacturer of Lloyd Loom furniture."
+  meta_heritage_keywords: "Cane, wicker, furniture, design, specification, manufacture, british, painted, ecological, recycled, genuine"
+  meta_heritage_title: "Lloyd Loom of Spalding - Heritage"
+
+  meta_history_description: "The History of Lloyd Loom furniture manufacture in Britain."
+  meta_history_keywords: "Cane, wicker, furniture, birtish, marshall burns, painted, ecological, genuine, paper, specification, contract, real"
+  meta_history_title: "Lloyd Loom of Spalding - History"
+
+  meta_production_description: "A detailed look out how genuine Lloyd Loom furniture is made, right here in England."
+  meta_production_keywords: "Cane, wicker, furniture, design, specification, manufacture, british, UK, handmade, ecological, chairs, rattan, paper"
+  meta_production_title: "Lloyd Loom of Spalding - Manufacture in the UK"
+
+  meta_contact_description: "View Showroom addresses or contact us to enquire about prices or delivery times."
+  meta_contact_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor, restaurant, garden rooms"
+  meta_contact_title: "Lloyd Loom of Spalding -Showrooms & Contact Details"
+
+  meta_legal_description: "Legal Information from Lloyd Loom of Spalding."
+  meta_legal_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor"
+  meta_legal_title: "Lloyd Loom of Spalding - Legal Information"
+
+  meta_faq_description: "A list of frequently asked questions from Lloyd Loom of Spalding - the genuine British manufacturer of Lloyd Loom furniture."
+  meta_faq_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor"
+  meta_faq_title: "Lloyd Loom of Spalding - FAQs"
+
+  meta_standard_description: "A selection of coloured weave samples from Lloyd Loom of Spalding, the genuine British manufacturer of Lloyd Loom furniture."
+  meta_standard_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor, restaurant, garden rooms"
+  meta_standard_title: "Lloyd Loom of Spalding - Standard weave"
+
+  meta_naturals_description: "A selection of coloured weave samples from Lloyd Loom of Spalding, the genuine British manufacturer of Lloyd Loom furniture."
+  meta_naturals_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor, restaurant, garden rooms"
+  meta_naturals_title: "Lloyd Loom of Spalding - Naturals weave"
+
+  meta_loomtex_description: "A selection of coloured weave samples from Lloyd Loom of Spalding, the genuine British manufacturer of Lloyd Loom furniture."
+  meta_loomtex_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor, restaurant, garden rooms"
+  meta_loomtex_title: "Lloyd Loom of Spalding - Loomtex weave"
+
+  meta_outdoor_description: "A selection of coloured weave samples from Lloyd Loom of Spalding, the genuine British manufacturer of Lloyd Loom furniture."
+  meta_outdoor_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor, restaurant, garden rooms"
+  meta_outdoor_title: "Lloyd Loom of Spalding - Outdoor weave"
+
+  meta_other_description: "A selection of coloured weave samples from Lloyd Loom of Spalding, the genuine British manufacturer of Lloyd Loom furniture."
+  meta_other_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor, restaurant, garden rooms"
+  meta_other_title: "Lloyd Loom of Spalding - Other weave"
+
+  meta_fabric_description: "Lloyd Loom of Spalding offer a wide range of fabrics, "
+  meta_fabric_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor, restaurant, garden rooms"
+  meta_fabric_title: "Lloyd Loom of Spalding - Fabrics"
+
+  # topnav
+  home: "Home"
+  products: "Products"
+  heritage: "Heritage"
+  news: "News"
+  projects: "Projects"
+  showrooms: "Contact Us"
+
+  # footer
+  contact: "Contact Us"
+  legal: "Legal"
+  faq: "FAQ"
+  copyright: "&copy; lloyd loom of spalding"
+
+  # product
+  Width: "Width"
+  Depth: "Depth"
+  Height: "Height"
+  Seat Height: "Seat Height"
+  Seat Diameter: "Seat Diameter"
+  Diameter: "Diameter"
+  Length: "Length"
+  Width x Width: "Width x Width"
+  Headboard Height: "Headboard Height"
+  Footboard Height: "Footboard Height"
+  Siderail Height: "Siderail Height"
+
+  width: "Width:"
+  depth: "Depth:"
+  height: "Height:"
+  available_in: "Colours available:"
+  fabrics: "Fabrics available:"
+  product_code: "Product code:"
+
+  # brochure new version
+  # brochure_title: "Please enter your details and we'll send you to a downloadable brochure"
+  brochure_title: ""
+  name: "Name"
+  company_name: "Company name (optional)"
+  email: "Email"
+  phone: "Telephone"
+  address: "Address"
+  subject: "Subject"
+  subject_default: "Brochure request"
+  body: "Message body (optional)"
+  body_default: ""
+  request_brochure: "Request Brochure"
+  send_email: "Send Email"
+  are_you: "Are you?"
+  please_send: "Please send the following brochures by post?"
+  where_hear: "Where did you hear about us?"
+  
+  hear_magazine: "Magazine"
+  hear_shop: "Shop"
+  hear_exhibition: "Exhibition"
+  hear_restaurant: "Restaurant"
+  hear_engine: "Search Engine"
+  hear_mouth: "Word of mouth"
+  hear_other: "Other"
+  hear_blank: " "
+    
+  callmeback: "Request callback?"
+  member_of_public: "Member of the public"
+  shop_owner: "Trade"
+
+  indoor: "Indoor Brochure"
+  outdoor: "Outdoor"
+  naturals: "Naturals"
+
+  further_info: "Would you like to receive further occasional information about Lloyd Loom of Spalding?"
+
+  confirmation: "Thanks {{name}}, we'll get back to you very soon. You can download your PDF brochures at the link below:"
+  indoor_brochure_link: "Indoor Brochure"
+  all_weather_brochure_link: "All weather"
+  naturals_brochure_link: "Naturals"
+  # END brochure
+
+  # news
+  doc_download: "download PDF"
+
+  # about
+  history: "History"
+  production: "Production"
+  media: "Media"
+
+  # mailer
+  welcome_message: "Thanks for your details. Please find your brochure to download below"
+
+  # general
+  permalink: "read more"
+
+  ########## RAILS TRANSLATIONS ############
+  number:
+    # Used in number_with_delimiter()
+    # These are also the defaults for 'currency', 'percentage', 'precision', and 'human'
+    format:
+      # Sets the separator between the units, for more precision (e.g. 1.0 / 2.0 == 0.5)
+      separator: "."
+      # Delimets thousands (e.g. 1,000,000 is a million) (always in groups of three)
+      delimiter: ","
+      # Number of decimals, behind the separator (1 with a precision of 2 gives: 1.00)
+      precision: 3
+
+    # Used in number_to_currency()
+    currency:
+      format:
+        # Where is the currency sign? %u is the currency unit, %n the number (default: $5.00)
+        format: "%u%n"
+        unit: "$"
+        # These three are to override number.format and are optional
+        separator: "."
+        delimiter: ","
+        precision: 2
+
+    # Used in number_to_percentage()
+    percentage:
+      format:
+        # These three are to override number.format and are optional
+        # separator:
+        delimiter: ""
+        # precision:
+
+    # Used in number_to_precision()
+    precision:
+      format:
+        # These three are to override number.format and are optional
+        # separator:
+        delimiter: ""
+        # precision:
+
+    # Used in number_to_human_size()
+    human:
+      format:
+        # These three are to override number.format and are optional
+        # separator:
+        delimiter: ""
+        precision: 1
+
+  # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
+  datetime:
+    distance_in_words:
+      half_a_minute: "half a minute"
+      less_than_x_seconds:
+        one:  "less than 1 second"
+        many: "less than {{count}} seconds"
+      x_seconds:
+        one:  "1 second"
+        many: "{{count}} seconds"
+      less_than_x_minutes:
+        one:  "less than a minute"
+        many: "less than {{count}} minutes"
+      x_minutes:
+        one:  "1 minute"
+        many: "{{count}} minutes"
+      about_x_hours:
+        one:  "about 1 hour"
+        many: "about {{count}} hours"
+      x_days:
+        one:  "1 day"
+        many: "{{count}} days"
+      about_x_months:
+        one:  "about 1 month"
+        many: "about {{count}} months"
+      x_months:
+        one:  "1 month"
+        many: "{{count}} months"
+      about_x_years:
+        one:  "about 1 year"
+        many: "about {{count}} years"
+      over_x_years:
+        one:  "over 1 year"
+        many: "over {{count}} years"
+
+  activerecord:
+    errors:
+      template:
+        header:
+          one:   "1 error prohibited this {{model}} from being saved"
+          other:  "{{count}} errors prohibited this {{model}} from being saved"
+        # The variable :count is also available
+        body: "There were problems with the following fields:"
+
+      # The values :model, :attribute and :value are always available for interpolation
+      # The value :count is available when applicable. Can be used for pluralization.
+      messages:
+        inclusion: "is not included in the list"
+        exclusion: "is reserved"
+        invalid: "is invalid"
+        confirmation: "doesn't match confirmation"
+        accepted: "must be accepted"
+        empty: "can't be empty"
+        blank: "can't be blank"
+        too_long: "is too long (maximum is {{count}} characters)"
+        too_short: "is too short (minimum is {{count}} characters)"
+        wrong_length: "is the wrong length (should be {{count}} characters)"
+        taken: "has already been taken"
+        not_a_number: "is not a number"
+        greater_than: "must be greater than {{count}}"
+        greater_than_or_equal_to: "must be greater than or equal to {{count}}"
+        equal_to: "must be equal to {{count}}"
+        less_than: "must be less than {{count}}"
+        less_than_or_equal_to: "must be less than or equal to {{count}}"
+        odd: "must be odd"
+        even: "must be even"
+        # Append your own errors here or at the model/attributes scope.
+
+      models:
+        # Overrides default messages
+
+      attributes:
+        # Overrides model and default messages.
+
+  date:
+    formats:
+      # Use the strftime parameters for formats.
+      # When no format has been given, it uses default.
+      # You can provide other formats here if you like!
+      default: "%Y-%m-%d" 
+      short: "%b %d"
+      long: "%B %d, %Y"
+
+    day_names: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+    abbr_day_names: [Sun, Mon, Tue, Wed, Thu, Fri, Sat]
+
+    # Don't forget the nil at the beginning; there's no such thing as a 0th month
+    month_names: [~, January, February, March, April, May, June, July, August, September, October, November, December]
+    abbr_month_names: [~, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
+    # Used in date_select and datime_select.
+    order: [ :year, :month, :day ]
+
+  time:
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      short: "%d %b %H:%M"
+      long: "%B %d, %Y %H:%M"
+    am: "am"
+    pm: "pm"
+
+# Used in array.to_sentence.
+  support:
+    array:
+      sentence_connector: "and"
+
+
+  ########## END RAILS TRANSLATIONS ############
+

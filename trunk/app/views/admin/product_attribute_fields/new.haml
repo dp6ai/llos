@@ -1,0 +1,15 @@
+.product_attribute_fields{:class => "padded"}
+  %h1 New Product Attribute Field
+
+  = error_messages_for :product_attribute_fields
+
+  - form_for([:admin, @product_attribute_field]) do |f|
+    %p
+      Name
+      %br
+      = f.text_field :name
+  
+    %p
+      = f.submit "Create"
+
+  = link_to 'Back', admin_product_attribute_fields_path

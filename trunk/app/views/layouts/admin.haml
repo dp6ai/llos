@@ -1,0 +1,20 @@
+!!!
+%html{ "xml:lang" => "en-GB", :lang => "en-GB", :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    = render :partial => "/layouts/html_header"
+  %body
+    #wrap
+      #header
+        = render :partial => '/layouts/header'
+      #content
+        #contentRight
+          #navhor
+            = render :partial => "/layouts/topnav"
+        #container
+          #messages
+            =flash[:notice]
+            =flash[:error]
+          = yield
+      #footer
+        = render :partial => "/layouts/footer"
+

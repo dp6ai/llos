@@ -1,0 +1,117 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+de:
+  hello: "FRHello world"
+
+  # topnav
+  home: "Startseite"
+  products: "Kollektion"
+  heritage: "Erbe"
+  news: "Presse"
+  projects: "Referenzen"
+  showrooms: "Ausstellungsraum"
+
+  # footer
+  contact: "Kontakt"
+  legal: "Datenschutz"
+  faq: "Fragen und Antworten"
+  copyright: "&copy; lloyd loom of spalding"
+
+  # product
+  width: "Breite:"
+  depth: "Tiefe:"
+  height: "Höhe:"
+  available_in: "Erhältlich i:"
+  fabrics: "DEFabrics available:"
+  product_code: "DEProduct code:"
+
+
+  # brochure
+  # brochure_title: "Bitte ausfüllen um die Prospekte herunterladen zu könn"
+  brochure_title: ""
+  name: "Name"
+  company_name: "Firmenname (kein Pflichtfeld)"
+  email: "Email"
+  phone: "Telefonnummer"
+  address: "Adresse"
+  subject: "Betrifft"
+  subject_default: "Prospekte verlangen"
+  body: "Anfrage/Bemerkungen"
+  body_default: ""
+  request_brochure: "Prospekte herunterladen"
+  send_email: "Send Email"
+  are_you: "Sind Sie?"
+  please_send: "Bitte folgende Prospekte per Post zuschicken"
+  where_hear: "Wie sind Sie auf unsere Produkte gekommen?"
+  
+  hear_magazine: "Zeitschrift"
+  hear_shop: "Möbelgeschäft"
+  hear_exhibition: "Ausstellung"
+  hear_restaurant: "Restaurant"
+  hear_engine: "Suchmaschine"
+  hear_mouth: "Bekanntenkreis"
+  hear_other: "Andere"
+  hear_blank: " "
+
+  howhear: "How did you hear about us?"
+  callmeback: "Bitte um Ruckruf?"
+  member_of_public: "Privatperson"
+  shop_owner: "Handel"
+
+  indoor: "Innenmöbel"
+  outdoor: "Gartenmöbel"
+  naturals: "Naturals"
+
+  further_info: "Would you like to receive further occasional information about Lloyd Loom of Spalding?"
+
+  confirmation: "Vielen Dank {{name}}, Wir melden uns gleich.  Sie können die Prospekte als PDF jetzt herunterlade:"
+  indoor_brochure_link: "Innenmöbel"
+  all_weather_brochure_link: "Gartenmöbe"
+  naturals_brochure_link: "Naturals"
+  # END brochure
+
+  # news
+  doc_download: "download PDF"
+
+
+  activerecord:
+    errors:
+      template:
+        header:
+          one:   "Wegen ein Fehler nicht gespeichert"
+          other:  "Wegen {{count}} Fehler nicht gespeichert"
+        # The variable :count is also available
+        body: "Problem mit folgende Eingabefelder:"
+
+      # The values :model, :attribute and :value are always available for interpolation
+      # The value :count is available when applicable. Can be used for pluralization.
+      messages:
+        inclusion: "Ist nicht auf der Liste"
+        exclusion: "Schon reserviert"
+        invalid: "Ungülti"
+        confirmation: "Stimmt nicht mit der Bestätigung"
+        accepted: "Bitte annerkennen"
+        empty: "Pflichtfeld"
+        blank: "Pflichtfeld"
+        too_long: "Zu lang (maximal {{count}} Zeichen)"
+        too_short: "Zu kurz (mindestens {{count}} Zeichen)"
+        wrong_length: "Ungültig. Soll{{count}} Zeichen sein"
+        taken: "Schon verteilt"
+        not_a_number: "Nur vollnumerisch"
+        greater_than: "Muss grösser als{{count}} sein"
+        greater_than_or_equal_to: "Muss grösser oder gleich{{count}} sein"
+        equal_to: "Muss gleich {{count}} sein"
+        less_than: "Muss weniger als {{count}} sein"
+        less_than_or_equal_to: "Muss weniger als oder gleich {{count}} sein"
+        odd: "Muss ungerade Zahl sein"
+        even: "Muss gerade Zahl sein"
+        # Append your own errors here or at the model/attributes scope.
+
+      models:
+        # Overrides default messages
+
+      attributes:
+        # Overrides model and default messages.
+
+

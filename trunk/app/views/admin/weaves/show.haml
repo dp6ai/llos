@@ -1,0 +1,17 @@
+= breadcrumbs
+
+.tag{:class => "padded"}
+  %p
+    Name:
+    =h @weave.name
+
+  %p
+    URL:
+    =h @weave.url
+
+  %p
+    Sort Order:
+    =h @weave.sort_order
+
+  = "#{link_to('Edit', edit_admin_weave_path(@weave))} /" if logged_in?
+  = link_to 'Back', admin_weaves_path

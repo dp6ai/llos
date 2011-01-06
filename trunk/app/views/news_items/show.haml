@@ -1,0 +1,16 @@
+= breadcrumbs
+
+.news_items{:class => "padded"}
+
+  = image_tag @news_item.image.url
+
+  %p
+    = link_to(image_tag("/images/pdficon_small.gif", :alt => t(:doc_download)), @news_item.doc.url) if @news_item.doc.exists?
+    PDF Download 
+
+  %h3= @news_item.headline
+
+  = textilize @news_item.content
+
+
+  = link_to('Edit', edit_news_path(@news_item)) if logged_in?

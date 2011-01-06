@@ -1,0 +1,27 @@
+.product_range{:class => "padded"}
+  %h1 New product_range
+
+  = error_messages_for :product_range
+
+  - form_for([:admin, @product_range], :html => { :multipart => true }) do |f|
+    %p
+      Location Image
+      %br
+      = f.file_field :image
+
+    %p
+      Name
+      %br
+      = f.text_field :name
+
+    %p
+      Description
+      = render :partial => "/layouts/textile"
+      %br
+      = f.text_area :description
+
+  
+    %p
+      = f.submit "Create"
+
+  = link_to 'Back', admin_product_ranges_path

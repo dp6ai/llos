@@ -1,0 +1,57 @@
+xml.instruct!
+
+xml.urlset "xmlns" => "http://www.google.com/schemas/sitemap/0.84" do
+  xml.url do
+    xml.loc         "http://www.lloydloom.com/"
+    xml.lastmod     w3c_date(Time.now)
+    xml.changefreq  "always"
+  end
+
+  #### Product Ranges ####
+  @ranges.each do |range|
+    range.products.each do |product|
+      xml.url do
+        xml.loc         browse_category_product_url(:category_kind => "range", :category =>  range.name.downcase, :product => seo(product.name.downcase), :id => product.id)
+        xml.lastmod     w3c_date(product.updated_at)
+        xml.changefreq  "weekly"
+        xml.priority    0.9
+      end
+    end
+  end
+
+  #### Types ####
+  @types.each do |type|
+    type.taggings.each do |tagging|
+      xml.url do
+        xml.loc         browse_category_product_url(:category_kind => "type", :category =>  tagging.taggable.product_range.name, :product => seo(tagging.taggable.name.downcase), :id => tagging.taggable.id)
+        xml.lastmod     w3c_date(tagging.taggable.updated_at)
+        xml.changefreq  "weekly"
+        xml.priority    0.9
+      end
+    end
+  end
+
+  #### Rooms ####
+  @rooms.each do |room|
+    room.taggings.each do |tagging|
+      xml.url do
+        xml.loc         browse_category_product_url(:category_kind => "room", :category =>  tagging.taggable.product_range.name, :product => seo(tagging.taggable.name.downcase), :id => tagging.taggable.id)
+        xml.lastmod     w3c_date(tagging.taggable.updated_at)
+        xml.changefreq  "weekly"
+        xml.priority    0.9
+      end
+    end
+  end
+
+  #### Outdoors ####
+  @outdoors.each do |outdoor|
+    outdoor.taggings.each do |tagging|
+      xml.url do
+        xml.loc         browse_category_product_url(:category_kind => "outdoor", :category =>  tagging.taggable.product_range.name, :product => seo(tagging.taggable.name.downcase), :id => tagging.taggable.id)
+        xml.lastmod     w3c_date(tagging.taggable.updated_at)
+        xml.changefreq  "weekly"
+        xml.priority    0.9
+      end
+    end
+  end
+end

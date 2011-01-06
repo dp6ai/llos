@@ -1,0 +1,31 @@
+= breadcrumbs
+
+.projects{:class => "padded"}
+
+
+  .header
+    =# :javascript
+    =#   swfobject.embedSWF("images/ProjectAni.swf", "projectsflash", "768", "150", "9.0.0")
+    =# #projectsflash
+    =#   <img src="/images/productpageimage.jpg" width="620" height="268" alt="projects header" />
+    %p="Our furniture is particularly suitable in contract situations because of its strength and longevity.  Every piece is individually handmade so we can customize any product to your specification and match any RAL or Farrow and Ball colour."
+    %p="Because our factory is in the UK, we are in a position to constantly monitor quality and we can be flexible on lead times.  Normally 6 to 8 weeks but sometimes even less for an urgent order."
+    %p="Our team of experienced contract sales managers can help you select the most appropriate furniture and advise on suitable fabrics, colours and space planning.  We also provide a full 'Customers own material' service and can help with technical advice on flame retardancy standards."
+    %p="<a href='/contact'>Contact us</a> and your area sales manager will get back to you and can advise or organize samples to help with client presentations."
+    %p="We would be delighted to show you our extensive range of quality, hand-made and extremely hardwearing Lloyd Loom furniture."
+    %p="A small selection of recent past projects:"
+  .body
+    - for project in @projects
+      .project
+        .project_image
+          = link_to image_tag(project.preview_image.url() , :class => "project_thumb"), project_path(project)
+        .project_text
+          %h3= link_to project.title, project_path(project)
+          = truncate(textilize_without_paragraph(project.description), :length => 200, :omission => "... #{link_to t(:permalink), project_path(project), :class => 'read_more'}")
+
+        .admin
+          = "#{link_to 'Edit', edit_project_path(project)} / " if logged_in?
+          = link_to 'Destroy', project_path(project), :confirm => 'Are you sure?', :method => :delete, :confirm => "Are you sure?", :method => :delete if logged_in?
+  .footer
+    = link_to 'New project', new_project_path if logged_in?
+    = will_paginate @projects, :class => "digg_pagination"

@@ -1,0 +1,13 @@
+= error_messages_for :tag
+
+- form_for([:admin, @tag]) do |f|
+  %p
+    Name
+    %br
+    = f.text_field :name
+  %p
+    Kind
+    %br
+    = collection_select(:tag, :kind, ["type","room","outdoor"], :to_s, :to_s, {:prompt => true})
+  %p
+    = f.submit "Submit"

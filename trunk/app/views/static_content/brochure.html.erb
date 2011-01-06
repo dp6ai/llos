@@ -1,0 +1,55 @@
+<%= breadcrumbs %>
+<script type="text/javascript">
+$(document).ready(function() { 
+var options = { 
+target:        '#alert',
+}; 
+$('#contactForm').ajaxForm(options); 
+}); 
+
+$.fn.clearForm = function() {
+  return this.each(function() {
+	var type = this.type, tag = this.tagName.toLowerCase();
+	if (tag == 'form')
+	  return $(':input',this).clearForm();
+	if (type == 'text' || type == 'password' || tag == 'textarea')
+	  this.value = '';
+	else if (type == 'checkbox' || type == 'radio')
+	  this.checked = false;
+	else if (tag == 'select')
+	  this.selectedIndex = -1;
+  });
+};
+
+</script>
+<div class="static padded">
+<form id="contactForm" action="sendmail.php" method="post">
+  <ul>
+    <li>
+      <label for="name">Name:</label>
+      <input id="name" name="name" type="text" />
+    </li>
+    <li>
+      <label for="email">Email:</label>
+      <input id="email" name="email" type="text" />
+    </li>
+    <li>
+      <label for="tele">Telephone:</label>
+      <input id="tele" name="tele" type="text" />
+    </li>
+    <li class="special">
+      <label for="last">Don't fill this in:</label>
+      <input id="last" name="last" type="text" />
+    </li>
+    <li>
+      <label for="message">Message:</label>
+      <textarea rows="5" name="message"></textarea>
+    </li>
+    <li>
+      <input type="submit" value="Send Message" />
+    </li>
+  </ul>
+</form>
+
+</div>
+

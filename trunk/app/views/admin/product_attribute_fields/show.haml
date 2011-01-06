@@ -1,0 +1,11 @@
+= breadcrumbs
+
+.product_attribute_fields{:class => "padded"}
+  %p
+    %span.bold Name:
+    =h @product_attribute_field.name
+
+
+  = link_to('Edit', edit_admin_product_attribute_field_path(@product_attribute_field)) if logged_in?
+  = "/" if logged_in?
+  = link_to 'Back', admin_product_attribute_fields_path

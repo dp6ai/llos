@@ -1,0 +1,40 @@
+!!!
+%html{ "xml:lang" => "en-GB", :lang => "en-GB", :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    = render :partial => "/layouts/html_header"
+  %body
+    #wrap
+      #header
+        = render :partial => '/layouts/header'
+      #content
+        #contentLeft
+          %h2.menuheadeer
+            Products
+          = render :partial => '/products/menu'
+        #contentRight
+          #navhor
+            = render :partial => "/layouts/topnav"
+          #messages
+            =flash[:notice]
+            =flash[:error]
+          = yield
+      #footer
+        = render :partial => "/layouts/footer"
+    %script{:type => "text/javascript"}
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+    %script{:type => "text/javascript"}
+      try {
+      var pageTracker = _gat._getTracker("UA-10326894-1");
+      pageTracker._trackPageview();
+
+      } catch(err) {}
+
+    %script{:type => "text/javascript"}
+      try {
+      var pageTracker = _gat._getTracker("UA-6137989-2");
+      pageTracker._trackPageview();
+
+      } catch(err) {}
+

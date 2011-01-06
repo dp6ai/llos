@@ -1,0 +1,26 @@
+================================================================
+From: <%= @message.name %>
+Company: <%= @message.company_name %>
+Email: <%= @message.email %>
+Address:
+<%= @message.address %>
+
+Phone: <%= @message.phone %>
+Time: <%= Time.now %>
+================================================================
+<%= "Callback Requested" if @message.callmeback %>
+--------------------------
+<%= "Member Of Public" if @message.member_of_public %>
+<%= "Trade" if @message.shop_owner %>
+--------------------------
+<%= "Brochure Requested" if @message.indoor %>
+--------------------------
+Source: 
+<%= @message.where if @message.where %>
+================================================================
+Message:
+
+<%= @message.body %>
+
+================================================================
+

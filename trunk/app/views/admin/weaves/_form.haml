@@ -1,0 +1,17 @@
+= error_messages_for :weave
+
+- form_for([:admin, @weave]) do |f|
+  %p
+    Name
+    %br
+    = f.text_field :name
+  %p
+    URL
+    %br
+    = f.text_field :url, :readonly => true
+  %p
+    Sort Order
+    %br
+    = f.text_field :sort_order
+  %p
+    = f.submit "Submit"

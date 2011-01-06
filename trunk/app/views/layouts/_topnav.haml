@@ -1,0 +1,13 @@
+%ul.menuhor
+  %li
+    =section_link(t(:home),:controller => 'static_content', :action => ['home'], :url => "")
+  %li
+    =section_link(t(:products),:controller => 'products', :action => ['index'], :url => "products")
+  %li
+    =section_link(t(:heritage),:controller => 'static_content', :action => ['heritage','production','history'] , :url => "heritage")
+  %li
+    =section_link(t(:news),:controller => 'news_items', :action => ['index'], :url => "news")
+  %li
+    =section_link(t(:projects),:controller => 'projects', :action => ['index'], :url => "projects")
+  %li
+    =section_link(t(:contact),:controller => 'static_content', :action => ['contact'], :url => "contact")

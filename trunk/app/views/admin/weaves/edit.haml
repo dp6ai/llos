@@ -1,0 +1,7 @@
+
+.weave{:class => "padded"}
+  %h1= "Editing #{@weave.name}"
+
+  = render :partial => 'form'
+  = link_to 'Back', admin_weaves_path
+

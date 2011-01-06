@@ -1,0 +1,15 @@
+#mainImg
+  = image_tag @product.image.url(:medium), :class => "medium", :title => @product.range_and_name
+#thumbCont
+  #thumbsImgRight
+    -# other products in range as thumbs
+    - if !@products_in_range.blank?
+      - for product in @products_in_range[0..4]
+        .thumbnail
+          = link_to image_tag(product.image.url(:thumb), :class => highlight_this?(product,@product,"thumb"), :title => product.range_and_name), browse_category_product_url(:category_kind => params[:category_kind].downcase, :category =>  params[:category].downcase, :product => seo(product.name.downcase), :id => product.id)
+  #thumbsImgLeft
+    -# other products in range as thumbs
+    - if !@products_in_range.blank? && @products_in_range.size > 4
+      - for product in @products_in_range[5..10]
+        .thumbnail
+          = link_to image_tag(product.image.url(:thumb), :class => highlight_this?(product,@product,"thumb"), :title => product.range_and_name), browse_category_product_url(:category_kind => params[:category_kind].downcase, :category =>  params[:category].downcase, :product => seo(product.name.downcase), :id => product.id)

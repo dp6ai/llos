@@ -1,0 +1,53 @@
+= breadcrumbs
+
+.browse{:class => "padded"}
+
+  #upperContent
+    -if !@product.blank?
+      = render :partial => "products/product_top"
+  #lowerContent
+    -if !@product.blank?
+      = render :partial => "products/product_bottom"
+
+    - elsif !@selected_category.blank?
+      -if params[:category_kind] == "range"
+        .range_page_range
+          - if !@highlighted_product.blank?
+            = image_tag @highlighted_product.product_range.image.url(:medium), :class => "medium"
+            %h2= @highlighted_product.product_range.name
+            %p= @highlighted_product.product_range.description
+        .range_page_products
+          - if !@products_in_range.blank?
+            - for product in @products_in_range[0..4]
+              .product_summary
+                = link_to image_tag(product.image.url(:thumb), :class => highlight_this?(product,@selected,"thumb"), :title => product.range_and_name), browse_category_product_url(:category_kind => params[:category_kind].downcase, :category =>  params[:category].downcase, :product => seo(product.name.downcase), :id => product.id)
+        .range_page_products
+          - if !@products_in_range.blank? && @products_in_range.size > 4
+            - for product in @products_in_range[5..10]
+              .product_summary
+                = link_to image_tag(product.image.url(:thumb), :class => highlight_this?(product,@selected,"thumb"), :title => product.range_and_name), browse_category_product_url(:category_kind => params[:category_kind].downcase, :category =>  params[:category].downcase, :product => seo(product.name.downcase), :id => product.id)
+        -if @products_in_range.blank?
+          %p No products found
+      -else
+        - for tagging in @selected_category.taggings
+          .product_summary
+            = "[#{tagging.highlighted}]" if logged_in?
+            = link_to image_tag(tagging.taggable.image.url(:thumb), :class => "thumb", :title => tagging.taggable.range_and_name ), browse_category_selected_url(:category_kind => "range", :category => tagging.taggable.product_range.name, :selected_id => tagging.taggable.id) if !tagging.taggable.product_range.blank?
+            = link_to tagging.taggable.range_name, browse_category_selected_url(:category_kind => "range", :category =>  tagging.taggable.product_range.name, :selected_id => tagging.taggable.id), :class => "product_range_name" if !tagging.taggable.product_range.blank?
+        -if @selected_category.taggings.blank?
+          %p No products found
+    - else
+      #productshome
+        #producthomeimage
+          <img src="/images/productpageimage.jpg" border="0" height="268" width="620" alt="table top"/>
+        #productstext
+          %p="Our furniture is made in Spalding, Lincolnshire, where we also weave the unique 'Lloyd Loom' twisted paper and wire fabric. Visit <a href='/heritage/production'>production</a> to see the process."
+          %p="Each piece is hand-made and coloured to order. The quality of our weave and the sturdy beech frames combine to create a product that will last a generation."
+          %p="Our designs are inspired by classic Lloyd Loom furniture of the last century but we are constantly innovating, creating new shapes which use the tensile properties of the weave and the solid bent wood frames."
+          %p="All our furniture is made using high quality eco-friendly sources.    We use 40% re-cycled paper, timber from sustainable FSC plantations and all paints and dyes are water-based."
+          %p="<b>To browse our products use the drop-down menus to the left.</b>"
+        #productsimages
+          -# <img src="/images/prodhome1.png" border="0" width="104" alt="weave picture" />
+          -# <img src="/images/prodhome2.png" border="0" width="104" alt="wood" />
+          -# <img src="/images/prodhome4.png" border="0" width="104" alt="painting" />
+

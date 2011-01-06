@@ -1,0 +1,23 @@
+= breadcrumbs
+
+.product_attribute_fields{:class => "padded"}
+
+  %h1 Listing Product Attribute Fields
+
+  %p Any subset of these fields can be associated with a particular product. Only populated values in the product edit screen will be displayed.
+
+  %table{:class => "sortable"}
+    %tr
+      %th{ :class => "sortfirstasc"} Name 
+      %th{ :class => "nosort"}
+      %th{ :class => "nosort"}
+      %th{ :class => "nosort"}
+
+    - for product_attribute_field in @product_attribute_fields
+      %tr
+        %td=h product_attribute_field.name
+        %td.adminlink= link_to 'Show', admin_product_attribute_field_path(product_attribute_field)
+        %td.adminlink= link_to 'Edit', edit_admin_product_attribute_field_path(product_attribute_field) if logged_in?
+        %td.adminlink= link_to 'Destroy', admin_product_attribute_field_path(product_attribute_field), :confirm => 'Are you sure?', :method => :delete, :confirm => "Are you sure?", :method => :delete if logged_in?
+
+  %p= link_to 'Add a new product attribute field', new_admin_product_attribute_field_path if logged_in?

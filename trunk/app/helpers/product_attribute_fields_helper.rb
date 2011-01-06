@@ -1,0 +1,3 @@
+module ProductAttributeFieldsHelper
+  
+end

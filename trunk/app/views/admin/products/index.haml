@@ -1,0 +1,11 @@
+= breadcrumbs
+
+.product{:class => "padded"}
+
+  %h1 Listing products
+
+  = render :partial => "/admin/products/products"
+
+  = will_paginate @products, :class => "digg_pagination"
+
+  %p= link_to 'New product', new_admin_product_path if logged_in?

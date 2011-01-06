@@ -1,0 +1,24 @@
+= breadcrumbs
+
+.weaves{:class => "padded"}
+
+  - if !@weaves.blank?
+    .products
+      %table{:class => "sortable"}
+        %tr
+          %th Name
+          %th URL
+          %th{ :class => "sortfirstasc"} Sort order
+
+        - i = 0
+        - for weave in @weaves
+          %tr{:class => i % 2 == 0 ? "odd" : "even"}
+            %td=h weave.name
+            %td=h weave.url
+            %td=h weave.sort_order
+            %td.adminlink= "#{link_to 'Show', admin_weave_path(weave)}"
+            %td.adminlink="#{link_to 'Edit', edit_admin_weave_path(weave)}"  if logged_in?
+            %td.adminlink="#{link_to 'Destroy', admin_weave_path(weave), :confirm => 'Are you sure?', :method => :delete}" if logged_in?
+
+          - i += 1
+  = link_to 'New Weave', new_admin_weave_path if logged_in?

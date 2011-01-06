@@ -1,0 +1,65 @@
+.message{:class => "padded"}
+
+  %p= t :brochure_title
+
+  = error_messages_for :message
+
+  - form_for(@message) do |f|
+
+    %p
+      =t :name
+      %br
+      = f.text_field :name
+
+    %p
+      =t :company_name
+      %br
+      = f.text_field :company_name
+
+    %p
+      =t :email
+      %br
+      = f.text_field :email
+
+    %p
+      =t :phone
+      %br
+      = f.text_field :phone
+
+      = f.hidden_field :subject, :value => brochures ?  t(:subject_default) : "Website Enquiry", :readonly => true
+
+    %p
+      =t :address
+      %br
+      = f.text_area :address, :class => "address"
+
+    %p
+      = f.check_box :callmeback, :checked => true
+      =t :callmeback
+
+    %p= t :are_you
+
+    %p
+      = f.check_box :member_of_public, :class => "indent" 
+      =t :member_of_public
+
+    %p
+      = f.check_box :shop_owner, :class => "indent" 
+      =t :shop_owner
+
+    %p
+      = f.check_box :indoor, :checked => brochures
+      =t :indoor
+
+    %p= t :where_hear
+
+    %p
+      = select_tag "message[where]", options_for_select([ t(:hear_blank), t(:hear_magazine), t(:hear_shop), t(:hear_exhibition), t(:hear_restaurant), t(:hear_engine), t(:hear_mouth), t(:hear_other) ] )
+
+    %p
+      =t :body
+      %br
+      = f.text_area :body
+
+    %p
+      = f.submit t(brochures ?  :request_brochure : :send_email)

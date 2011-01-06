@@ -1,0 +1,55 @@
+= breadcrumbs
+
+.search{:class => "padded"}
+
+  %h1 Search (Choose one category-kind)
+
+  %form{:action => "/search", :method => "post"}
+    .categories
+      .category
+        types
+        %br
+        = collection_select(:search, :type, Tag.types_asc, :id, :name, {:include_blank => true})
+      .category
+        rooms
+        %br
+        = collection_select(:search, :room, Tag.rooms_asc, :id, :name, {:include_blank => true})
+      .category
+        outdoors
+        %br
+        = collection_select(:search, :outdoor, Tag.outdoors_asc, :id, :name, {:include_blank => true})
+
+    %input{:type => "hidden", :value => form_authenticity_token}
+    %br
+    %input{:type => "submit", :value => "search"}
+
+    - if @taggings.blank? && !params[:search].blank?
+      %p No Results Found
+      
+    - if !@taggings.blank?
+      .products
+        %table
+          %tr
+            %th Category
+            %th Name
+            %th Code
+            %th Highlighted in Category?
+
+          - i = 0
+          - for tagging in @taggings
+            - if tagging.highlighted
+              %tr{:class => i % 2 == 0 ? "odd highlight" : "even highlight"}
+                %td=h tagging.tag.name
+                %td=h tagging.taggable.name
+                %td=h tagging.taggable.code
+                %td=h tagging.highlighted
+            - else
+              %tr{:class => i % 2 == 0 ? "odd" : "even"}
+
+                %td=h tagging.tag.name
+                %td=h tagging.taggable.name
+                %td=h tagging.taggable.code
+                %td=h tagging.highlighted
+            - i += 1
+
+

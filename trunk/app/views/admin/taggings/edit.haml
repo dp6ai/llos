@@ -1,0 +1,6 @@
+.product{:class => "padded"}
+  %h1= "Editing #{@tagging.taggable.name}"
+
+  = render :partial => 'form'
+  = link_to 'Back', admin_categories_path
+

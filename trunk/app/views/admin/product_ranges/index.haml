@@ -1,0 +1,22 @@
+= breadcrumbs
+
+.product_ranges{:class => "padded"}
+
+  %h1 Listing product ranges
+
+  - for product_range in @product_ranges
+
+    .grouping
+      .admin
+        = "#{link_to 'Show', admin_product_range_path(product_range)}"
+        = "/ #{link_to 'Edit', edit_admin_product_range_path(product_range)}" if logged_in?
+        = "/ #{link_to 'Destroy', admin_product_range_path(product_range), :confirm => 'Are you sure?', :method => :delete}" if logged_in?
+      %span{:style => "float:left"}
+        %h2
+          = link_to product_range.name, admin_product_range_path(product_range)
+          = "(#{product_range.products.size})"
+        = link_to(image_tag(product_range.image.url(), :class => "thumb"), admin_product_range_path(product_range))
+
+    = render :partial => "/admin/products/products", :locals => {:products => product_range.products}
+
+  %p= link_to 'Add Product Range', new_admin_product_range_path if logged_in?

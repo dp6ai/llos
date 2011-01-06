@@ -1,0 +1,127 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+fr:
+  hello: "FRHello world"
+
+  # topnav
+  home: "Acceuil"
+  products: "Produits"
+  heritage: "héritage"
+  news: "Presse"
+  projects: "Projets"
+  showrooms: "Salles d'exposition"
+
+  # footer
+  contact: "Contact"
+  legal: "Informations l&eacute;gales"
+  faq: "FAQs"
+  copyright: "&copy; lloyd loom of spalding"
+
+  # product
+  Width: "Largeur:"
+  Depth: "Profondeur:"
+  Height: "Hauteur:"
+  Seat Height: "FRSeat Height"
+  Seat Diameter: "FRSeat Diameter"
+  Diameter: "FRDiameter"
+  Length: "FRLength"
+  Width x Width: "FRWidth x Width"
+  Headboard Height: "FRHeadboard Height"
+  Footboard Height: "FRFootboard Height"
+  Siderail Height: "FRSiderail Height"
+  width: "Largeur:"
+  depth: "Profondeur:"
+  height: "Hauteur:"
+  available_in: "Options:"
+  fabrics: "FRFabrics available:"
+  product_code: "FRProduct code:"
+
+
+  # brochure
+  # brochure_title: "Fiche &agrave; remplir pour pouvoir t&eacute;l&eacute;charger la catalogu"
+  brochure_title: ""
+  name: "cwNom"
+  company_name: "Nom de société (Non obligatoir)"
+  email: "Email"
+  phone: "Téléphone"
+  address: "Addresse"
+  subject: "Sujet"
+  subject_default: "Demande de catalogue"
+  body: "Demande (Non obligatoire)"
+  body_default: ""
+  request_brochure: "Tél&eacute;charger la catalog"
+  send_email: "Send Email"
+  are_you: "Vous êtes"
+  please_send: "Merci de m'envoyer par poste les catalogues suivantes."
+  where_hear: "Ou avez vous recontrer nos produits?"
+  
+  hear_magazine: "Magazine"
+  hear_shop: "Magasin"
+  hear_exhibition: "Exposition"
+  hear_restaurant: "Restaurant"
+  hear_engine: "Moteur de recherche"
+  hear_mouth: "Associés"
+  hear_other: "Autres"
+  hear_blank: " "
+
+  howhear: "How did you hear about us?"
+  callmeback: "Merci de me rappeler"
+  member_of_public: "Membre du public"
+  shop_owner: "Proffesionel"
+
+  indoor: "Intérieur"
+  outdoor: "Extérieur"
+  naturals: "Naturals"
+
+  further_info: "Would you like to receive further occasional information about Lloyd Loom of Spalding?"
+
+  confirmation: "Merci {{name}}, Nous vous contacterons par retour. Vous pouvez procéder&agrave; &eacute;l&eacute;charger la catalogue dessous:"
+  indoor_brochure_link: "Int&eacute;rieu"
+  all_weather_brochure_link: "Ext&eacute;rieu"
+  naturals_brochure_link: "Naturals"
+  # END brochure
+
+  # news
+  doc_download: "download PDF"
+
+  activerecord:
+    errors:
+      template:
+        header:
+          one:   "Pas enregistr� &agrave; cause d'une erreur"
+          other:  "Pas enregistr� &agrave; cause de count erreur"
+        # The variable :count is also available
+        body: "Probleme avec les domains suivants:"
+
+      # The values :model, :attribute and :value are always available for interpolation
+      # The value :count is available when applicable. Can be used for pluralization.
+      messages:
+        inclusion: "Pas sur la liste"
+        exclusion: "D&eacute;j&agrave; reserv&eacute;"
+        invalid: "Inadmissible"
+        confirmation: "Ne correspond pas &agrave; la confirmation"
+        accepted: "Veuillez accepter"
+        empty: "Obligatoire"
+        blank: "Obligatoire"
+        too_long: "Trop longue (maximum {{count}} chiffres/lettres)"
+        too_short: "Trop court (minimum {{count}} chiffres/lettres)"
+        wrong_length: "Inadmissible. Doit être{{count}} chiffres/lettres)"
+        taken: "D&eacute;j&agrave; attribu&eacute;"
+        not_a_number: "Doit être numerique"
+        greater_than: "Doit être  plus que{{count}}"
+        greater_than_or_equal_to: "Doit être{{count}} ou plus"
+        equal_to: "Doit être{{count}}"
+        less_than: "Doit être moins que {count}}"
+        less_than_or_equal_to: "Doit être{{count}} ou moins"
+        odd: "Doit être impair"
+        even: "Doit &ecirc;tre pair"
+        # Append your own errors here or at the model/attributes scope.
+
+      models:
+        # Overrides default messages
+
+      attributes:
+        # Overrides model and default messages.
+
+

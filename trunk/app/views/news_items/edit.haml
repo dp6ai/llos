@@ -1,0 +1,11 @@
+= breadcrumbs
+
+.news_items{:class => "padded"}
+  %h1 Editing news item
+
+  = error_messages_for :news
+
+  = render :partial => "/news_items/form"
+  
+  = link_to 'Back', news_path
+

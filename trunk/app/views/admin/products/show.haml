@@ -1,0 +1,8 @@
+= breadcrumbs
+
+#upperContent
+  -if !@product.blank?
+    = render :partial => "products/product_top"
+#lowerContent
+-if !@product.blank?
+  = render :partial => "products/product_bottom"

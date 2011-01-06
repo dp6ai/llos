@@ -1,0 +1,32 @@
+https://llosws1.vm.bytemark.co.uk:10000/
+lloydloom.com admin pass = l0oydlo0m9922
+
+IP		-		80.68.89.216 
+www		-		www.lloydloom.com
+llosop		-		w3av3r58390
+root		-		wqACBpk5dvm
+matt		-		Cr3at3d
+llosftp.lloydloom -		ll05ftp3782
+mysql root	-		llo5mysq18385
+lloydloom	-		l10ydl0om8157
+www.lloydloom.com/stats		lloydloom	sta759105
+matts IP 	-		78.86.166.32
+
+
+llosws	
+llosuser
+l105u53r7502
+
+
+svn st -u
+
+svn st
+
+ssh root@llosws1.vm.bytemark.co.uk
+
+wqACBpk5dvm
+
+
+08000 y188354
+password1
+

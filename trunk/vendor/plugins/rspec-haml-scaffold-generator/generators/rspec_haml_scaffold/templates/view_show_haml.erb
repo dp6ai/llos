@@ -1,0 +1,12 @@
+= breadcrumbs
+
+.<%= singular_name %>{:class => "padded"}
+<% for attribute in attributes -%>
+  %p
+    <%= attribute.column.human_name %>
+    =h @<%= singular_name %>.<%= attribute.name %>
+<% end %>
+
+
+  = link_to('Edit', <%= path_for(table_name, singular_name, "edit") %>) if logged_in?
+  = link_to 'Back', <%= path_for(table_name, singular_name, "index") %>
