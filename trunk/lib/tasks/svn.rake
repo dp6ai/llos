@@ -25,6 +25,16 @@ namespace :svn do
      system "svn status | grep '^\?' | sed -e 's/? *//' | sed -e 's/ /\ /g' | xargs svn add"
   end
 
+  desc "Remove missing files from subversion"
+  task :remove_missing_files do
+     system "svn status | grep '\!' | awk '{print $2;}' | xargs svn rm"
+  end
+
+ 
   desc "shortcut for adding new files"
   task :add => [ :add_new_files ]
+
+  desc "shortcut for removing missing"
+  task :rm => [ :remove_missing_files ]
+
 end

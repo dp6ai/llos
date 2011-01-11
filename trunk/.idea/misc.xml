@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project relativePaths="false" version="4">
+<project version="4">
   <component name="DependencyValidationManager">
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
   <component name="ProjectDetails">
     <option name="projectName" value="llos" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Ruby SDK 1.8.6" project-jdk-type="RUBY_SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Ruby SDK 1.8.7-p174" project-jdk-type="RUBY_SDK" />
   <component name="RailsProjectViewPane">
     <subPane />
   </component>
@@ -16,6 +16,20 @@
         <entry key="$PROJECT_DIR$">
           <value>
             <SvnBranchConfiguration>
+              <option name="branchMap">
+                <map>
+                  <entry key="http://svn.radialsolutions.co.uk/svn/llos/branches">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                  <entry key="http://svn.radialsolutions.co.uk/svn/llos/tags">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                </map>
+              </option>
               <option name="branchUrls">
                 <list>
                   <option value="http://svn.radialsolutions.co.uk/svn/llos/branches" />

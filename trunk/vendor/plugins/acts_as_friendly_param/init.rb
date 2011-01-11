@@ -8,4 +8,5 @@ ActiveRecord::Base.send :include, ActiveRecord::Acts::FriendlyParam
 # load a filter to catch RecordMoved redirect errors
 #
 require 'friendly_filter'
-ActionController::Base.send :around_filter, ActionController::FriendlyFilter.new
+# TODO MSP - redirect loop locally?
+#ActionController::Base.send :around_filter, ActionController::FriendlyFilter.new

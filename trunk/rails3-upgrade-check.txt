@@ -1,0 +1,95 @@
+(in /Volumes/data/development/llos)
+[31m[1mDeprecated ActionMailer API[0m
+[37mYou're using the old ActionMailer API to send e-mails in a controller, model, or observer.
+[1mMore information:[0m [36mhttp://lindsaar.net/2010/1/26/new-actionmailer-api-in-rails-3
+
+[37mThe culprits: 
+[33m	- /Volumes/data/development/llos/app/models/user_observer.rb
+[33m	- app/controllers/messages_controller.rb
+[0m
+[31m[1mOld ActionMailer class API[0m
+[37mYou're using the old API in a mailer class.
+[1mMore information:[0m [36mhttp://lindsaar.net/2010/1/26/new-actionmailer-api-in-rails-3
+
+[37mThe culprits: 
+[33m	- /Volumes/data/development/llos/app/models/notifier.rb
+[33m	- /Volumes/data/development/llos/app/models/user_mailer.rb
+[33m	- /Volumes/data/development/llos/app/models/notifier.rb
+[0m
+[31m[1mOld Rails generator API[0m
+[37mA plugin in the app is using the old generator API (a new one may be available at http://github.com/trydionel/rails3-generators).
+[1mMore information:[0m [36mhttp://blog.plataformatec.com.br/2010/01/discovering-rails-3-generators/
+
+[37mThe culprits: 
+[33m	- vendor/plugins/is_taggable/generators/
+[33m	- vendor/plugins/is_taggable/generators/is_taggable_migration/
+[33m	- vendor/plugins/paperclip/generators/
+[33m	- vendor/plugins/paperclip/generators/paperclip/
+[33m	- vendor/plugins/restful_authentication/generators/
+[33m	- vendor/plugins/restful_authentication/generators/authenticated/
+[33m	- vendor/plugins/rspec-haml-scaffold-generator/generators/
+[33m	- vendor/plugins/rspec-haml-scaffold-generator/generators/rspec_haml_scaffold/
+[0m
+[31m[1mOld router API[0m
+[37mThe router API has totally changed.
+[1mMore information:[0m [36mhttp://yehudakatz.com/2009/12/26/the-rails-3-router-rack-it-up/
+
+[37mThe culprits: 
+[33m	- config/routes.rb
+[0m
+[31m[1mKnown broken plugins[0m
+[37mAt least one plugin in your app is broken (according to the wiki).  Most of project maintainers are rapidly working towards compatability, but do be aware you may encounter issues.
+[1mMore information:[0m [36mhttp://wiki.rubyonrails.org/rails/version3/plugins_and_gems
+
+[37mThe culprits: 
+[33m	- restful_authentication
+[0m
+[31m[1mDeprecated test_help path[0m
+[37mYou now must require 'rails/test_help' not just 'test_help'.
+[1mMore information:[0m [36mhttp://weblog.rubyonrails.org/2009/9/1/gem-packaging-best-practices
+
+[37mThe culprits: 
+[33m	- /Volumes/data/development/llos/test/test_helper.rb
+[0m
+[31m[1mNew file needed: config/application.rb[0m
+[37mYou need to add a config/application.rb.
+[1mMore information:[0m [36mhttp://omgbloglol.com/post/353978923/the-path-to-rails-3-approaching-the-upgrade
+
+[37mThe culprits: 
+[33m	- config/application.rb
+[0m
+[31m[1mDeprecated ERb helper calls[0m
+[37mBlock helpers that use concat (e.g., form_for) should use <%= instead of <%.  The current form will continue to work for now, but you will get deprecation warnings since this form will go away in the future.
+[1mMore information:[0m [36mhttp://weblog.rubyonrails.org/
+
+[37mThe culprits: 
+[33m	- /Volumes/data/development/llos/app/views/users/new.html.erb
+[33m	- /Volumes/data/development/llos/app/views/sessions/new.html.erb
+[0m
+[31m[1mSoon-to-be-deprecated ActiveRecord calls[0m
+[37mMethods such as find(:all), find(:first), finds with conditions, and the :joins option will soon be deprecated.
+[1mMore information:[0m [36mhttp://m.onkey.org/2010/1/22/active-record-query-interface
+
+[37mThe culprits: 
+[33m	- /Volumes/data/development/llos/app/controllers/admin/product_attribute_fields_controller.rb
+[33m	- /Volumes/data/development/llos/app/controllers/admin/product_ranges_controller.rb
+[33m	- /Volumes/data/development/llos/app/models/user.rb
+[0m
+[31m[1mnamed_scope is now just scope[0m
+[37mThe named_scope method has been renamed to just scope.
+[1mMore information:[0m [36mhttp://github.com/rails/rails/commit/d60bb0a9e4be2ac0a9de9a69041a4ddc2e0cc914
+
+[37mThe culprits: 
+[33m	- /Volumes/data/development/llos/app/models/fabric.rb
+[33m	- /Volumes/data/development/llos/app/models/product.rb
+[33m	- /Volumes/data/development/llos/app/models/product_attribute_field.rb
+[33m	- /Volumes/data/development/llos/app/models/product_range.rb
+[33m	- /Volumes/data/development/llos/app/models/weave.rb
+[0m
+[31m[1mOld gem bundling (config.gems)[0m
+[37mThe old way of bundling is gone now.  You need a Gemfile for bundler.
+[1mMore information:[0m [36mhttp://omgbloglol.com/post/353978923/the-path-to-rails-3-approaching-the-upgrade
+
+[37mThe culprits: 
+[33m	- /Volumes/data/development/llos/config/environment.rb
+[0m
