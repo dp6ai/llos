@@ -1,28 +1,28 @@
 #navindoor{:class => "urbangreymenu"}
 
   - if !@types.blank?
-    %h3{:class => "headerbar"}= @types.first.kind
+    %h3{:class => "headerbar"}= t(:type)
     %ul{:class => "submenu"}
       - for type in @types
         - css_class = params[:category].downcase == type.name.downcase ? "current" : "" if !params[:category].nil?
         %li{:class => css_class}= link_to type.name, browse_category_url(:category_kind => type.kind, :category => type.name.downcase)
 
   - if !@rooms.blank?
-    %h3{:class => "headerbar"}= @rooms.first.kind
+    %h3{:class => "headerbar"}= t(:room)
     %ul{:class => "submenu"}
       - for room in @rooms
         - css_class = params[:category].downcase == room.name.downcase ? "current" : "" if !params[:category].nil?
         %li{:class => css_class}= link_to room.name, browse_category_url(:category_kind => room.kind, :category => room.name.downcase)
 
   - if !@outdoors.blank?
-    %h3{:class => "headerbar"}= @outdoors.first.kind
+    %h3{:class => "headerbar"}= t(:outdoor)
     %ul{:class => "submenu"}
       - for outdoor in @outdoors
         - css_class = params[:category].downcase == outdoor.name.downcase ? "current" : "" if !params[:category].nil?
         %li{:class => css_class}= link_to outdoor.name, browse_category_url(:category_kind => outdoor.kind, :category => outdoor.name.downcase)
 
   - if !@ranges.blank?
-    %h3{:class => "headerbar"}= "Ranges"
+    %h3{:class => "headerbar"}= t(:ranges)
     %ul{:class => "submenu", :id => "ranges"}
       - for range in @ranges
         - if !range.name.blank?
@@ -30,14 +30,14 @@
           %li{:class => css_class, :id => range.name.downcase.parameterize}= link_to range.name, browse_category_url(:category_kind => "range", :category => range.name.downcase)
 
   - if !@weaves.blank?
-    %h3{:class => "headerbar"}= @weaves.first.class
+    %h3{:class => "headerbar"}= t(:weave)
     %ul{:class => "submenu"}
       - for weave in @weaves
         - css_class = controller.action_name == weave.name.downcase ? "current" : ""
         %li{:class => css_class}= link_to weave.name, weave.url
 
   - if !@fabrics.blank?
-    %h3{:class => "headerbar"}= @fabrics.first.class
+    %h3{:class => "headerbar"}= t(:fabric)
     %ul{:class => "submenu"}
       - for fabric in @fabrics
         - css_class = controller.action_name == fabric.name.downcase ? "current" : ""

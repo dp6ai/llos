@@ -1,5 +1,5 @@
 class ProductRange < ActiveRecord::Base         
-  # translates :name, :description
+  translates :name, :description
   has_many :products, :dependent => :destroy
   named_scope :all_asc, :order => "name ASC"
 

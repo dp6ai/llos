@@ -1,4 +1,7 @@
 class Tag < ActiveRecord::Base
+
+  translates :name, :kind
+  
   class << self
     def find_or_initialize_with_name_like_and_kind(name, kind)
       with_name_like_and_kind(name, kind).first || new(:name => name, :kind => kind)

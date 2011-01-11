@@ -52,10 +52,12 @@ class ApplicationController < ActionController::Base
 
   def set_locale
     # if params[:locale] is nil then I18n.default_locale will be used
+    logger.debug("MSP: set_lookup: #{params[:lang]}")
     if !params[:lang].blank?
       I18n.locale = params[:lang]
       session[:lang] = params[:lang] 
     else
+      logger.debug("MSP: set_lookup2: #{session[:lang]}")
       if !session[:lang].blank?
         I18n.locale = session[:lang]
       else

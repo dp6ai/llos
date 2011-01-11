@@ -7,7 +7,7 @@ fr:
   # topnav
   home: "Acceuil"
   products: "Produits"
-  heritage: "héritage"
+  heritage: "Héritage"
   news: "Presse"
   projects: "Projets"
   showrooms: "Salles d'exposition"
@@ -17,6 +17,15 @@ fr:
   legal: "Informations l&eacute;gales"
   faq: "FAQs"
   copyright: "&copy; lloyd loom of spalding"
+  design: "NW1PC"
+
+  # master categories
+  type: "Type_fr"
+  room: "Chambre"
+  outdoor: "Extérieur"
+  ranges: "Ranges_fr"
+  weave: "Weave_fr"
+  fabric: "Fabric_fr"
 
   # product
   Width: "Largeur:"
@@ -71,7 +80,6 @@ fr:
   shop_owner: "Proffesionel"
 
   indoor: "Intérieur"
-  outdoor: "Extérieur"
   naturals: "Naturals"
 
   further_info: "Would you like to receive further occasional information about Lloyd Loom of Spalding?"
@@ -89,8 +97,8 @@ fr:
     errors:
       template:
         header:
-          one:   "Pas enregistr� &agrave; cause d'une erreur"
-          other:  "Pas enregistr� &agrave; cause de count erreur"
+          one:   "Pas enregistr� &agrave; cause d'une erreur"
+          other:  "Pas enregistr� &agrave; cause de count erreur"
         # The variable :count is also available
         body: "Probleme avec les domains suivants:"
 

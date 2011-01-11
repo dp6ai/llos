@@ -72,6 +72,15 @@ com:
   legal: "Legal"
   faq: "FAQ"
   copyright: "&copy; lloyd loom of spalding"
+  design: "NW1PC"
+
+  # master categories
+  type: "Type"
+  room: "Room"
+  outdoor: "Outdoor"
+  ranges: "Ranges"
+  weave: "Weave"
+  fabric: "Fabric"
 
   # product
   Width: "Width"

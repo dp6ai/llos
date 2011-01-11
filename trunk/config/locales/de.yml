@@ -18,6 +18,15 @@ de:
   faq: "Fragen und Antworten"
   copyright: "&copy; lloyd loom of spalding"
 
+  # master categories
+  type: "Type_de"
+  room: "Room_de"
+  outdoor: "Outdoor_de"
+  ranges: "Ranges_de"
+  weave: "Weave_de"
+  fabric: "Fabric_de"
+  design: "NW1PC"
+
   # product
   width: "Breite:"
   depth: "Tiefe:"
