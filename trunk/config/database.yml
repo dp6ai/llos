@@ -9,6 +9,14 @@ development:
   username: root
   password: 
 
+staging:
+  adapter: mysql
+  encoding: utf8
+  database: llos_staging
+  pool: 5
+  username: root
+  password: llo5mysq18385
+
 production:
   adapter: mysql
   encoding: utf8
