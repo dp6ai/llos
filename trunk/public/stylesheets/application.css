@@ -288,10 +288,10 @@ img.highlighted_product {
   width: 144px; }
 
 .errorExplanation {
-  border: 1px dotted red;
-  background-color: #ff3333;
-  color: white;
-  width: 60%;
+  /*border: 1px dotted red;*/
+  /*background-color: #ff3333;*/
+  /*color: white;*/
+  /*width: 60%;*/
   padding: 5px; }
 
 .digg_pagination {
