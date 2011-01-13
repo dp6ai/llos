@@ -46,22 +46,37 @@ module IsTaggable
 
     module InstanceMethods
       def set_tag_list(kind, list)
+        logger.debug "MSP set_tag_list: #{kind} :#{list}"
         tag_list = TagList.new(list)
+        logger.debug "MSP set_tag_list2: #{kind} :#{list}"
         instance_variable_set(tag_list_name_for_kind(kind), tag_list)
       end
 
       def get_tag_list(kind)
-        set_tag_list(kind, tags.of_kind(kind).map(&:name)) if tag_list_instance_variable(kind).nil?
+        logger.debug "MSP get_tag_list: #{kind}"
+
+        tags.each { |tag| logger.debug "MSP tag:#{tag.name}" }
+
+#        logger.debug "MSP get_tag_list map2: #{tags.of_kind(kind)}" #MSP whats up with this ?!? Breaks with i18n can't use of_kind
+
+#        set_tag_list(kind, tags.of_kind(kind).map(&:name)) if tag_list_instance_variable(kind).nil?
+        set_tag_list(kind, tags.collect{|t| t if t.kind == kind}.compact.map(&:name)) if tag_list_instance_variable(kind).nil?
+        logger.debug "MSP get_tag_list2: #{kind}"
         tag_list_instance_variable(kind)
       end
 
       protected
         def tag_list_name_for_kind(kind)
-          "@#{kind}_list"
+          ret = "@#{kind}_list"
+          logger.debug "MSP: tag_list_name_for_kind #{ret}"
+          ret
         end
         
         def tag_list_instance_variable(kind)
-          instance_variable_get(tag_list_name_for_kind(kind))
+          logger.debug "MSP tag_list_instance_variable: #{kind} "
+          ret = instance_variable_get(tag_list_name_for_kind(kind))
+          logger.debug "MSP tag_list_instance_variable2 ret: #{ret} "
+          ret
         end
 
         def save_tags
@@ -74,11 +89,13 @@ module IsTaggable
         end
         
         def delete_unused_tags(tag_kind)
-          tags.of_kind(tag_kind).each { |t| tags.delete(t) unless get_tag_list(tag_kind).include?(t.name) }
+#          tags.of_kind(tag_kind).each { |t| tags.delete(t) unless get_tag_list(tag_kind).include?(t.name) }
+          tags.collect{|t| t if t.kind == tag_kind}.compact.each { |t| tags.delete(t) unless get_tag_list(tag_kind).include?(t.name) }
         end
 
         def add_new_tags(tag_kind)
-          tag_names = tags.of_kind(tag_kind).map(&:name)
+#          tag_names = tags.of_kind(tag_kind).map(&:name)
+          tag_names = tags.collect{|t| t if t.kind == tag_kind}.compact.map(&:name)
           get_tag_list(tag_kind).each do |tag_name| 
             tags << Tag.find_or_initialize_with_name_like_and_kind(tag_name, tag_kind) unless tag_names.include?(tag_name)
           end
