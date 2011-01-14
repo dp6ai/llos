@@ -104,6 +104,16 @@ de:
   fabrics: "DEFabrics available:"
   product_code: "DEProduct code:"
 
+  # static
+  static_content:
+    standard:
+      1_h2: "(de) Paint Colors"
+      1_p1: "(de) Our Environmentally friendly water based paints apply a slightly matt finish to our weave. These are our standard colours but we can also supply any RAL or Farrow & Ball colour you specify for a small surcharge."
+      1_p2: "(de) Please note that colours are as accurate as screen variance will allow."
+      2_h2: "(de) Stain Colors"
+      2_p1: "(de) Our water based stains provide varied levels of tinted colour to our weave. 'Clear' is totally untinted and shows the natural colour of the paper, 'Honey' is slightly more golden."
+      2_p2: "(de) Please note all colours are only represented as closely as screen variance allows."
+      3_p1: "(de) &quot;We can also spray our weave with any RAL or Farrow &amp; Ball colour, please <a href='/contact'> contact us for further details</a>&quot;"
 
   # brochure
   # brochure_title: "Bitte ausfüllen um die Prospekte herunterladen zu könn"
