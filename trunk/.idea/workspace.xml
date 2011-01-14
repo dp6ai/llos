@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="fa3ca17f-a57a-42c3-8879-e5473ae72c28" name="Default" comment="- Move FAQ to top menu.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/access.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/development.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/error.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/production.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/temp.log" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="llos.iws" />
@@ -97,7 +92,7 @@
       <file leaf-file-name="svn.rake" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/tasks/svn.rake">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="66" selection-start="129" selection-end="183" vertical-scroll-proportion="0.07643312">
+            <state line="7" column="70" selection-start="275" selection-end="333" vertical-scroll-proportion="0.13375796">
               <folding />
             </state>
           </provider>
@@ -1112,7 +1107,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/tasks/svn.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="66" selection-start="129" selection-end="183" vertical-scroll-proportion="0.07643312">
+        <state line="7" column="70" selection-start="275" selection-end="333" vertical-scroll-proportion="0.13375796">
           <folding />
         </state>
       </provider>
