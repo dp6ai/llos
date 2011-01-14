@@ -3,9 +3,9 @@
 
 com:
   # meta tags
-  meta_default_description: "Furniture makers" #MSP / KIPS TODO LLOS to provide
-  meta_default_keywords: "bespoke, furniture makers" #MSP / KIPS TODO LLOS to provide
-  meta_default_title: "Lloyd Loom of Spalding" #MSP / KIPS TODO LLOS to provide
+  meta_default_description: "Furniture makers"
+  meta_default_keywords: "bespoke, furniture makers"
+  meta_default_title: "Lloyd Loom of Spalding"
 
   meta_home_description: "Lloyd Loom of Spalding, the genuine British manufacturer of Lloyd Loom furniture, for your conservatory, kitchens and restaurants."
   meta_home_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor"
@@ -81,6 +81,14 @@ com:
   ranges: "Ranges"
   weave: "Weave"
   fabric: "Fabric"
+
+  # home
+  home_main_image: "/images/Homepageimage.jpg"
+  home_title: "Lloyd Loom of Spalding the genuine British manufacturer"
+  home_p1: "Genuine British Lloyd Loom furniture is manufactured from woven twisted paper and wire on a solid beech-wood frame."
+  home_p2: "Each piece - whether for conservatory, kitchen or restaurant - is individually handmade by craftsmen to your specification and can be in any colour you like."
+  home_p3: "Our furniture is tremendously strong and, unlike the cane and rattan furniture which inspired the original elegant designs, it will last for a generation."
+
 
   # product
   Width: "Width"
@@ -285,7 +293,7 @@ com:
       # Use the strftime parameters for formats.
       # When no format has been given, it uses default.
       # You can provide other formats here if you like!
-      default: "%Y-%m-%d" 
+      default: "%Y-%m-%d"
       short: "%b %d"
       long: "%B %d, %Y"
 

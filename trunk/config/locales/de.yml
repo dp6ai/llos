@@ -2,7 +2,62 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 de:
-  hello: "FRHello world"
+  # meta tags
+  meta_default_description: "Furniture makers"
+  meta_default_keywords: "bespoke, furniture makers"
+  meta_default_title: "Lloyd Loom of Spalding"
+
+  meta_home_description: "Lloyd Loom of Spalding, the genuine British manufacturer of Lloyd Loom furniture, for your conservatory, kitchens and restaurants."
+  meta_home_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor"
+  meta_home_title: "Lloyd Loom of Spalding - The Genuine British Manufacturer of  Lloyd Loom Furniture"
+
+  meta_heritage_description: "A brief look at Lloyd Loom of Spalding, the genuine British manufacturer of Lloyd Loom furniture."
+  meta_heritage_keywords: "Cane, wicker, furniture, design, specification, manufacture, british, painted, ecological, recycled, genuine"
+  meta_heritage_title: "Lloyd Loom of Spalding - Heritage"
+
+  meta_history_description: "The History of Lloyd Loom furniture manufacture in Britain."
+  meta_history_keywords: "Cane, wicker, furniture, birtish, marshall burns, painted, ecological, genuine, paper, specification, contract, real"
+  meta_history_title: "Lloyd Loom of Spalding - History"
+
+  meta_production_description: "A detailed look out how genuine Lloyd Loom furniture is made, right here in England."
+  meta_production_keywords: "Cane, wicker, furniture, design, specification, manufacture, british, UK, handmade, ecological, chairs, rattan, paper"
+  meta_production_title: "Lloyd Loom of Spalding - Manufacture in the UK"
+
+  meta_contact_description: "View Showroom addresses or contact us to enquire about prices or delivery times."
+  meta_contact_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor, restaurant, garden rooms"
+  meta_contact_title: "Lloyd Loom of Spalding -Showrooms & Contact Details"
+
+  meta_legal_description: "Legal Information from Lloyd Loom of Spalding."
+  meta_legal_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor"
+  meta_legal_title: "Lloyd Loom of Spalding - Legal Information"
+
+  meta_faq_description: "A list of frequently asked questions from Lloyd Loom of Spalding - the genuine British manufacturer of Lloyd Loom furniture."
+  meta_faq_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor"
+  meta_faq_title: "Lloyd Loom of Spalding - FAQs"
+
+  meta_standard_description: "A selection of coloured weave samples from Lloyd Loom of Spalding, the genuine British manufacturer of Lloyd Loom furniture."
+  meta_standard_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor, restaurant, garden rooms"
+  meta_standard_title: "Lloyd Loom of Spalding - Standard weave"
+
+  meta_naturals_description: "A selection of coloured weave samples from Lloyd Loom of Spalding, the genuine British manufacturer of Lloyd Loom furniture."
+  meta_naturals_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor, restaurant, garden rooms"
+  meta_naturals_title: "Lloyd Loom of Spalding - Naturals weave"
+
+  meta_loomtex_description: "A selection of coloured weave samples from Lloyd Loom of Spalding, the genuine British manufacturer of Lloyd Loom furniture."
+  meta_loomtex_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor, restaurant, garden rooms"
+  meta_loomtex_title: "Lloyd Loom of Spalding - Loomtex weave"
+
+  meta_outdoor_description: "A selection of coloured weave samples from Lloyd Loom of Spalding, the genuine British manufacturer of Lloyd Loom furniture."
+  meta_outdoor_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor, restaurant, garden rooms"
+  meta_outdoor_title: "Lloyd Loom of Spalding - Outdoor weave"
+
+  meta_other_description: "A selection of coloured weave samples from Lloyd Loom of Spalding, the genuine British manufacturer of Lloyd Loom furniture."
+  meta_other_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor, restaurant, garden rooms"
+  meta_other_title: "Lloyd Loom of Spalding - Other weave"
+
+  meta_fabric_description: "Lloyd Loom of Spalding offer a wide range of fabrics, "
+  meta_fabric_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor, restaurant, garden rooms"
+  meta_fabric_title: "Lloyd Loom of Spalding - Fabrics"
 
   # topnav
   home: "Startseite"
@@ -26,6 +81,14 @@ de:
   weave: "Weave_de"
   fabric: "Fabric_de"
   design: "NW1PC"
+
+  # home
+  home_main_image: "/images/Homepageimage_de.jpg"
+  home_title: "(de) Lloyd Loom of Spalding the genuine British manufacturer"
+  home_p1: "(de) Genuine British Lloyd Loom furniture is manufactured from woven twisted paper and wire on a solid beech-wood frame."
+  home_p2: "(de) Each piece - whether for conservatory, kitchen or restaurant - is individually handmade by craftsmen to your specification and can be in any colour you like."
+  home_p3: "(de) Our furniture is tremendously strong and, unlike the cane and rattan furniture which inspired the original elegant designs, it will last for a generation."
+
 
   # product
   width: "Breite:"
@@ -83,6 +146,10 @@ de:
   # news
   doc_download: "download PDF"
 
+  # about
+  history: "History"
+  production: "Production"
+  media: "Media"
 
   activerecord:
     errors:
