@@ -146,6 +146,18 @@ uk:
       2_p1: "With the release of the popular naturals range, we decided to introduce the same colours into the Loomtex range."
       2_p2: "Still made from highly durable linen and paper weave, the Naturals Loomtex can be made with a variety of patterns. Please contact us for more information."
       2_p3: "Please note all colours are only represented as closely as screen variance allows."
+    fabric:
+      1_h2: "Fabric for Cushions"
+      1_p1: "We have ranges of fabrics at different price levels but we can also make-up our cushions in any fabric you choose."
+      1_p2: "Please contact us for the fabric requirement for any particular model if you want us to use your own material."
+      1_p3: "All our standard fabrics comply with the Furniture Fire Safety Regulations 1988 and we can provide fire resistant inter-liners if your fabric is not FR treated."
+      1_p4: "For contract situations, we have ranges that conform to Crib 5 fire ignition tests."
+      1_p5: "Our standard ranges include:"
+      1_li1: "Romo Linara in 200 colours"
+      1_li2: "Linwood Medura"
+      1_li3: "Linwood Iona"
+      1_li4: "Sekers (particularly suited to contract situations)"
+      1_p6: "Please <a href='/contact'>contact us</a> for swatches or for advice on fabrics"
 
 
   width: "Width:"
