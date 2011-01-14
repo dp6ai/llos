@@ -126,6 +126,32 @@ fr:
       2_p1: "(fr) Our water based stains provide varied levels of tinted colour to our weave. 'Clear' is totally untinted and shows the natural colour of the paper, 'Honey' is slightly more golden."
       2_p2: "(fr) Please note all colours are only represented as closely as screen variance allows."
       3_p1: "(fr) &quot;We can also spray our weave with any RAL or Farrow &amp; Ball colour, please <a href='/contact'> contact us for further details</a>&quot;"
+    farrow_and_ball:
+      1_h2: "(fr) Farrow &amp; Ball"
+      1_p1: "(fr) For those customers who have decorated their homes in Farrow & Ball paints and wish to continue their colour scheme through to their furniture, Lloyd Loom of Spalding can now offer our furniture in the entire range of Farrow & Ball colours. Please contact us for details."
+      1_p2: "(fr) &quot;Farrow & Ball has been making paint in Dorset, one batch at a time, for over sixty years, and is the only company continuing to make the full range of traditional and modern paint finishes of the highest quality."
+      1_p3: "(fr) The depth and beauty of our colours are due to superior formulations and quality standards, unmatched by other paints. We use more high quality pigments and resins and no low quality 'fillers', giving our colours visibly greater depth and purity, Unlike many other manufacturers we use naturally occurring pigments, such as umbers in their purest form, and we continue to use natural ingredients such as chalk, Lime Putty, Linseed oil and China Clay."
+      1_p4: "(fr) In order to maintain our extraordinarily high standards of colour accuracy, which are twice as exacting as the industry norm, we don't let anyone else mix Farrow & Ball paint. We insist on checking each batch ourselves before it leaves our factory in Dorset in order to make sure that it is absolutely perfect."
+      1_p5: "(fr) Farrow & Ball paints grace the walls of some of the most beautiful homes across the world. The colours and finishes are historically rooted, meticulously researched, and reflect the companies unique heritage.&quot;"
+    outdoor:
+      1_h2: "(fr) Outdoor Colours"
+      1_p1: "(fr) Our normal paper weave is unsuitable for outdoor use, to overcome this we launched our All Weather Lloyd Loom collection, woven from rehau cord. The furniture is fully UV resistant, weather proof and can be used inside or outdoors. Not all models are available in all the colours shown below."
+      1_p2: "(fr) Please note all colours are only represented as closely as screen variance allows."
+    naturals:
+      1_h2: "(fr) Naturals"
+      1_p1: "(fr) Made using traditional methods on Lloyd Loom machinery Naturals Weave is crafted from 40% recycled Kraft paper that has been pre-dyed by environmentally friendly water based dyeing system."
+      1_p2: "(fr) Naturals is 100% color fast and extremely hard wearing with no possibility of the color chipping."
+      1_p3: "(fr) Please note all colours are only represented as closely as screen variance allows."
+    loomtex:
+      1_h2: "(fr) Loomtex"
+      1_p1: "(fr) Made from highly durable linen and twisted dyed paper fibre, the fabric is used in many of our contemporary pieces but it can also be used as a floor covering."
+      1_p2: "(fr) As a carpet or rug, it is available in widths of 1.2m to 2.5m and lengths of 1.2m to 5m."
+      1_p3: "(fr) It comes in a variety of patterns as well as the colours shown. Please <a href='/contact'>contact us</a> for more information about Loomtex."
+      1_p4: "(fr) Please note all colours are only represented as closely as screen variance allows."
+      2_h2: "(fr) Naturals Loomtex"
+      2_p1: "(fr) With the release of the popular naturals range, we decided to introduce the same colours into the Loomtex range."
+      2_p2: "(fr) Still made from highly durable linen and paper weave, the Naturals Loomtex can be made with a variety of patterns. Please contact us for more information."
+      2_p3: "(fr) Please note all colours are only represented as closely as screen variance allows."
 
 
   # brochure
