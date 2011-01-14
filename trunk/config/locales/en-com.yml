@@ -89,6 +89,13 @@ com:
   home_p2: "Each piece - whether for conservatory, kitchen or restaurant - is individually handmade by craftsmen to your specification and can be in any colour you like."
   home_p3: "Our furniture is tremendously strong and, unlike the cane and rattan furniture which inspired the original elegant designs, it will last for a generation."
 
+  # products
+  products_p1: "Our furniture is made in Spalding, Lincolnshire, where we also weave the unique 'Lloyd Loom' twisted paper and wire fabric. Visit <a href='/heritage/production'>production</a> to see the process."
+  products_p2: "Each piece is hand-made and coloured to order. The quality of our weave and the sturdy beech frames combine to create a product that will last a generation."
+  products_p3: "Our designs are inspired by classic Lloyd Loom furniture of the last century but we are constantly innovating, creating new shapes which use the tensile properties of the weave and the solid bent wood frames."
+  products_p4: "All our furniture is made using high quality eco-friendly sources.    We use 40% re-cycled paper, timber from sustainable FSC plantations and all paints and dyes are water-based."
+  products_p5: "To browse our products use the drop-down menus to the left."
+
 
   # product
   Width: "Width"

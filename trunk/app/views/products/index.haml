@@ -39,15 +39,13 @@
     - else
       #productshome
         #producthomeimage
-          <img src="/images/productpageimage.jpg" border="0" height="268" width="620" alt="table top"/>
+          %img{ :src => "/images/productpageimage.jpg", :border => "0", :height => "268", :width => "620", :alt => "table top"}
         #productstext
-          %p="Our furniture is made in Spalding, Lincolnshire, where we also weave the unique 'Lloyd Loom' twisted paper and wire fabric. Visit <a href='/heritage/production'>production</a> to see the process."
-          %p="Each piece is hand-made and coloured to order. The quality of our weave and the sturdy beech frames combine to create a product that will last a generation."
-          %p="Our designs are inspired by classic Lloyd Loom furniture of the last century but we are constantly innovating, creating new shapes which use the tensile properties of the weave and the solid bent wood frames."
-          %p="All our furniture is made using high quality eco-friendly sources.    We use 40% re-cycled paper, timber from sustainable FSC plantations and all paints and dyes are water-based."
-          %p="<b>To browse our products use the drop-down menus to the left.</b>"
+          %p= t(:products_p1)
+          %p= t(:products_p2)
+          %p= t(:products_p3)
+          %p= t(:products_p4)
+          %p
+            %b= t(:products_p5)
         #productsimages
-          -# <img src="/images/prodhome1.png" border="0" width="104" alt="weave picture" />
-          -# <img src="/images/prodhome2.png" border="0" width="104" alt="wood" />
-          -# <img src="/images/prodhome4.png" border="0" width="104" alt="painting" />
 
