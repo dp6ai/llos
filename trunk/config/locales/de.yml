@@ -1,4 +1,4 @@
-# Sample localization file for English. Add more files in this directory for other locales.
+## Sample localization file for English. Add more files in this directory for other locales.
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 de:
@@ -74,27 +74,27 @@ de:
   copyright: "&copy; lloyd loom of spalding"
 
   # master categories
-  type: "Type_de"
-  room: "Room_de"
-  outdoor: "Outdoor_de"
-  ranges: "Ranges_de"
-  weave: "Weave_de"
-  fabric: "Fabric_de"
+  type: "Typen"
+  room: "Innenbereich"
+  outdoor: "Aussenbereich"
+  ranges: "Kollectionen"
+  weave: "Geflecht"
+  fabric: "Stoffe"
   design: "NW1PC"
 
   # home
   home_main_image: "/images/Homepageimage_de.jpg"
-  home_title: "(de) Lloyd Loom of Spalding the genuine British manufacturer"
-  home_p1: "(de) Genuine British Lloyd Loom furniture is manufactured from woven twisted paper and wire on a solid beech-wood frame."
-  home_p2: "(de) Each piece - whether for conservatory, kitchen or restaurant - is individually handmade by craftsmen to your specification and can be in any colour you like."
-  home_p3: "(de) Our furniture is tremendously strong and, unlike the cane and rattan furniture which inspired the original elegant designs, it will last for a generation."
+  home_title: "Lloyd Loom of Spalding – echtes britisches Handwerk"
+  home_p1: "Echte britische Lloyd-Loom-Möbel bestehen aus einem Geflecht aus verzwirntem Kraftpapier und Draht auf einem stabilen Buchenholzrahmen."
+  home_p2: "Jedes einzelne Stück – sei es nun für den Wintergarten, die Küche oder für ein Restaurant – wird von Hand nach Ihren spezifischen Vorgaben und in der von Ihnen gewünschten Farbe gefertigt."
+  home_p3: "Unsere Möbelstücke sind äußerst stabil, und anders als Korb- und Rattanmöbel, die als Inspiration für die eleganten Designs dienten, halten sie ein Leben lang."
 
   # products
-  products_p1: "(de) Our furniture is made in Spalding, Lincolnshire, where we also weave the unique 'Lloyd Loom' twisted paper and wire fabric. Visit <a href='/heritage/production'>production</a> to see the process."
-  products_p2: "(de) Each piece is hand-made and coloured to order. The quality of our weave and the sturdy beech frames combine to create a product that will last a generation."
-  products_p3: "(de) Our designs are inspired by classic Lloyd Loom furniture of the last century but we are constantly innovating, creating new shapes which use the tensile properties of the weave and the solid bent wood frames."
-  products_p4: "(de) All our furniture is made using high quality eco-friendly sources.    We use 40% re-cycled paper, timber from sustainable FSC plantations and all paints and dyes are water-based."
-  products_p5: "(de) To browse our products use the drop-down menus to the left."
+  products_p1: "Unsere Möbel werden in Spalding, Lincolnshire, hergestellt, wo wir auch das einzigartige Lloyd-Loom-Geflecht aus verzwirntem Kraftpapier und Draht fertigen.  Besuchen Sie unsere <a href='/heritage/production'>production</a> und schauen Sie sich das Verfahren an."
+  products_p2: "Jedes einzelne Stück wird von Hand gefertigt und nach Kundenwunsch gefärbt. Aus der Kombination unseres qualitativ hochwertigen Geflechts und der stabilen Buchenholzrahmen ergibt sich ein Produkt mit extrem langer Lebensdauer."
+  products_p3: "Unsere Designs werden zwar durch klassische Lloyd-Loom-Flechtmöbel des vergangenen Jahrhunderts inspiriert, aber wir streben ständig nach Innovationen und entwickeln neue Formen, bei denen die Dehnungseigenschaften des Geflechts und die Stabilität der gebogenen Holzrahmen optimal zur Geltung kommen."
+  products_p4: "Das Material für den Bau unserer Möbel stammt aus qualitativ hochwertigen, umweltfreundlichen Quellen. Wir verwenden zu 40% recyceltes Papier, Holz aus Plantagen mit nachhaltigem Anbau sowie Farben und Farbstoffe auf Wasserbasis."
+  products_p5: "Wenn Sie sich einen Überblick über unsere Produkte verschaffen möchten, verwenden Sie bitte die Menüs auf der linken Seite."
 
   # product
   width: "Breite:"
