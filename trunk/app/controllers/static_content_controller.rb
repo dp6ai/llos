@@ -24,6 +24,12 @@ class StaticContentController < ApplicationController
     @meta_title = t(:meta_production_title)
   end
 
+  def film
+    @meta_description = t(:meta_heritage_description)
+    @meta_keywords = t(:meta_heritage_keywords)
+    @meta_title = t(:meta_heritage_title)
+  end
+
   def media
     @meta_description = t(:meta_media_description)
     @meta_keywords = t(:meta_media_keywords)

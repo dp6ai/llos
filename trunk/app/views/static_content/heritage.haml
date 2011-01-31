@@ -1,17 +1,14 @@
 #navhorheritage
-  %ul{:class => "menuhorheritage"}
-    %li{:class => "current"}= link_to "About Us", "/heritage"
-    %li{}= link_to "Production", "/heritage/production"
-    %li{}= link_to "History", "/heritage/history"
+  = render :partial => "heritage_menu", :locals => {:current => "heritage"}
 = breadcrumbs
 #heritageus
   .heritageleft
-    %p="<b>Lloyd Loom of Spalding is an innovative furniture manufacturer,</b> employing British craftsmen making the genuine Lloyd Loom weave and furniture using traditional techniques.   Our current factory is in the market town of Spalding, Lincolnshire, where we have been making high quality furniture since 1985."
-    %p{:class => "heritagebreak2"}="Each piece is handmade and coloured to your specification and can therefore be individually tailored to requirements. Our range contains more than 150 different products and we make more than 25,000 items a year in the factory in Spalding - which you are welcome to visit at any time by appointment. "
-    %p{:class => "heritagebreak"}="We have showrooms in London and Spalding"
-    %p="<a href='/contact'>Click Here to Contact Us</a>"
-    %p="Visit <a href='/heritage/production' >Production</a> to see our methods and the skilled craftsmen at work."
-    %p="Visit <a href='/heritage/history' >History</a> to learn more about the company and what is 'Lloyd Loom'."
+    %p=t(".1_p1")
+    %p{:class => "heritagebreak2"}=t(".1_p2")
+    %p{:class => "heritagebreak"}=t(".1_p3")
+    %p=t(".1_p4")
+    %p=t(".1_p5")
+    %p=t(".1_p6")
   .heritageright
     .heritageimage
       <img src="/images/Weave.jpg" border="0" width="160" alt="weave image" />

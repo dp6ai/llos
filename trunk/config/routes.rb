@@ -27,6 +27,7 @@ ActionController::Routing::Routes.draw do |map|
   map.about_history "/heritage/history", :controller => "static_content", :action => "history"
   map.about_production "/heritage/production", :controller => "static_content", :action => "production"
   map.about_media "/heritage/media", :controller => "static_content", :action => "media"
+  map.about_film "/heritage/film", :controller => "static_content", :action => "film"
   map.faq "/faq", :controller => "static_content", :action => "faq"
   map.contact "/contact", :controller => "static_content", :action => "contact"
   map.legal "/legal", :controller => "static_content", :action => "legal"

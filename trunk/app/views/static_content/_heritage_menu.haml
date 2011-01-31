@@ -1,0 +1,5 @@
+%ul{:class => "menuhorheritage"}
+  %li{:class => current == "heritage" ? "current" : ""}= link_to t(".1_li1"), "/heritage"
+  %li{:class => current == "production" ? "current" : ""}= link_to t(".1_li2"), "/heritage/production"
+  %li{:class => current == "history" ? "current" : ""}= link_to t(".1_li3"), "/heritage/history"
+  %li{:class => current == "film" ? "current" : ""}= link_to t(".1_li4"), "/heritage/film"
