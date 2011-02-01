@@ -1,0 +1,126 @@
+= breadcrumbs
+:javascript
+  jQuery(document).ready(function() {									
+  	jQuery("a[name^='faq-']").each(function() {
+  		jQuery(this).click(function() {
+  			if( jQuery("#" + this.name).is(':hidden') ) {
+  				jQuery("#" + this.name).fadeIn('slow');
+  			} else {
+  				jQuery("#" + this.name).fadeOut('slow');
+  			}			
+  			return false;
+  		});
+  	});
+  });
+#faq
+  %a{:href => "#", :name => "faq-1"}= t(".1_qu")
+  %br/
+  #faq-1.faq-answer
+    %p= t(".1_p1")
+    %p= t(".1_p2")
+    %br/
+    %br/
+  %a{:href => "#", :name => "faq-2"}= t(".2_qu")
+  %br/
+  #faq-2.faq-answer
+    %p= t(".2_p1")
+    %p= t(".2_p2")
+    %p= t(".2_p3")
+    %br/
+    %br/
+  %a{:href => "#", :name => "faq-3"}= t(".3_qu")
+  %br/
+  #faq-3.faq-answer
+    %p= t(".3_p1")
+    %p
+      = t(".3_p2a")
+      %a{:href => "/heritage/history"}= t(".3_p2b")
+      = t(".3_p2c")
+    %p= t(".3_p3")
+    %br/
+    %br/
+  %a{:href => "#", :name => "faq-4"}= t(".4_qu")
+  %br/
+  #faq-4.faq-answer
+    %p= t(".4_p1")
+    %p
+      = t(".4_p2a")
+      %a{:href => "/contact"}= t(".4_p2b")
+      = t(".4_p2c")
+    %br/
+    %br/
+  %a{:href => "#", :name => "faq-5"}= t(".5_qu")
+  %br/
+  #faq-5.faq-answer
+    %p= t(".5_p1")
+    %p
+      = t(".5_p2a")
+      %a{:href => "/accessories"}= t(".5_p2b")
+      = t(".5_p2c")
+      %a{:href => "/fabric"}= t(".5_p2d")
+      = t(".5_p2e")
+    %p= t(".5_p3")
+    %br/
+    %br/
+  %a{:href => "#", :name => "faq-6"}= t(".6_qu")
+  %br/
+  #faq-6.faq-answer
+    %p
+      = t(".6_p1a")
+      %a{:href => "/contact"}= t(".6_p1b")
+      = t(".6_p1c")
+    %br/
+    %br/
+  %a{:href => "#", :name => "faq-7"}= t(".7_qu")
+  %br/
+  #faq-7.faq-answer
+    %p= t(".7_p1")
+    %p= t(".7_p2")
+    %ul
+      %li Paul Bolton
+      %li Cane Chairs Repaired
+      %li Dunmayling
+      %li High street
+      %li Burwash
+      %li Etchingham
+      %li East Sussex
+      %li TN19 7EP
+      %li 01435 882201
+      %li
+        %a{:href => "mailt:chairs@btconnect.com"} chairs@btconnect.com
+    %br/
+    %br/
+  %a{:href => "#", :name => "faq-8"}= t(".8_qu")
+  %br/
+  #faq-8.faq-answer
+    %p= t(".8_p1")
+    %p= t(".8_p2")
+    %p= t(".8_p3")
+    %br/
+    %br/
+  %a{:href => "#", :name => "faq-9"}= t(".9_qu")
+  %br/
+  #faq-9.faq-answer
+    %p= t(".9_p1")
+    %p= t(".9_p2")
+    %p= t(".9_p3")
+    %p
+      = t(".9_p4a")
+      %a{:href => "/outdoor"}= t(".9_p4b")
+    %br/
+    %br/
+  %a{:href => "#", :name => "faq-10"}= t(".10_qu")
+  %br/
+  #faq-10.faq-answer
+    %ul
+      %li= t(".10_li1")
+      %li= t(".10_li2")
+      %li= t(".10_li3")
+      %li= t(".10_li4")
+      %li= t(".10_li5")
+      %li= t(".10_li6")
+      %li= t(".10_li7")
+      %li= t(".10_li8")
+      %li= t(".10_li9")
+    %br/
+    %br/
