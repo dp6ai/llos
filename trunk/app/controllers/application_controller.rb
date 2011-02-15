@@ -40,6 +40,7 @@ class ApplicationController < ActionController::Base
     @outdoors_lov = Tag.outdoors_asc.collect { |cat| [cat.name, cat.id] }
   end
 
+  LOCALES = {"uk" => "en", "com" => "en"}
   def extract_locale_from_tld
     _parsed_locale = request.host.split('.').last
     logger.debug("MSP: _parsed_locale: [#{_parsed_locale}]")
@@ -47,7 +48,10 @@ class ApplicationController < ActionController::Base
     # parsed locales are symbols, not strings
     parsed_locale = (I18n.available_locales.include? _parsed_locale.intern) ? _parsed_locale : nil
     logger.debug("MSP: parsed_locale from lookup: #{parsed_locale}")
-    return parsed_locale
+
+    keyed_locale = !LOCALES[parsed_locale].blank? ? LOCALES[parsed_locale] : parsed_locale
+    logger.debug("MSP: keyed_locale from lookup: #{keyed_locale}")
+    return keyed_locale
   end
 
   def set_locale
