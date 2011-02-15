@@ -3,15 +3,23 @@
     %a{ :href => "/home" }
       %img{ :src => "/images/mainlogo.png", :alt => "Lloyd Loom Of Spalding logo" }
 #headright
-  #language
-  #telephone
-    #telcon.telephoneicon
-      %a{ :href => "/telephone" }
-        %img{ :src => "/images/teleIcon.png", :alt => "Lloyd Loom Of Spalding contact" }
   #brochure
     #bricon.brochureicon
       %a{ :href => "/brochure" }
         %img{ :src => "/images/brochureIcon.png ", :alt => "Lloyd Loom Of Spalding logo" }
       %a{ :id => "trigger_dialog", :href => "#errorExplanation"}
+  #telephone
+    #telcon.telephoneicon
+      %a{ :href => "/telephone" }
+        %img{ :src => "/images/teleIcon.png", :alt => "Lloyd Loom Of Spalding contact" }
+  .flags
+    .flag
+      %a{ :href => "/?lang=de" }
+        %img{ :src => "/images/drSmall.jpg", :alt => "Lloyd Loom Of Spalding German" }
+    .flag
+      %a{ :href => "/?lang=fr" }
+        %img{ :src => "/images/frSmall.jpg", :alt => "Lloyd Loom Of Spalding French" }
+    .flag
+      %a{ :href => "/?lang=com" }
+        %img{ :src => "/images/ukSmall.jpg", :alt => "Lloyd Loom Of Spalding English" }
 
-  #bread

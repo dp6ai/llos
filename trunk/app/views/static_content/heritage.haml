@@ -2,16 +2,20 @@
   = render :partial => "heritage_menu", :locals => {:current => "heritage"}
 = breadcrumbs
 #heritageus
-  .heritageleft
-    %p=t(".1_p1")
-    %p{:class => "heritagebreak2"}=t(".1_p2")
-    %p{:class => "heritagebreak"}=t(".1_p3")
-    %p=t(".1_p4")
-    %p=t(".1_p5")
-    %p=t(".1_p6")
-  .heritageright
+  .heritage_item
     .heritageimage
-      <img src="/images/Weave.jpg" border="0" width="160" alt="weave image" />
+      =link_to image_tag("/images/Weave.jpg"), "/heritage/production"
+    .heritagetext
+      %p=t(".1_p1")
+  .heritage_item
     .heritageimage
-      <img src="/images/hand.jpg" border="0" width="160" alt="hand image" />
+      =link_to image_tag("/images/hand.jpg"), "/heritage/history"
+    .heritagetext
+      %p=t(".2_p1")
+  .heritage_item
+    .heritageimage
+      =link_to image_tag("/images/filmimg.jpg"), "heritage/film"
+    .heritagetext
+      %p=t(".3_p1")
+
 

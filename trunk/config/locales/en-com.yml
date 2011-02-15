@@ -164,12 +164,9 @@ com:
       1_li3: "History"
       1_li4: "Film"
     heritage:
-      1_p1: "<b>Lloyd Loom of Spalding is an innovative furniture manufacturer,</b> employing British craftsmen making the genuine Lloyd Loom weave and furniture using traditional techniques.   Our current factory is in the market town of Spalding, Lincolnshire, where we have been making high quality furniture since 1985."
-      1_p2: "Each piece is handmade and coloured to your specification and can therefore be individually tailored to requirements. Our range contains more than 150 different products and we make more than 25,000 items a year in the factory in Spalding - which you are welcome to visit at any time by appointment."
-      1_p3: "We have showrooms in London and Spalding"
-      1_p4: "<a href='/contact'>Click Here to Contact Us</a>"
-      1_p5: "Visit <a href='/heritage/production' >Production</a> to see our methods and the skilled craftsmen at work."
-      1_p6: "Visit <a href='/heritage/history' >History</a> to learn more about the company and what is 'Lloyd Loom'."
+      1_p1: "Visit <a href='/heritage/production' >Production</a> to see our methods and the skilled craftsmen at work."
+      2_p1: "Visit <a href='/heritage/history' >History</a> to learn more about the company and what is 'Lloyd Loom'."
+      3_p1: "Visit <a href='/heritage/film' >Film</a> to watch a short video on the production of 'Lloyd Loom'."
     production:
       intro_p1: "Our furniture is made in Spalding, Lincolnshire using traditional materials and techniques.   The unique .Lloyd Loom. paper and wire weave is also made at the factory and its superb quality differentiates our furniture, as do the sturdy beech frames which will last a generation unlike the rattan used in imported copy Lloyd Loom chairs."
       intro_p2: "Each piece is handmade and coloured to order which enables us to tailor any product to your specification.   You are welcome to visit the factory at any time by appointment."
