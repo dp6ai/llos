@@ -300,6 +300,7 @@ de:
   # brochure
   # brochure_title: "Bitte ausfüllen um die Prospekte herunterladen zu könn"
   brochure_title: ""
+  title: "(de)Title"
   name: "Name"
   company_name: "Firmenname (kein Pflichtfeld)"
   email: "Email"

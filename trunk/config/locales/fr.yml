@@ -314,6 +314,7 @@ fr:
   # brochure
   # brochure_title: "Fiche &agrave; remplir pour pouvoir t&eacute;l&eacute;charger la catalogu"
   brochure_title: ""
+  title: "(fr)Title"
   name: "Nom"
   company_name: "Nom de société (Non obligatoir)"
   email: "Email"

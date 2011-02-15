@@ -7,6 +7,11 @@
   - form_for(@message) do |f|
 
     %p
+      =t :title
+      %br
+      = f.text_field :title
+
+    %p
       =t :name
       %br
       = f.text_field :name

@@ -314,6 +314,7 @@ en:
   # brochure new version
   # brochure_title: "Please enter your details and we'll send you to a downloadable brochure"
   brochure_title: ""
+  title: "Title"
   name: "Name"
   company_name: "Company name (optional)"
   email: "Email"
