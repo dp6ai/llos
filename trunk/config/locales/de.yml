@@ -158,12 +158,9 @@ de:
       1_li3: "Geschichte"
       1_li4: "Film"
     heritage:
-      1_p1: "Produktion"
-      1_p2: "<b>Besuchen Sie die <a href='/heritage/production' >Produktion</a> um sich anzuschauen, wie britische Handwerker Lloyd-Loom-Möbel herstellen.</b>"
-      1_p3: "Geschichte"
-      1_p4: "<b>Schauen Sie sich den Bereich <a href='/heritage/history' >Geschichte</a> an, um mehr über unser Unternehmen und Lloyd-Loom-Möbel zu erfahren.</b>"
-      1_p5: "Film"
-      1_p6: "<b>Klicken Sie hier, um sich einen kurzen <a href='/heritage/film' >Film</a> über die Herstellung der Möbel anzuschauen.</b>"
+      1_p1: "Visit <a href='/heritage/production' >Production</a> to see our methods and the skilled craftsmen at work."
+      2_p1: "Visit <a href='/heritage/history' >History</a> to learn more about the company and what is 'Lloyd Loom'."
+      3_p1: "Visit <a href='/heritage/film' >Film</a> to watch a short video on the production of 'Lloyd Loom'."
     production:
       intro_p1: "Unsere Möbel werden in Spalding, Lincolnshire, mithilfe traditioneller Materialien und Verfahren hergestellt. Auch das einzigartige Lloyd-Loom-Geflecht aus Kraftpapier und Draht wird bei uns im Werk produziert. Unsere Möbel zeichnen sich besonders durch die exzellente Qualität des Geflechts und der stabilen Buchenholzrahmen aus, und anders als Rattan, das in importierten Kopien von Lloyd-Loom-Stühlen zum Einsatz kommt, halten sie ein Leben lang."
       intro_p2: "Jedes einzelne Möbelstück wird von Hand und in der jeweils gewünschten Farbe gefertigt, sodass wir jedes unserer Produkte ganz spezifisch an Ihre Wünsche anpassen können. Sie sind herzlich eingeladen, unser Werk jederzeit – nach Terminvereinbarung – zu besichtigen."

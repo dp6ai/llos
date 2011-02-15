@@ -171,12 +171,9 @@ fr:
       1_li3: "Historique"
       1_li4: "Film"
     heritage:
-      1_p1: "Production"
-      1_p2: "<b>Allez sur la page <a href='/heritage/production' >Production</a> pour voir les artisans anglais en train de fabriquer les produits Lloyd Loom.</b>"
-      1_p3: "Historique"
-      1_p4: "<b>Allez sur la page <a href='/heritage/history' >Historique</a> apour en savoir plus sur la société et sur la signification de Lloyd Loom.</b>"
-      1_p5: "Film"
-      1_p6: "<b>Cliquez <a href='/heritage/film' >Film</a> pour voir une brève vidéo sur la fabrication du mobilier.</b>"
+      1_p1: "Visit <a href='/heritage/production' >Production</a> to see our methods and the skilled craftsmen at work."
+      2_p1: "Visit <a href='/heritage/history' >History</a> to learn more about the company and what is 'Lloyd Loom'."
+      3_p1: "Visit <a href='/heritage/film' >Film</a> to watch a short video on the production of 'Lloyd Loom'."
     production:
       intro_p1: "Notre mobilier est fabriqué à Spalding dans le Lincolnshire, avec des matériaux et des techniques traditionnels. Le tissage unique de fil de fer et de papier Lloyd Loom est également fabriqué en usine et cette qualité supérieure nous distingue de nos concurrents, de même que nos cadres en bois de hêtre ultra résistants contrairement au rotin utilisé dans la version importée des fauteuils Lloyd Loom."
       intro_p2: "Chaque produit est fait à la main et la couleur personnalisée, pour offrir au client un produit sur mesure. N’hésitez pas à prendre rendez-vous pour visiter notre usine."
