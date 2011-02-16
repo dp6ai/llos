@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110215131449) do
+ActiveRecord::Schema.define(:version => 20110216103124) do
 
   create_table "fabrics", :force => true do |t|
     t.string   "name"
@@ -183,6 +183,16 @@ ActiveRecord::Schema.define(:version => 20110215131449) do
   end
 
   add_index "users", ["login"], :name => "index_users_on_login", :unique => true
+
+  create_table "weave_translations", :force => true do |t|
+    t.integer  "weave_id"
+    t.string   "locale"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "weave_translations", ["weave_id"], :name => "index_weave_translations_on_weave_id"
 
   create_table "weaves", :force => true do |t|
     t.string   "name"

@@ -318,7 +318,25 @@ fr:
       10_li6: "Si la fibre naturelle tissée enduite est endommagée et exposée, il est recommandé d’appliquer une retouche d’enduit à l’aide du pot de retouche fourni et d’un petit pinceau pour étancher la zone endommagée."
       10_li7: "Ne pas stocker ou exposer à l’extérieur à l’humidité ambiante."
       10_li8: "Ne pas utiliser de solvants de nettoyage/détachants ou de produits chimiques qui endommageraient la fibre naturelle."
-      10_li9: "Ne pas faire tremper dans l’eau pour nettoyer."
+      10_li9: "Do not soak whilst cleaning"
+    telephone:
+      1_h2: "New Sales Enquiries"
+      1_p1: "Head Office"
+      1_p2: "01775 724 358"
+      1_p3: "London Showroom"
+      1_p4: "020 7730 6574"
+      2_h2: "Existing Sales Enquiries"
+      2_p1: "Head Office"
+      2_p2: "01775 712 111"
+      2_p3: "London Showroom"
+      2_p4: "020 7730 6574"
+      3_h2: "All Other Enquiries"
+      3_p1: "Head Office"
+      3_p2: "01775 712 111"
+      3_p3: "London Showroom"
+      3_p4: "020 7730 6574"
+      4_p1: "To contact us via email, please click"
+      4_p2: "here"
 
 
   # brochure

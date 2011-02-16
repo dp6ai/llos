@@ -1,4 +1,5 @@
 class Weave < ActiveRecord::Base
+  translates :name
   has_one :product_weave
 
   named_scope :all_asc, :order => "name ASC"
