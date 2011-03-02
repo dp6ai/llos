@@ -20,7 +20,7 @@ staging:
 production:
   adapter: mysql
   encoding: utf8
-  database: llos_production
+  database: llos_production_i18n
   pool: 5
   username: root
   password: llo5mysq18385
