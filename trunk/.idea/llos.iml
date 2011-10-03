@@ -62,7 +62,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="mislav-will_paginate (v2.3.11, Ruby SDK 1.8.7-p174) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails (v2.3.5, Ruby SDK 1.8.7-p174) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mysql (v2.8.1, Ruby SDK 1.8.7-p174) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rake (v0.8.7, Ruby SDK 1.8.7-p174) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />
