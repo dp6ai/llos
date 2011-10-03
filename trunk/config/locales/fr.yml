@@ -3,61 +3,61 @@
 
 fr:
   # meta tags
-  meta_default_description: "Furniture makers"
-  meta_default_keywords: "bespoke, furniture makers"
+  meta_default_description: "Meubles makers"
+  meta_default_keywords: "Meubles, Osier, Loom, artisanale, Fauteuil, Chaise, Table, Terrasse, conservatory, Grand-Bretagne, Jardin d'hiver, Rotin, vrai, sur mesure, Gastronomie, écologique, Angleterre, extérieur, cuisine"
   meta_default_title: "Lloyd Loom of Spalding"
 
-  meta_home_description: "Lloyd Loom of Spalding, the genuine British manufacturer of Lloyd Loom furniture, for your conservatory, kitchens and restaurants."
-  meta_home_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor"
-  meta_home_title: "Lloyd Loom of Spalding - The Genuine British Manufacturer of  Lloyd Loom Furniture"
+  meta_home_description: "Lloyd Loom of Spalding, the genuine British manufacturer of Lloyd Loom Meubles, for your conservatory, kitchens and restaurants."
+  meta_home_keywords: "Meubles, Osier, Loom, artisanale, Fauteuil, Chaise, Table, Terrasse, conservatory, Grand-Bretagne, Jardin d'hiver, Rotin, vrai, sur mesure, Gastronomie, écologique, Angleterre, extérieur, cuisine veranda, verandah"
+  meta_home_title: "Lloyd Loom of Spalding - Le Fabricant Britannique Authentique"
 
   meta_heritage_description: "A brief look at Lloyd Loom of Spalding, the genuine British manufacturer of Lloyd Loom furniture."
-  meta_heritage_keywords: "Cane, wicker, furniture, design, specification, manufacture, british, painted, ecological, recycled, genuine"
-  meta_heritage_title: "Lloyd Loom of Spalding - Heritage"
+  meta_heritage_keywords: "Meubles, Osier, Loom, artisanale, Fauteuil, Chaise, Table, Terrasse, conservatory, Grand-Bretagne, Jardin d'hiver, Rotin, vrai, sur mesure, Gastronomie, écologique, Angleterre, extérieur, cuisine"
+  meta_heritage_title: "Lloyd Loom of Spalding - Héritage"
 
   meta_history_description: "The History of Lloyd Loom furniture manufacture in Britain."
-  meta_history_keywords: "Cane, wicker, furniture, birtish, marshall burns, painted, ecological, genuine, paper, specification, contract, real"
-  meta_history_title: "Lloyd Loom of Spalding - History"
+  meta_history_keywords: "Meubles, Osier, Loom, artisanale, Fauteuil, Chaise, Table, Terrasse, conservatory, Grand-Bretagne, Jardin d'hiver, Rotin, vrai, sur mesure, Gastronomie, écologique, Angleterre, extérieur, cuisine"
+  meta_history_title: "Lloyd Loom of Spalding - Historique"
 
   meta_production_description: "A detailed look out how genuine Lloyd Loom furniture is made, right here in England."
-  meta_production_keywords: "Cane, wicker, furniture, design, specification, manufacture, british, UK, handmade, ecological, chairs, rattan, paper"
-  meta_production_title: "Lloyd Loom of Spalding - Manufacture in the UK"
+  meta_production_keywords: "Meubles, Osier, Loom, artisanale, Fauteuil, Chaise, Table, Terrasse, conservatory, Grand-Bretagne, Jardin d'hiver, Rotin, vrai, sur mesure, Gastronomie, écologique, Angleterre, extérieur, cuisine veranda, verandah"
+  meta_production_title: "Lloyd Loom of Spalding - Production"
 
   meta_contact_description: "View Showroom addresses or contact us to enquire about prices or delivery times."
-  meta_contact_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor, restaurant, garden rooms"
-  meta_contact_title: "Lloyd Loom of Spalding -Showrooms & Contact Details"
+  meta_contact_keywords: "Meubles, Osier, Loom, artisanale, Fauteuil, Chaise, Table, Terrasse, conservatory, Grand-Bretagne, Jardin d'hiver, Rotin, vrai, sur mesure, Gastronomie, écologique, Angleterre, extérieur, cuisine"
+  meta_contact_title: "Lloyd Loom of Spalding - Contact"
 
   meta_legal_description: "Legal Information from Lloyd Loom of Spalding."
-  meta_legal_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor"
-  meta_legal_title: "Lloyd Loom of Spalding - Legal Information"
+  meta_legal_keywords: "Meubles, Osier, Loom, artisanale, Fauteuil, Chaise, Table, Terrasse, conservatory, Grand-Bretagne, Jardin d'hiver, Rotin, vrai, sur mesure, Gastronomie, écologique, Angleterre, extérieur, cuisine"
+  meta_legal_title: "Lloyd Loom of Spalding - Information Légales"
 
   meta_faq_description: "A list of frequently asked questions from Lloyd Loom of Spalding - the genuine British manufacturer of Lloyd Loom furniture."
-  meta_faq_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor"
+  meta_faq_keywords: "Meubles, Osier, Loom, artisanale, Fauteuil, Chaise, Table, Terrasse, conservatory, Grand-Bretagne, Jardin d'hiver, Rotin, vrai, sur mesure, Gastronomie, écologique, Angleterre, extérieur, cuisine"
   meta_faq_title: "Lloyd Loom of Spalding - FAQs"
 
   meta_standard_description: "A selection of coloured weave samples from Lloyd Loom of Spalding, the genuine British manufacturer of Lloyd Loom furniture."
-  meta_standard_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor, restaurant, garden rooms"
-  meta_standard_title: "Lloyd Loom of Spalding - Standard weave"
+  meta_standard_keywords: "Meubles, Osier, Loom, artisanale, Fauteuil, Chaise, Table, Terrasse, conservatory, Grand-Bretagne, Jardin d'hiver, Rotin, vrai, sur mesure, Gastronomie, écologique, Angleterre, extérieur, cuisine"
+  meta_standard_title: "Lloyd Loom of Spalding - Coloeurs Standard"
 
   meta_naturals_description: "A selection of coloured weave samples from Lloyd Loom of Spalding, the genuine British manufacturer of Lloyd Loom furniture."
-  meta_naturals_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor, restaurant, garden rooms"
-  meta_naturals_title: "Lloyd Loom of Spalding - Naturals weave"
+  meta_naturals_keywords: "Meubles, Osier, Loom, artisanale, Fauteuil, Chaise, Table, Terrasse, conservatory, Grand-Bretagne, Jardin d'hiver, Rotin, vrai, sur mesure, Gastronomie, écologique, Angleterre, extérieur, cuisine"
+  meta_naturals_title: "Lloyd Loom of Spalding - Coloeurs Naturels"
 
   meta_loomtex_description: "A selection of coloured weave samples from Lloyd Loom of Spalding, the genuine British manufacturer of Lloyd Loom furniture."
-  meta_loomtex_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor, restaurant, garden rooms"
-  meta_loomtex_title: "Lloyd Loom of Spalding - Loomtex weave"
+  meta_loomtex_keywords: "Meubles, Osier, Loom, artisanale, Fauteuil, Chaise, Table, Terrasse, conservatory, Grand-Bretagne, Jardin d'hiver, Rotin, vrai, sur mesure, Gastronomie, écologique, Angleterre, extérieur, cuisine"
+  meta_loomtex_title: "Lloyd Loom of Spalding - Coloeurs Loomtex"
 
   meta_outdoor_description: "A selection of coloured weave samples from Lloyd Loom of Spalding, the genuine British manufacturer of Lloyd Loom furniture."
-  meta_outdoor_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor, restaurant, garden rooms"
-  meta_outdoor_title: "Lloyd Loom of Spalding - Outdoor weave"
+  meta_outdoor_keywords: "Meubles, Osier, Loom, artisanale, Fauteuil, Chaise, Table, Terrasse, conservatory, Grand-Bretagne, Jardin d'hiver, Rotin, vrai, sur mesure, Gastronomie, écologique, Angleterre, extérieur, cuisine"
+  meta_outdoor_title: "Lloyd Loom of Spalding - Couleurs Extérieur"
 
   meta_other_description: "A selection of coloured weave samples from Lloyd Loom of Spalding, the genuine British manufacturer of Lloyd Loom furniture."
-  meta_other_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor, restaurant, garden rooms"
-  meta_other_title: "Lloyd Loom of Spalding - Other weave"
+  meta_other_keywords: "Meubles, Osier, Loom, artisanale, Fauteuil, Chaise, Table, Terrasse, conservatory, Grand-Bretagne, Jardin d'hiver, Rotin, vrai, sur mesure, Gastronomie, écologique, Angleterre, extérieur, cuisine"
+  meta_other_title: "Lloyd Loom of Spalding - Other"
 
   meta_fabric_description: "Lloyd Loom of Spalding offer a wide range of fabrics, "
-  meta_fabric_keywords: "Furniture, wicker, cane, design, british, ecological, contract, kitchen, conservatory, genuine, real, rattan, outdoor, restaurant, garden rooms"
-  meta_fabric_title: "Lloyd Loom of Spalding - Fabrics"
+  meta_fabric_keywords: "Meubles, Osier, Loom, artisanale, Fauteuil, Chaise, Table, Terrasse, conservatory, Grand-Bretagne, Jardin d'hiver, Rotin, vrai, sur mesure, Gastronomie, écologique, Angleterre, extérieur, cuisine"
+  meta_fabric_title: "Lloyd Loom of Spalding - Textile"
 
   # topnav
   home: "Acceuil"
