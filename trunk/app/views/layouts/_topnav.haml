@@ -11,5 +11,10 @@
     =section_link(t(:projects),:controller => 'projects', :action => ['index'], :url => "projects")
   %li
     =section_link(t(:contact),:controller => 'static_content', :action => ['contact'], :url => "contact")
+
+  - if I18n.locale.to_s == "en"
+    %li
+      =section_link(t(:stockists),:controller => 'stockists', :action => ['index'], :url => "stockists")
+
   %li
     =section_link(t(:faq), :controller => 'static_content', :action => ['faq'], :url => "faq")

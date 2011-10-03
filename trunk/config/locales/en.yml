@@ -65,6 +65,7 @@ en:
   heritage: "Heritage"
   news: "News"
   projects: "Projects"
+  stockists: "Stockists"
   showrooms: "Contact Us"
 
   # footer
@@ -351,7 +352,7 @@ en:
   subject_default: "Brochure request"
   body: "Message body (optional)"
   body_default: ""
-  request_brochure: "Request Brochure"
+  request_brochure: "Enter"
   send_email: "Send Email"
   are_you: "Are you?"
   please_send: "Please send the following brochures by post?"
@@ -380,6 +381,17 @@ en:
   indoor_brochure_link: "Indoor Brochure"
   all_weather_brochure_link: "All weather"
   naturals_brochure_link: "Naturals"
+
+
+  flag: "/images/ukSmall.jpg"
+  brochure_download: "UK BROCHURE"
+  brochure_download_now_link: "Download Now"
+  brochure_view_online_link: "View Online"
+  brochure_download_now_pdf: "/downloads/Lloyd_Loom_Brochure.pdf"
+  post_notice: "To receive these details by post, please fill out the form below:"
+
+  pricelist_download: "UK PRICELIST"
+  pricelist_download_now_pdf: "/downloads/Lloyd_Loom_Pricelist.pdf"
   # END brochure
 
   # news

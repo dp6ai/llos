@@ -1,8 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
-  map.register '/register', :controller => 'users', :action => 'create' #MSP / KIPS TODO Remove when LIVE
-  map.signup '/signup', :controller => 'users', :action => 'new'
+  #map.register '/register', :controller => 'users', :action => 'create' #MSP / KIPS TODO Remove when LIVE
+  #map.signup '/signup', :controller => 'users', :action => 'new'
 
   map.activate '/activate/:activation_code', :controller => 'users', :action => 'activate', :activation_code => nil
 
@@ -17,6 +17,8 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :news, :controller => :news_items
   map.resources :news_items
+
+  map.stockists "/stockists", :controller => "stockists", :action => "index"
 
   map.show_news "/news/:id/:headline", :controller => "news_items", :action => "show"
   map.show_project "/projects/:id/:title", :controller => "projects", :action => "show"

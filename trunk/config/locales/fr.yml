@@ -65,6 +65,7 @@ fr:
   heritage: "Héritage"
   news: "Presse"
   projects: "Projets"
+  stockists: "Stockists FR"
   showrooms: "Salles d'exposition"
 
   # footer
@@ -352,7 +353,7 @@ fr:
   subject_default: "Demande de catalogue"
   body: "Demande (Non obligatoire)"
   body_default: ""
-  request_brochure: "Tél&eacute;charger la catalog"
+  request_brochure: "Enter"
   send_email: "Send Email"
   are_you: "Vous êtes"
   please_send: "Merci de m'envoyer par poste les catalogues suivantes."
@@ -381,6 +382,16 @@ fr:
   indoor_brochure_link: "Int&eacute;rieu"
   all_weather_brochure_link: "Ext&eacute;rieu"
   naturals_brochure_link: "Naturals"
+
+  flag: "/images/frSmall.jpg"
+  brochure_download: "FRENCH BROCHURE"
+  brochure_download_now_link: "Download Now FR"
+  brochure_view_online_link: "View Online FR"
+  brochure_download_now_pdf: "/downloads/Lloyd_Loom_Brochure_FR.pdf"
+  post_notice: "To receive these details by post, please fill out the form below: FR"
+
+  pricelist_download: "FRENCH PRICELIST"
+  pricelist_download_now_pdf: "/downloads/Lloyd_Loom_Pricelist_FR.pdf"
   # END brochure
 
   # news

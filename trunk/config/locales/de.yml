@@ -65,6 +65,7 @@ de:
   heritage: "Erbe"
   news: "Presse"
   projects: "Referenzen"
+  stockists: "Stockists DE"
   showrooms: "Ausstellungsraum"
 
   # footer
@@ -338,7 +339,7 @@ de:
   subject_default: "Prospekte verlangen"
   body: "Anfrage/Bemerkungen"
   body_default: ""
-  request_brochure: "Prospekte herunterladen"
+  request_brochure: "Enter"
   send_email: "Send Email"
   are_you: "Sind Sie?"
   please_send: "Bitte folgende Prospekte per Post zuschicken"
@@ -368,6 +369,17 @@ de:
   indoor_brochure_link: "Innenmöbel"
   all_weather_brochure_link: "Gartenmöbe"
   naturals_brochure_link: "Naturals"
+
+  flag: "/images/drSmall.jpg"
+  brochure_download: "GERMAN BROCHURE"
+  brochure_download_now_link: "Download Now DE"
+  brochure_view_online_link: "View Online DE"
+  brochure_download_now_pdf: "/downloads/Lloyd_Loom_Brochure_DE.pdf"
+  post_notice: "To receive these details by post, please fill out the form below: DE"
+
+  pricelist_download: "GERMAN PRICELIST"
+  pricelist_download_now_pdf: "/downloads/Lloyd_Loom_Pricelist_DE.pdf"
+
   # END brochure
 
   # news
