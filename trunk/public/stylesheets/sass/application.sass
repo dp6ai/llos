@@ -303,59 +303,51 @@ img.highlighted_product
   padding: 5px
 
 .digg_pagination
-  margin-top: 6px
-  margin-bottom: 6px
   background: white
-  font-size: smaller
-  /* self-clearing method:
-  a
-    padding: .2em .5em
+  cursor: default
+  a, span, em
+    padding: 0.2em 0.5em
     display: block
     float: left
     margin-right: 1px
-  span
-    padding: .2em .5em
-    display: block
-    float: left
-    margin-right: 1px
-    &.disabled
-      color: #999
-      border: 1px solid #CCC
-    &.current
-      font-weight: bold
-      background: #ccc
-      color: white
-      border: 1px solid #CCC
+  .disabled
+    color: #999999
+    border: 1px solid #dddddd
+  .current
+    font-style: normal
+    font-weight: bold
+    background: #2e6ab1
+    color: white
+    border: 1px solid #2e6ab1
   a
     text-decoration: none
-    color: black
-    border: 1px solid #CCC
+    color: #105cb6
+    border: 1px solid #9aafe5
     &:hover, &:focus
-      color: #999
-      border-color: #999
+      color: #000033
+      border-color: #000033
   .page_info
-    background: #2E6AB1
+    background: #2e6ab1
     color: white
-    padding: .4em .6em
+    padding: 0.4em 0.6em
     width: 22em
-    margin-bottom: .3em
+    margin-bottom: 0.3em
     text-align: center
     b
-      color: #003
-      background: #6aa6ed
-      padding: .1em .25em
+      color: #000033
+      background: #2e6ab1 + 60
+      padding: 0.1em 0.25em
+  /* self-clearing method:
   &:after
     content: "."
     display: block
     height: 0
     clear: both
     visibility: hidden
-
-*
-  html .digg_pagination
+  * html &
     height: 1%
-  &:first-child+html .digg_pagination
-    overflow: hidden
+  //*:first-child+html &
+  //  overflow: hidden
 
 tr.roweven
   background-color: #F2F2F2

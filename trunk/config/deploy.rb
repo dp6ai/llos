@@ -2,11 +2,10 @@
 default_run_options[:pty] = true 
 
 set :application, "llos"
-set :repository,  "http://llos.svn.beanstalkapp.com/llos/trunk"
+set :repository,  "https://llos.svn.beanstalkapp.com/llos/trunk"
 set :scm_username , "lloydloom"
 set :scm_password, "L10yd100m"
 # set :scm_command, "/usr/bin/svn"
-set :deploy_to, "~/#{application}"
 set :user, "deployment"
 set :password, "d3pl0ym3nt7584"
 
@@ -27,7 +26,23 @@ namespace :deploy do
   task :restart, :roles => :app, :except => { :no_release => true } do
     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
   end
-end    
+end
+
+
+task :production do
+  set :deploy_to, "~/#{application}"
+  puts "\n\e[0;31m   ######################################################################"
+  puts "   #\n   #       Are you REALLY sure you want to deploy to PRODUCTION?"
+  puts "   #\n   #               Enter y/N + enter to continue\n   #"
+  puts "   ######################################################################\e[0m\n"
+  proceed = STDIN.gets[0..0] rescue nil
+  exit unless proceed == 'y' || proceed == 'Y'
+
+end
+
+task :staging do
+  set :deploy_to, "~/#{application}/staging"
+end
 
 
 after :deploy, "deploy:restart"
