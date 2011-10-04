@@ -1,0 +1,21 @@
+= breadcrumbs
+
+.stockist{:class => "padded"}
+  %h2= @stockist.name
+
+  %p
+    = @stockist.address_line_one
+  %p
+    = @stockist.address_line_two
+  %p
+    = @stockist.town
+  %p
+    = @stockist.city
+  %p
+    = @stockist.postcode
+  %p
+    = "#{@stockist.latitude} by #{@stockist.longitude}"
+
+  = link_to('Edit', edit_admin_stockist_path(@stockist)) if logged_in?
+  = "/" if logged_in?
+  = link_to 'Back', admin_stockists_path

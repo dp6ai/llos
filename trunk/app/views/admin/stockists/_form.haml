@@ -1,0 +1,29 @@
+= error_messages_for :stockist
+
+- form_for([:admin, @stockist]) do |f|
+  %p
+    Name
+    %br
+    = f.text_field :name
+  %p
+    Address line one
+    %br
+    = f.text_field :address_line_one
+  %p
+    Address line two
+    %br
+    = f.text_field :address_line_two
+  %p
+    Town
+    %br
+    = f.text_field :town
+  %p
+    City
+    %br
+    = f.text_field :city
+  %p
+    Postcode
+    %br
+    = f.text_field :postcode
+  %p
+    = f.submit "Submit"

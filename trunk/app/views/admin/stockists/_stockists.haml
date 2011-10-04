@@ -1,0 +1,29 @@
+- if !stockists.blank?
+  .stockists
+    %table{:class => "sortable"}
+      %tr
+        %th{ :class => "sortfirstasc"} Name
+        %th Address Line One
+        %th Address Line Two
+        %th Town
+        %th City
+        %th Post Code
+        %th Latitude
+        %th Longitude
+        %th{ :class => "nosort"}
+        %th{ :class => "nosort"}
+        %th{ :class => "nosort"}
+
+      - for stockist in stockists
+        %tr
+          %td=h stockist.name
+          %td=h stockist.address_line_one
+          %td=h stockist.address_line_two
+          %td=h stockist.town
+          %td=h stockist.city
+          %td=h stockist.postcode
+          %td=h stockist.latitude
+          %td=h stockist.longitude
+          %td.adminlink= "#{link_to 'Show', admin_stockist_path(stockist)}"
+          %td.adminlink= "#{link_to 'Edit', edit_admin_stockist_path(stockist)}"  if logged_in?
+          %td.adminlink= "#{link_to 'Destroy', admin_stockist_path(stockist), :confirm => 'Are you sure?', :method => :delete}" if logged_in?

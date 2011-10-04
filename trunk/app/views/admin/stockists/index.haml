@@ -1,0 +1,11 @@
+= breadcrumbs
+
+.stockist{:class => "padded"}
+
+  %h1 Listing stockists
+
+  = render :partial => "/admin/stockists/stockists"
+
+  = will_paginate @stockists, :class => "digg_pagination"
+
+  %p= link_to 'New stockist', new_admin_stockist_path if logged_in?
