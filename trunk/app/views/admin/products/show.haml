@@ -13,6 +13,8 @@
     = @stockist.city
   %p
     = @stockist.postcode
+  %p
+    = "#{@stockist.latitude} by #{@stockist.longitude}"
 
   = link_to('Edit', edit_admin_stockist_path(@stockist)) if logged_in?
   = "/" if logged_in?

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111004164355) do
+ActiveRecord::Schema.define(:version => 20111004170615) do
 
   create_table "fabrics", :force => true do |t|
     t.string   "name"
@@ -146,6 +146,8 @@ ActiveRecord::Schema.define(:version => 20111004164355) do
     t.string   "postcode"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.float    "latitude"
+    t.float    "longitude"
   end
 
   create_table "tag_translations", :force => true do |t|

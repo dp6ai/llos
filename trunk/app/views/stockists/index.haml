@@ -2,3 +2,10 @@
 
 #stockists_container
   %h2 Coming soon...
+
+  - for stockist in @stockists[0..1] do
+    %h3=stockist.name
+    .padded
+      %p=stockist.postcode
+      %p= "#{stockist.latitude} by #{stockist.longitude}"
+
