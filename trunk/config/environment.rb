@@ -1,4 +1,4 @@
-  # Be sure to restart your server when you modify this file
+# Be sure to restart your server when you modify this file
 
 # Uncomment below to force Rails into production mode when
 # you don't control web/app server and can't set it the proper way
@@ -24,9 +24,9 @@ Rails::Initializer.run do |config|
   # Specify gems that this application depends on. 
   # They can then be installed with "rake gems:install" on new installations.
   # You have to specify the :lib option for libraries, where the Gem name (sqlite3-ruby) differs from the file itself (sqlite3)
-   config.gem "RedCloth", :lib => 'redcloth'
-   config.gem 'mislav-will_paginate', :version => '~> 2.3.8', :lib => 'will_paginate',
-       :source => 'http://gems.github.com'
+  config.gem "RedCloth", :lib => 'redcloth'
+  config.gem 'mislav-will_paginate', :version => '~> 2.3.8', :lib => 'will_paginate',
+             :source => 'http://gems.github.com'
 
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
@@ -59,8 +59,8 @@ Rails::Initializer.run do |config|
   # Make sure the secret is at least 30 characters and all random, 
   # no regular words or you'll be exposed to dictionary attacks.
   config.action_controller.session = {
-    :session_key => '_trunk_session',
-    :secret      => 'f084d92f2f42c039a6996b64eaf5139a76fa8916228c1e253654c848d016a1a93ff1c1ff18e038091e4ca9705b4c3b91a52c98816e4325e20d0f3df7255edc0d'
+      :session_key => '_trunk_session',
+      :secret => 'f084d92f2f42c039a6996b64eaf5139a76fa8916228c1e253654c848d016a1a93ff1c1ff18e038091e4ca9705b4c3b91a52c98816e4325e20d0f3df7255edc0d'
   }
 
   # Use the database for sessions instead of the cookie-based default,
@@ -76,7 +76,15 @@ Rails::Initializer.run do |config|
   # Activate observers that should always be running
   # Please note that observers generated using script/generate observer need to have an _observer suffix
   # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
-   config.active_record.observers = :user_observer 
+  config.active_record.observers = :user_observer
+
+  #config.generators do |g|
+  #  g.template_engine :haml
+  #
+  #  # you can also specify a different test framework or ORM here
+  #  # g.test_framework  :rspec
+  #  # g.orm             :mongoid
+  #end
 
 end
 

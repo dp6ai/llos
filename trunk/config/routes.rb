@@ -90,6 +90,7 @@ ActionController::Routing::Routes.draw do |map|
        admin.resources :categories, :controller => "tags"
        admin.resources :tags
        admin.resources :weaves
+       admin.resources :stockists
      end
 
   map.connect "sitemap.xml", :controller => "sitemap", :action => "sitemap"

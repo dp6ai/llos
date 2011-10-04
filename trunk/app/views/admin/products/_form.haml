@@ -1,79 +1,29 @@
-= error_messages_for :product
+= error_messages_for :stockist
 
-- form_for([:admin, @product], :html => { :multipart => true }) do |f|
-  %p
-    Image
-    %br
-    = f.file_field :image
+- form_for([:admin, @stockist]) do |f|
   %p
     Name
     %br
     = f.text_field :name
   %p
-    Description
+    Address line one
     %br
-    = f.text_area :description, :size => "10x10"
+    = f.text_field :address_line_one
   %p
-    Code
+    Address line two
     %br
-    = f.text_field :code
+    = f.text_field :address_line_two
   %p
-    Product range
+    Town
     %br
-    = collection_select(:product, :product_range_id, ProductRange.all_asc, :id, :name, {:prompt => true})
-  .categories
-    %p Categories (select existing or add new, comma seperated.)
-    .category
-      types
-      = select_tag("type_ids[]", options_for_select(@types_lov, @product.categories.collect { |cat| cat.id}), {:multiple=>true, :size => 10, :class => :multi})
-      %br
-      new types
-      %br
-      = tag("input", { :type => 'text', :name => "type_list", :id => "type_list" })
-    .category
-      rooms
-      = select_tag("room_ids[]", options_for_select(@rooms_lov, @product.categories.collect { |cat| cat.id}), {:multiple=>true, :size => 10, :class => :multi})
-      %br
-      new rooms
-      %br
-      = tag("input", { :type => 'text', :name => "room_list", :id => "room_list" })
-    .category
-      oudoor
-      = select_tag("outdoor_ids[]", options_for_select(@outdoors_lov, @product.categories.collect { |cat| cat.id}), {:multiple=>true, :size => 10, :class => :multi})
-      %br
-      new outdoor
-      %br
-      = tag("input", { :type => 'text', :name => "outdoor_list", :id => "outdoor_list" })
+    = f.text_field :town
   %p
-    Highlighted
+    City
     %br
-    = collection_select(:product, :highlighted, [1,2,3,4,5], :to_i, :to_i, {:prompt => true})
-
-
-  .product_attributes
-    %p.bold Product Attribute Fields
-    - for paf in ProductAttributeField.all_asc
-      %p.product_attribute
-        = paf.name
-        %br
-        = text_field_tag "product_attributes[#{paf.id}]", @product.product_attributes.collect{|p| p if p.product_attribute_field_id == paf.id}.compact.first
-
-  .weaves_fabrics
-    %p.bold Weaves
-    - for w in Weave.all_asc
-      %p.weave_fabric
-        = w.name
-        %br
-        - checked = @product.product_weaves.collect{|we| we if we.weave_id == w.id}.compact.first.blank? ? false : true
-        = check_box_tag "weaves[#{w.id}]", nil, checked  
-
-  .weaves_fabrics
-    %p.bold Fabrics
-    - for _f in Fabric.all_asc
-      %p.weave_fabric
-        = _f.name
-        %br
-        - checked = @product.product_fabrics.collect{|fa| fa if fa.fabric_id == _f.id}.compact.first.blank? ? false : true
-        = check_box_tag "fabrics[#{_f.id}]", nil, checked
+    = f.text_field :city
+  %p
+    Postcode
+    %br
+    = f.text_field :postcode
   %p
     = f.submit "Submit"
