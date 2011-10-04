@@ -1,11 +1,11 @@
 = breadcrumbs
 
-.stockist{:class => "padded"}
+.product{:class => "padded"}
 
-  %h1 Listing stockists
+  %h1 Listing products
 
-  = render :partial => "/admin/stockists/stockists"
+  = render :partial => "/admin/products/products"
 
-  = will_paginate @stockists, :class => "digg_pagination"
+  = will_paginate @products, :class => "digg_pagination"
 
-  %p= link_to 'New stockist', new_admin_stockist_path if logged_in?
+  %p= link_to 'New product', new_admin_product_path if logged_in?
