@@ -1,11 +1,32 @@
 = breadcrumbs
 
 #stockists_container
-  %h2 Coming soon...
+  %h2 Stockist Search
+
+  %form{:id => "stockist_form", :action => ""}
+    %input#address{:placeholder => "Enter your address"}
+    %input{:type => :submit, :value => "Go", :autofocus => :autofocus}
+
+  %p We've tried to use some magic to work out your location. Look about right? If not,please enter you address above..
+  #user_canvas{:style => "width:200px; height:200px; border:0px solid #ccc;"}
+
+  %br
+    
+  #results_canvas{:style => "width:500px; height:500px; border:0px solid #ccc;"}
 
   - for stockist in @stockists[0..1] do
-    %h3=stockist.name
-    .padded
-      %p=stockist.postcode
-      %p= "#{stockist.latitude} by #{stockist.longitude}"
+    .stockist
+      %h3=stockist.name
+      .padded
+        %p=stockist.postcode
+        %p= "#{stockist.latitude} by #{stockist.longitude}"
 
+      %dl{:style => "display:none"}
+        %dt Name
+        %dd.name= stockist.name
+        %dt Lat
+        %dd.lat= stockist.latitude
+        %dt Long
+        %dd.long= stockist.longitude
+
+      -#.map_canvas{:style => "width:500px; height:500px; border:1px solid #ccc;"}
