@@ -62,12 +62,12 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="rails (v2.3.5, Ruby SDK 1.8.7-p330 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="actionpack (v2.3.5, Ruby SDK 1.8.7-p330 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionmailer (v2.3.5, Ruby SDK 1.8.7-p330 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actionpack (v2.3.5, Ruby SDK 1.8.7-p330 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="RedCloth (v4.2.8, Ruby SDK 1.8.7-p330 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v1.0.1, Ruby SDK 1.8.7-p330 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activerecord (v2.3.5, Ruby SDK 1.8.7-p330 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activeresource (v2.3.5, Ruby SDK 1.8.7-p330 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activerecord (v2.3.5, Ruby SDK 1.8.7-p330 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v2.3.5, Ruby SDK 1.8.7-p330 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v0.9.2, Ruby SDK 1.8.7-p330 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mysql (v2.8.1, Ruby SDK 1.8.7-p330 [global]) [gem]" level="application" />

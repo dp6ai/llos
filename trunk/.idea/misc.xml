@@ -43,6 +43,312 @@
             </SvnBranchConfiguration>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/views/admin_bak/product_attribute_fields">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="branchMap">
+                <map>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/branches">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/tags">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="branchUrls">
+                <list>
+                  <option value="https://llos.svn.beanstalkapp.com/llos/branches" />
+                  <option value="https://llos.svn.beanstalkapp.com/llos/tags" />
+                </list>
+              </option>
+              <option name="trunkUrl" value="https://llos.svn.beanstalkapp.com/llos/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/views/admin_bak/product_ranges">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="branchMap">
+                <map>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/branches">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/tags">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="branchUrls">
+                <list>
+                  <option value="https://llos.svn.beanstalkapp.com/llos/branches" />
+                  <option value="https://llos.svn.beanstalkapp.com/llos/tags" />
+                </list>
+              </option>
+              <option name="trunkUrl" value="https://llos.svn.beanstalkapp.com/llos/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/views/admin_bak/products">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="branchMap">
+                <map>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/branches">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/tags">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="branchUrls">
+                <list>
+                  <option value="https://llos.svn.beanstalkapp.com/llos/branches" />
+                  <option value="https://llos.svn.beanstalkapp.com/llos/tags" />
+                </list>
+              </option>
+              <option name="trunkUrl" value="https://llos.svn.beanstalkapp.com/llos/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/views/admin_bak/products_bak">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="branchMap">
+                <map>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/branches">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/tags">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="branchUrls">
+                <list>
+                  <option value="https://llos.svn.beanstalkapp.com/llos/branches" />
+                  <option value="https://llos.svn.beanstalkapp.com/llos/tags" />
+                </list>
+              </option>
+              <option name="trunkUrl" value="https://llos.svn.beanstalkapp.com/llos/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/views/admin_bak/route">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="branchMap">
+                <map>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/branches">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/tags">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="branchUrls">
+                <list>
+                  <option value="https://llos.svn.beanstalkapp.com/llos/branches" />
+                  <option value="https://llos.svn.beanstalkapp.com/llos/tags" />
+                </list>
+              </option>
+              <option name="trunkUrl" value="https://llos.svn.beanstalkapp.com/llos/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/views/admin_bak/stockists">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="branchMap">
+                <map>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/branches">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/tags">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="branchUrls">
+                <list>
+                  <option value="https://llos.svn.beanstalkapp.com/llos/branches" />
+                  <option value="https://llos.svn.beanstalkapp.com/llos/tags" />
+                </list>
+              </option>
+              <option name="trunkUrl" value="https://llos.svn.beanstalkapp.com/llos/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/views/admin_bak/stockists_bak">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="branchMap">
+                <map>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/branches">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/tags">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="branchUrls">
+                <list>
+                  <option value="https://llos.svn.beanstalkapp.com/llos/branches" />
+                  <option value="https://llos.svn.beanstalkapp.com/llos/tags" />
+                </list>
+              </option>
+              <option name="trunkUrl" value="https://llos.svn.beanstalkapp.com/llos/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/views/admin_bak/taggings">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="branchMap">
+                <map>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/branches">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/tags">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="branchUrls">
+                <list>
+                  <option value="https://llos.svn.beanstalkapp.com/llos/branches" />
+                  <option value="https://llos.svn.beanstalkapp.com/llos/tags" />
+                </list>
+              </option>
+              <option name="trunkUrl" value="https://llos.svn.beanstalkapp.com/llos/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/views/admin_bak/tags">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="branchMap">
+                <map>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/trunk/app/views/admin/product_attribute_fields">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/trunk/app/views/admin/product_ranges">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/trunk/app/views/admin/products">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/trunk/app/views/admin/route">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/trunk/app/views/admin/stockists">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/trunk/app/views/admin/taggings">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/trunk/app/views/admin/tags">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/trunk/app/views/admin/weaves">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="branchUrls">
+                <list>
+                  <option value="https://llos.svn.beanstalkapp.com/llos/trunk/app/views/admin/product_attribute_fields" />
+                  <option value="https://llos.svn.beanstalkapp.com/llos/trunk/app/views/admin/product_ranges" />
+                  <option value="https://llos.svn.beanstalkapp.com/llos/trunk/app/views/admin/products" />
+                  <option value="https://llos.svn.beanstalkapp.com/llos/trunk/app/views/admin/route" />
+                  <option value="https://llos.svn.beanstalkapp.com/llos/trunk/app/views/admin/stockists" />
+                  <option value="https://llos.svn.beanstalkapp.com/llos/trunk/app/views/admin/taggings" />
+                  <option value="https://llos.svn.beanstalkapp.com/llos/trunk/app/views/admin/tags" />
+                  <option value="https://llos.svn.beanstalkapp.com/llos/trunk/app/views/admin/weaves" />
+                </list>
+              </option>
+              <option name="trunkUrl" value="https://llos.svn.beanstalkapp.com/llos/trunk/app/views/admin/tags" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/views/admin_bak/weaves">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="branchMap">
+                <map>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/branches">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                  <entry key="https://llos.svn.beanstalkapp.com/llos/tags">
+                    <value>
+                      <list />
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="branchUrls">
+                <list>
+                  <option value="https://llos.svn.beanstalkapp.com/llos/branches" />
+                  <option value="https://llos.svn.beanstalkapp.com/llos/tags" />
+                </list>
+              </option>
+              <option name="trunkUrl" value="https://llos.svn.beanstalkapp.com/llos/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
       </map>
     </option>
     <option name="myVersion" value="124" />

@@ -3,30 +3,75 @@
 #stockists_container
   %h2 Stockist Search
 
+  %p#enter_postcode Enter your postcode
   %form{:id => "stockist_form", :action => ""}
     %input#address{:placeholder => "Enter your address"}
     %input{:type => :submit, :value => "Go", :autofocus => :autofocus}
 
-  %p We've tried to use some magic to work out your location. Look about right? If not,please enter you address above..
-  #user_canvas{:style => "width:200px; height:200px; border:0px solid #ccc;"}
+
+  -##user_canvas{:style => "width:200px; height:200px; border:0px solid #ccc;"}
 
   %br
+
+  #results
+
+    %p#title{:style =>  "display:none"} Your nearest three premium stockist are:
+
+    .stockist_result{:style =>  "display:none"}
+      %p.stockist_name
+      %p.stockist_address_line_one
+      %p.stockist_address_line_two
+      %p.stockist_town
+      %p.stockist_city
+      %p.stockist_postcode
+    .stockist_result{:style =>  "display:none"}
+      %p.stockist_name
+      %p.stockist_address_line_one
+      %p.stockist_address_line_two
+      %p.stockist_town
+      %p.stockist_city
+      %p.stockist_postcode
+    .stockist_result{:style =>  "display:none"}
+      %p.stockist_name
+      %p.stockist_address_line_one
+      %p.stockist_address_line_two
+      %p.stockist_town
+      %p.stockist_city
+      %p.stockist_postcode
+
+    %div{:style => "clear:both"}
+    %p#message{:style =>  "display:none"} Sorry, Unable to find any stores within a 50 mile radius. Please call us to see how we can help you 01775 712111
+    %p#enquiries{:style =>  "display:none"} For enquiries outside the UK please call 01775 712111
+
+
     
-  #results_canvas{:style => "width:500px; height:500px; border:0px solid #ccc;"}
+  #results_canvas{:style => "width:90%; height:300px; border:0px solid #ccc;"}
 
-  - for stockist in @stockists[0..1] do
-    .stockist
-      %h3=stockist.name
-      .padded
-        %p=stockist.postcode
-        %p= "#{stockist.latitude} by #{stockist.longitude}"
+  -#- for stockist in @stockists[0..1] do
+  -#  .stockist
+  -#    %h3=stockist.name
+  -#    .padded
+  -#      %p=stockist.postcode
+  -#      %p= "#{stockist.latitude} by #{stockist.longitude}"
+  -#
+  -#    %dl{:style => "display:inherit"}
+  -#      %dt ID
+  -#      %dd.id= stockist.id
+  -#      %dt Name
+  -#      %dd.name= stockist.name
+  -#      %dt Address line one
+  -#      %dd.address_line_one= stockist.address_line_one
+  -#      %dt Address line two
+  -#      %dd.address_line_two= stockist.address_line_two
+  -#      %dt Town
+  -#      %dd.town= stockist.town
+  -#      %dt City
+  -#      %dd.city= stockist.city
+  -#      %dt Postcode
+  -#      %dd.postcode= stockist.postcode
+  -#      %dt Lat
+  -#      %dd.lat= stockist.latitude
+  -#      %dt Long
+  -#      %dd.long= stockist.longitude
 
-      %dl{:style => "display:none"}
-        %dt Name
-        %dd.name= stockist.name
-        %dt Lat
-        %dd.lat= stockist.latitude
-        %dt Long
-        %dd.long= stockist.longitude
-
-      -#.map_canvas{:style => "width:500px; height:500px; border:1px solid #ccc;"}
+  -#.map_canvas{:style => "width:500px; height:500px; border:1px solid #ccc;"}

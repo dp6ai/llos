@@ -49,6 +49,8 @@ ActionController::Routing::Routes.draw do |map|
   map.search "/contact", :controller => "static_content", :action => "contact"
   map.search "/search", :controller => "search", :action => "index"
 
+  map.stockist_search "/stockist_search", :controller => "stockists", :action => "search"
+
 #  map.browse "/browse/:range/:category_kind/:category/:product_id", :controller => "browse", :action => "index"
   map.browse_category "/products/:category_kind/:category", :controller => "products", :action => "index"
   map.browse_category_selected "/products/:category_kind/:category/:selected_id", :controller => "products", :action => "index"
