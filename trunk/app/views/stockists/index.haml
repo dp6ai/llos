@@ -3,9 +3,9 @@
 #stockists_container
   %h2=t(".title")
 
-  %p#enter_postcode Enter your postcode
+  %p#enter_postcode=t(".enter_postcode")
   %form{:id => "stockist_form", :action => ""}
-    %input#address{:placeholder => "Enter your address"}
+    %input#address{:placeholder => t(".enter_postcode")}
     %input{:type => :submit, :value => t(".go"), :autofocus => :autofocus}
 
   %br

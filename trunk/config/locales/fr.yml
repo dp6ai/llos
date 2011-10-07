@@ -65,7 +65,7 @@ fr:
   heritage: "Héritage"
   news: "Presse"
   projects: "Projets"
-  stockists: "Stockists FR"
+  stockists_link: "Stockists FR"
   showrooms: "Salles d'exposition"
 
   # footer
@@ -339,6 +339,15 @@ fr:
       4_p1: "Cliquez ici pour nous"
       4_p2: "contacter"
 
+  stockists:
+    index:
+      title: "Stockist Search FR"
+      enter_postcode: "Please enter your postcode FR"
+      go: "Go FR"
+      results_title: "Your nearest three premium stockist are: FR"
+      view_on_map: "view on map FR"
+      no_data_found: "Sorry, Unable to find any stores within a 50 mile radius. Please call us to see how we can help you 01775 712111 FR"
+      enquiries: "If these are not convenient or for enquiries outside the UK please call 01775 712111 FR"
 
   # brochure
   # brochure_title: "Fiche &agrave; remplir pour pouvoir t&eacute;l&eacute;charger la catalogu"

@@ -65,7 +65,7 @@ de:
   heritage: "Erbe"
   news: "Presse"
   projects: "Referenzen"
-  stockists: "Stockists DE"
+  stockists_link: "Stockists DE"
   showrooms: "Ausstellungsraum"
 
   # footer
@@ -325,6 +325,16 @@ de:
       3_p4: "44(0)20 7730 6574"
       4_p1: "Klicken Sie hier um"
       4_p2: "Kontakt"
+
+  stockists:
+    index:
+      title: "Stockist Search DE"
+      enter_postcode: "Please enter your postcode DE"
+      go: "Go DE"
+      results_title: "Your nearest three premium stockist are: DE"
+      view_on_map: "view on map DE"
+      no_data_found: "Sorry, Unable to find any stores within a 50 mile radius. Please call us to see how we can help you 01775 712111 DE"
+      enquiries: "If these are not convenient or for enquiries outside the UK please call 01775 712111 DE"
 
   # brochure
   # brochure_title: "Bitte ausfüllen um die Prospekte herunterladen zu könn"
