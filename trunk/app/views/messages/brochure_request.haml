@@ -8,17 +8,21 @@
     %p.brochure_link=link_to t(:brochure_download_now_link), t(:brochure_download_now_pdf)
     %p.brochure_link=link_to t(:brochure_view_online_link), t(:brochure_download_now_pdf)
 
-  .brochure
-    .flag
-      %img{ :src => t(:flag), :alt => "Lloyd Loom Of Spalding" }
-    %p.title= t(:pricelist_download)
-    %p.brochure_link=link_to t(:brochure_download_now_link), t(:pricelist_download_now_pdf)
-    %p.brochure_link=link_to t(:brochure_view_online_link), t(:pricelist_download_now_pdf)
 
-    %p.notice= t(:post_notice)
+  - if I18n.locale == :en
+    .brochure
+      .flag
+        %img{ :src => t(:flag), :alt => "Lloyd Loom Of Spalding" }
+      %p.title= t(:pricelist_download)
+      %p.brochure_link=link_to t(:brochure_download_now_link), t(:pricelist_download_now_pdf)
+      %p.brochure_link=link_to t(:brochure_view_online_link), t(:pricelist_download_now_pdf)
 
-    -#%img{ :src => "/images/frSmall.jpg", :alt => "Lloyd Loom Of Spalding French" }
-    -#%img{ :src => "/images/drSmall.jpg", :alt => "Lloyd Loom Of Spalding German" }
+  .clearer
+
+  %p.notice= t(:post_notice)
+  
+  -#%img{ :src => "/images/frSmall.jpg", :alt => "Lloyd Loom Of Spalding French" }
+  -#%img{ :src => "/images/drSmall.jpg", :alt => "Lloyd Loom Of Spalding German" }
 
 
 

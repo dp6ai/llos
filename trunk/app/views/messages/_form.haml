@@ -48,9 +48,9 @@
       = f.check_box :shop_owner, :class => "indent" 
       =t :shop_owner
 
-    %p= t :where_hear
-
     %p
+      =t :where_hear
+      %br
       = select_tag "message[where]", options_for_select([ t(:hear_blank), t(:hear_magazine), t(:hear_shop), t(:hear_exhibition), t(:hear_restaurant), t(:hear_engine), t(:hear_mouth), t(:hear_other) ] )
 
     %p
