@@ -65,7 +65,7 @@ en:
   heritage: "Heritage"
   news: "News"
   projects: "Projects"
-  stockists: "Stockists"
+  stockists_link: "Stockists"
   showrooms: "Contact Us"
 
   # footer
@@ -331,6 +331,16 @@ en:
       3_p4: "020 7730 6574"
       4_p1: "To contact us via email, please click"
       4_p2: "here"
+
+  stockists:
+    index:
+      title: "Stockist Search"
+      enter_postcode: "Please enter your postcode"
+      go: "Go"
+      results_title: "Your nearest three premium stockist are:"
+      view_on_map: "view on map"
+      no_data_found: "Sorry, Unable to find any stores within a 50 mile radius. Please call us to see how we can help you 01775 712111"
+      enquiries: "If these are not convenient or for enquiries outside the UK please call 01775 712111"
 
   width: "Width:"
   depth: "Depth:"

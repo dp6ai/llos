@@ -55,6 +55,7 @@ jQuery(document).ready(function() {
             jQuery(".stockist_result").hide();
             jQuery("#results p#title").hide();
             jQuery(".stockist_result p").text("");
+            jQuery(".stockist_result a").hide();
             jQuery("#results p#message").hide();
             jQuery("#results p#enquiries").hide();
 
@@ -76,6 +77,7 @@ jQuery(document).ready(function() {
                             jQuery(".stockist_town:eq(" + index + ")").text(val.stockist.town);
                             jQuery(".stockist_city:eq(" + index + ")").text(val.stockist.city);
                             jQuery(".stockist_postcode:eq(" + index + ")").text(val.stockist.postcode);
+                            jQuery(".stockist_result a:eq(" + index + ")").show();
 
                             var marker = new google.maps.Marker({
                                 position: new google.maps.LatLng(val.stockist.latitude, val.stockist.longitude),
@@ -94,7 +96,7 @@ jQuery(document).ready(function() {
                                     infowindows[index].close();
                                 });
 
-                                map.setCenter(new google.maps.LatLng(val.stockist.latitude, val.stockist.longitude));
+                                map.panTo(new google.maps.LatLng(val.stockist.latitude, val.stockist.longitude));
                                 infowindows.push(infowindow);
                                 infowindow.open(map, marker);
                             });
