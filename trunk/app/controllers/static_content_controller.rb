@@ -3,6 +3,16 @@ class StaticContentController < ApplicationController
     @meta_description = t(:meta_home_description)
     @meta_keywords = t(:meta_home_keywords)
     @meta_title = t(:meta_home_title)
+
+    tag = Tag.find_by_name('slideshow')
+
+    @pictures = []
+    if tag.present?
+      @pictures = tag.taggings.collect{|a| Asset.find a.taggable_id}
+    end
+    
+    @slideshow_left_panel = Asset.find_by_name('slideshow_left_panel')
+
   end
 
   def heritage

@@ -1,0 +1,26 @@
+= breadcrumbs
+
+.assets{:class => "padded"}
+
+  - if !@assets.blank?
+    .products
+      %table{:class => "sortable"}
+        %tr
+          %th Asset
+          %th Name
+          %th Desc
+          %th{:class => "sortfirstasc"} Tags
+
+        - i = 0
+        - for asset in @assets
+          %tr{:class => i % 2 == 0 ? "odd" : "even"}
+            %td= link_to image_tag(asset.asset.url(:thumb), :title => "#{asset.description} : #{asset.asset_file_name}"), asset.asset.url
+            %td=link_to asset.name, asset.asset.url
+            %td=h asset.description
+            %td=h asset.tag_list
+            %td.adminlink= "#{link_to 'Show', admin_asset_path(asset)}"
+            %td.adminlink="#{link_to 'Edit', edit_admin_asset_path(asset)}"  if logged_in?
+            %td.adminlink="#{link_to 'Destroy', admin_asset_path(asset), :confirm => 'Are you sure?', :method => :delete}" if logged_in?
+
+          - i += 1
+  = link_to 'New asset', new_admin_asset_path if logged_in?

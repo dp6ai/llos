@@ -1,0 +1,23 @@
+= error_messages_for :asset
+
+- form_for([:admin, @asset], :html => { :multipart => true }) do |f|
+  %p
+    Asset
+    %br
+    = f.file_field :asset
+  %p
+    Name
+    %br
+    = f.text_field :name
+  %p
+    Desc
+    %br
+    = f.text_field :description
+
+  %p
+    Tags
+    %br
+    = f.text_field :tag_list
+
+  %p
+    = f.submit "Submit"

@@ -1,0 +1,35 @@
+- if !products.blank?
+  .products
+    %table{:class => "sortable"}
+      %tr
+        %th{ :class => "sortfirstasc"} Code
+        %th Name
+        %th Description
+        %th Width
+        %th Depth
+        %th Height
+        %th Product range
+        %th Highlighted in range?
+        %th Types
+        %th Rooms
+        %th Outdoors
+        %th{ :class => "nosort"}
+        %th{ :class => "nosort"}
+        %th{ :class => "nosort"}
+
+      - for product in products
+        %tr
+          %td=h product.code
+          %td=h product.name
+          %td=h truncate product.description, :length => 100
+          %td=h product.width
+          %td=h product.depth
+          %td=h product.height
+          %td=h product.product_range.name if !product.product_range.blank?
+          %td=h product.highlighted
+          %td=h product.type_list
+          %td=h product.room_list
+          %td=h product.outdoor_list
+          %td.adminlink= "#{link_to 'Show', admin_product_path(product)}"
+          %td.adminlink= "#{link_to 'Edit', edit_admin_product_path(product)}"  if logged_in?
+          %td.adminlink= "#{link_to 'Destroy', admin_product_path(product), :confirm => 'Are you sure?', :method => :delete}" if logged_in?

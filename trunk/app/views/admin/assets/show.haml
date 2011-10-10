@@ -1,0 +1,21 @@
+= breadcrumbs
+
+.asset{:class => "padded"}
+  .thumbnail{:class => "padded"}
+    = image_tag(@asset.asset.url(:thumb), :title => @asset.description)
+
+  %p
+    Name:
+    =h @asset.name
+
+  %p
+    Desc:
+    =h @asset.description
+
+  %p
+    Tags:
+    =h @asset.tag_list
+
+
+  = "#{link_to('Edit', edit_admin_asset_path(@asset))} /" if logged_in?
+  = link_to 'Back', admin_assets_path

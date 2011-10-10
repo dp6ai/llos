@@ -1,5 +1,11 @@
 #homeflash
-  <img src="/images/Homepageimage.jpg" width="620" height="286" alt="home page image" />
+  .slideshow_left_panel
+    -if @slideshow_left_panel.present?
+      =image_tag @slideshow_left_panel.asset.url
+  .slideshow_right_panel
+    .slideshow
+      - for picture in @pictures do
+        =image_tag picture.asset.url()
 #hometext
   %h1= t(:home_title)
   %p= t(:home_p1)

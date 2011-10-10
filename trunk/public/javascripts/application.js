@@ -32,6 +32,10 @@ jQuery(document).ready(function() {
     }
 
 
+    jQuery('.slideshow').cycle({
+		fx: 'growY' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+	});
+    
     if (current_controller == "stockists") {
 
         //    collectStockists();

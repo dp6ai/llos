@@ -1,0 +1,9 @@
+
+.asset{:class => "padded"}
+  %h1= "Editing #{@asset.name}"
+
+  = image_tag(@asset.asset.url(:thumb), :title => @asset.description)
+  
+  = render :partial => 'form'
+  = link_to 'Back', admin_assets_path
+

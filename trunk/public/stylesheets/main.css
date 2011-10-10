@@ -623,26 +623,6 @@ ul.menuhorfoot li a.current {
 }
 
 /*pjd*/
-#homeflash {
-    width: 620px;
-    float: left;
-    clear: both;
-    padding-left: 6px;
-    padding-bottom: 20px;
-    padding-top: 18px;
-
-}
-
-#hometext {
-    clear: both;
-    float: left;
-    width: 630px;
-    padding-left: 18px;
-    padding-right: 16px;
-    padding-bottom: 40px;
-
-}
-
 #productshome {
     width: 620px;
     float: left;
