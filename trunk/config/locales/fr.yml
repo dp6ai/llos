@@ -394,10 +394,10 @@ fr:
 
   flag: "/images/frSmall.jpg"
   brochure_download: "FRENCH BROCHURE"
-  brochure_download_now_link: "Download Now FR"
-  brochure_view_online_link: "View Online FR"
+  brochure_download_now_link: "Télécharger maintenant"
+  brochure_view_online_link: "Voir en ligne"
   brochure_download_now_pdf: "/downloads/Lloyd_Loom_Of_Spalding_2011_Brochure_FR.pdf"
-  post_notice: "To receive these details by post, please fill out the form below: FR"
+  post_notice: "Pour recevoir par la Poste, merci de remplir le formulaire ci-dessous:"
 
   pricelist_download: "FRENCH PRICELIST"
   pricelist_download_now_pdf: "/downloads/Lloyd_Loom_Pricelist_FR.pdf"

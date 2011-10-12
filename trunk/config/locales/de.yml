@@ -382,10 +382,10 @@ de:
 
   flag: "/images/drSmall.jpg"
   brochure_download: "GERMAN BROCHURE"
-  brochure_download_now_link: "Download Now DE"
-  brochure_view_online_link: "View Online DE"
+  brochure_download_now_link: "Jetzt herunterladen"
+  brochure_view_online_link: "online nachschauen"
   brochure_download_now_pdf: "/downloads/Lloyd_Loom_Of_Spalding_2011_Brochure_DE.pdf"
-  post_notice: "To receive these details by post, please fill out the form below: DE"
+  post_notice: "per Post zu erhalten, füllen Sie bitte untenstehende Formular:"
 
   pricelist_download: "GERMAN PRICELIST"
   pricelist_download_now_pdf: "/downloads/Lloyd_Loom_Pricelist_DE.pdf"
