@@ -80,6 +80,8 @@ jQuery(document).ready(function() {
                                 jQuery(".stockist_town:eq(" + index + ")").text(val.stockist.town);
                                 jQuery(".stockist_city:eq(" + index + ")").text(val.stockist.city);
                                 jQuery(".stockist_postcode:eq(" + index + ")").text(val.stockist.postcode);
+                                jQuery(".stockist_url:eq(" + index + ")").text(val.stockist.url);
+                                jQuery(".stockist_url:eq(" + index + ")").attr("href",val.stockist.url);
                                 jQuery(".stockist_result a:eq(" + index + ")").show();
 
                                 var marker = new google.maps.Marker({
@@ -113,6 +115,7 @@ jQuery(document).ready(function() {
                                 jQuery("#results p#title").show();
                                 jQuery("#results p#enquiries").show();
                                 jQuery(".stockist_result").show("slow");
+                                jQuery(".stockist_url").show();
                                 if (current_view != 'msp'){
                                     jQuery(".stockist_map").hide();
                                 }
