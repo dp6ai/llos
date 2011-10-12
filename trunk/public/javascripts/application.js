@@ -6,16 +6,6 @@ var geocoder = new google.maps.Geocoder();
 var distance_service = new google.maps.DistanceMatrixService();
 
 
-//var stockists = {
-//    stockists: [] // array of all
-//    ,stockist_destinations: [] // list of latlng for G API
-//    ,stockist: {} // hash for search, keyed on latlng
-//    ,closest:function() {
-//        alert("NYI")
-//    }
-//};
-
-
 jQuery(document).ready(function() {
     // only care about ranges for now
     if (jQuery("li[id=" + LLOS.current_range + "]").length > 0) {
@@ -38,8 +28,9 @@ jQuery(document).ready(function() {
     
     if (current_controller == "stockists") {
 
-        //    collectStockists();
-        sniffLocation();
+        if (current_view == "msp") {
+	    	sniffLocation();
+		}
 
         jQuery('#stockist_form').submit(function() {
             var address = jQuery("input:first").val();
@@ -51,7 +42,7 @@ jQuery(document).ready(function() {
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
 
-            var map = new google.maps.Map(jQuery("#results_canvas")[0], myOptions);
+            var map;
             var infowindows = [];
             var origin;
 
@@ -63,72 +54,88 @@ jQuery(document).ready(function() {
             jQuery("#results p#message").hide();
             jQuery("#results p#enquiries").hide();
 
-            geocoder.geocode({'address': address}, function(results, status) {
-                if (status == google.maps.GeocoderStatus.OK) {
+			//if (current_view != "msp") {
+			//	jQuery(".stockist_map").hide();
+			//}
 
-                    origin = results[0].geometry.location
-                    console.log("OK : " + origin);
+            console.log("address : " + address);
 
-                    jQuery.getJSON('/stockist_search', { latitude: origin.lat(), longitude: origin.lng() }, function(results) {
+            if (address != '') {
+                geocoder.geocode({'address': address}, function(results, status) {
 
-                        jQuery("#results p#title").show();
+                    if (status == google.maps.GeocoderStatus.OK) {
+                        map = new google.maps.Map(jQuery("#results_canvas")[0], myOptions);
+                        origin = results[0].geometry.location
+                        console.log("OK : " + origin);
 
-                        jQuery.each(results, function(index, val) {
+                        jQuery.getJSON('/stockist_search', { latitude: origin.lat(), longitude: origin.lng() }, function(results) {
 
-                            jQuery(".stockist_name:eq(" + index + ")").text(val.stockist.name);
-                            jQuery(".stockist_address_line_one:eq(" + index + ")").text(val.stockist.address_line_one);
-                            jQuery(".stockist_address_line_two:eq(" + index + ")").text(val.stockist.address_line_two);
-                            jQuery(".stockist_town:eq(" + index + ")").text(val.stockist.town);
-                            jQuery(".stockist_city:eq(" + index + ")").text(val.stockist.city);
-                            jQuery(".stockist_postcode:eq(" + index + ")").text(val.stockist.postcode);
-                            jQuery(".stockist_result a:eq(" + index + ")").show();
+                            jQuery("#results p#title").show();
 
-                            var marker = new google.maps.Marker({
-                                position: new google.maps.LatLng(val.stockist.latitude, val.stockist.longitude),
-                                title: val.stockist.name + ", " + val.stockist.address_line_one + " " + val.stockist.postcode,
-                                map: map
-                            });
+                            jQuery.each(results, function(index, val) {
 
-                            jQuery(".stockist_map:eq(" + index + ")").click(function() {
-                                console.log("View on MAP :"+val.stockist.name);
+                                jQuery(".stockist_name:eq(" + index + ")").text(val.stockist.name);
+                                jQuery(".stockist_address_line_one:eq(" + index + ")").text(val.stockist.address_line_one);
+                                jQuery(".stockist_address_line_two:eq(" + index + ")").text(val.stockist.address_line_two);
+                                jQuery(".stockist_town:eq(" + index + ")").text(val.stockist.town);
+                                jQuery(".stockist_city:eq(" + index + ")").text(val.stockist.city);
+                                jQuery(".stockist_postcode:eq(" + index + ")").text(val.stockist.postcode);
+                                jQuery(".stockist_result a:eq(" + index + ")").show();
 
-                                var infowindow = new google.maps.InfoWindow({
-                                    content: val.stockist.name +", "+val.stockist.postcode
+                                var marker = new google.maps.Marker({
+                                    position: new google.maps.LatLng(val.stockist.latitude, val.stockist.longitude),
+                                    title: val.stockist.name + ", " + val.stockist.address_line_one + " " + val.stockist.postcode,
+                                    map: map
                                 });
 
-                                jQuery.each(infowindows, function(index, val) {
-                                    infowindows[index].close();
+                                jQuery(".stockist_map:eq(" + index + ")").click(function() {
+                                    console.log("View on MAP :"+val.stockist.name);
+
+                                    var infowindow = new google.maps.InfoWindow({
+                                        content: val.stockist.name +", "+val.stockist.postcode
+                                    });
+
+                                    jQuery.each(infowindows, function(index, val) {
+                                        infowindows[index].close();
+                                    });
+
+                                    map.panTo(new google.maps.LatLng(val.stockist.latitude, val.stockist.longitude));
+                                    infowindows.push(infowindow);
+                                    infowindow.open(map, marker);
                                 });
 
-                                map.panTo(new google.maps.LatLng(val.stockist.latitude, val.stockist.longitude));
-                                infowindows.push(infowindow);
-                                infowindow.open(map, marker);
                             });
 
+                            if (results.length == 0) {
+                                jQuery("#results p#message").show();
+                                jQuery("#results p#title").hide();
+                            } else {
+                                jQuery("#results p#title").show();
+                                jQuery("#results p#enquiries").show();
+                                jQuery(".stockist_result").show("slow");
+                                if (current_view != 'msp'){
+                                    jQuery(".stockist_map").hide();
+                                }
+                            }
                         });
 
-                        if (results.length == 0) {
-                            jQuery("#results p#message").show();
-                            jQuery("#results p#title").hide();
-                        } else {
-                            jQuery("#results p#title").show();
-                            jQuery("#results p#enquiries").show();
-                            jQuery(".stockist_result").show("slow");
-                        }
-                    });
+                        map.setCenter(origin);
 
-                    map.setCenter(origin);
+                        marker = new google.maps.Marker({
+                            position: origin,
+                            title: "your current location " + address,
+                            map: map
+                        });
 
-                    marker = new google.maps.Marker({
-                        position: origin,
-                        title: "your current location " + address,
-                        map: map
-                    });
+                    } else {
+                        alert("We were unable to geolocate your position from the address provided, please try again: " + status);
+                    }
+                });
+            } else {
+                alert("Please enter a location into the search field");
+                jQuery("#address").focus();
+            }
 
-                } else {
-                    alert("We were unable to geolocate your position from the address provided, please try again: " + status);
-                }
-            });
 
             return false;
         });

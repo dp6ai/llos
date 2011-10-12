@@ -1,6 +1,8 @@
 class StockistsController < ApplicationController
   def index
-    @stockists = Stockist.all
+  end
+
+  def msp
   end
 
   def search

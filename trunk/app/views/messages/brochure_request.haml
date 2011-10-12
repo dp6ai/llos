@@ -9,7 +9,8 @@
     %p.brochure_link=link_to t(:brochure_view_online_link), t(:brochure_download_now_pdf)
 
 
-  - if I18n.locale == :en
+  %h3= "[#{I18n.locale}]"
+  - if I18n.locale == :en || I18n.locale == "en"
     .brochure
       .flag
         %img{ :src => t(:flag), :alt => "Lloyd Loom Of Spalding" }
@@ -21,12 +22,4 @@
 
   %p.notice= t(:post_notice)
   
-  -#%img{ :src => "/images/frSmall.jpg", :alt => "Lloyd Loom Of Spalding French" }
-  -#%img{ :src => "/images/drSmall.jpg", :alt => "Lloyd Loom Of Spalding German" }
-
-
-
-
-
-
 = render :partial => "form", :locals => {:brochures => true}

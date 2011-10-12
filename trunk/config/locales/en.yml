@@ -333,7 +333,7 @@ en:
       4_p2: "here"
 
   stockists:
-    index:
+    results:
       title: "Stockist Search"
       enter_postcode: "Please enter your postcode"
       go: "Go"

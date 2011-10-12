@@ -340,7 +340,7 @@ fr:
       4_p2: "contacter"
 
   stockists:
-    index:
+    results:
       title: "Stockist Search FR"
       enter_postcode: "Please enter your postcode FR"
       go: "Go FR"

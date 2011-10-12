@@ -327,7 +327,7 @@ de:
       4_p2: "Kontakt"
 
   stockists:
-    index:
+    results:
       title: "Stockist Search DE"
       enter_postcode: "Please enter your postcode DE"
       go: "Go DE"
