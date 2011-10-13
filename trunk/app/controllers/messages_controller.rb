@@ -38,9 +38,7 @@ class MessagesController < ApplicationController
     respond_to do |format|
       if @message.save
 
-        #logger.debug("MSP about to send message")
         Notifier.deliver_contact(@message) # sends the email
-        #logger.debug("MSP message sent")
 
         format.html { redirect_to(@message) }
       else

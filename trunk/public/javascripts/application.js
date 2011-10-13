@@ -34,7 +34,6 @@ jQuery(document).ready(function() {
 
         jQuery('#stockist_form').submit(function() {
             var address = jQuery("input:first").val();
-            console.log('Handler for .submit() called : ' + address);
 
             // Geocode whatever we have for the users address
             var myOptions = {
@@ -54,19 +53,12 @@ jQuery(document).ready(function() {
             jQuery("#results p#message").hide();
             jQuery("#results p#enquiries").hide();
 
-			//if (current_view != "msp") {
-			//	jQuery(".stockist_map").hide();
-			//}
-
-            console.log("address : " + address);
-
             if (address != '') {
                 geocoder.geocode({'address': address}, function(results, status) {
 
                     if (status == google.maps.GeocoderStatus.OK) {
                         map = new google.maps.Map(jQuery("#results_canvas")[0], myOptions);
                         origin = results[0].geometry.location
-                        console.log("OK : " + origin);
 
                         jQuery.getJSON('/stockist_search', { latitude: origin.lat(), longitude: origin.lng() }, function(results) {
 
@@ -91,7 +83,6 @@ jQuery(document).ready(function() {
                                 });
 
                                 jQuery(".stockist_map:eq(" + index + ")").click(function() {
-                                    console.log("View on MAP :"+val.stockist.name);
 
                                     var infowindow = new google.maps.InfoWindow({
                                         content: val.stockist.name +", "+val.stockist.postcode
@@ -175,7 +166,6 @@ function collectStockists() {
 
     jQuery(".stockist").each(function(index) {
 
-        console.log(jQuery(this));
 
         stockist = new Stockist(jQuery(this).children("dl").find(".id").text()
             , jQuery(this).children("dl").find(".name").text()
@@ -188,7 +178,6 @@ function collectStockists() {
             , jQuery(this).children("dl").find(".long").text());
 
 
-        console.log("loaded stockist: " + stockist.toString());
         stockists.stockists.push(stockist);
         stockists.stockist_destinations.push(stockist.latlng);
         // careful of the precision, we need a key to tie the stockists back together after a distance search
@@ -243,7 +232,6 @@ function handleNoGeolocation(errorFlag) {
 }
 
 function setDefaultPosition(service, init_lat, init_long) {
-    console.log(service + " init_lat: " + init_lat + " init_long: " + init_long);
     if (init_lat != 0) {
         geocoder.geocode({'address': init_lat + ", " + init_long}, function(results, status) {
             if (status == google.maps.GeocoderStatus.OK) {

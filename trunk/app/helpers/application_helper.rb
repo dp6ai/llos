@@ -30,7 +30,6 @@ module ApplicationHelper
 
   # if there are multiple actions passed through, the first is assumed to be the priority link!
   def section_link(name,options)
-      #logger.debug("MSP @current_action: #{@current_action} @current_controller: #{@current_controller}")
       if options[:action].include?(@current_action) && options[:controller] == @current_controller
          link_to(name, "/"+ options[:url], :class => 'current')
       else

@@ -146,9 +146,7 @@ class Admin::ProductsController < ApplicationController
   def collect_and_assign_product_weaves
     wes = []
     if !params[:weaves].blank?
-      logger.debug("MSP weaves: #{params[:weaves]}")
       params[:weaves].each do |_we|
-        logger.debug("MSP _we: #{_we}")
         we = ProductWeave.new(:weave_id =>_we[0])
         wes << we
       end
@@ -160,9 +158,7 @@ class Admin::ProductsController < ApplicationController
   def collect_and_assign_product_fabrics
     fabs = []
     if !params[:fabrics].blank?
-      logger.debug("MSP fabrics: #{params[:fabrics]}")
       params[:fabrics].each do |_fa|
-        logger.debug("MSP _fa: #{_fa}")
         fa = ProductFabric.new(:fabric_id =>_fa[0])
         fabs << fa
       end

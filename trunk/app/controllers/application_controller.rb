@@ -14,7 +14,6 @@ class ApplicationController < ActionController::Base
     #logger.debug "MSP2 previous_action_name #{controller.session[:previous_action_name]}"
     action.call
     controller.session[:previous_action_name] = controller.action_name
-    logger.debug "MSP2 this action:  #{controller.action_name}"
   end
 
 
@@ -43,25 +42,20 @@ class ApplicationController < ActionController::Base
   LOCALES = {"uk" => "en", "com" => "en"}
   def extract_locale_from_tld
     _parsed_locale = request.host.split('.').last
-    logger.debug("MSP: _parsed_locale: [#{_parsed_locale}]")
 
     # parsed locales are symbols, not strings
     parsed_locale = (I18n.available_locales.include? _parsed_locale.intern) ? _parsed_locale : nil
-    logger.debug("MSP: parsed_locale from lookup: #{parsed_locale}")
 
     keyed_locale = !LOCALES[parsed_locale].blank? ? LOCALES[parsed_locale] : parsed_locale
-    logger.debug("MSP: keyed_locale from lookup: #{keyed_locale}")
     return keyed_locale
   end
 
   def set_locale
     # if params[:locale] is nil then I18n.default_locale will be used
-    logger.debug("MSP: set_lookup: #{params[:lang]}")
     if !params[:lang].blank?
       I18n.locale = params[:lang]
       session[:lang] = params[:lang] 
     else
-      logger.debug("MSP: set_lookup2: #{session[:lang]}")
       if !session[:lang].blank?
         I18n.locale = session[:lang]
       else
