@@ -75,7 +75,12 @@ jQuery(document).ready(function() {
                                 jQuery(".stockist_telephone:eq(" + index + ")").text(val.stockist.telephone);
                                 jQuery(".stockist_url:eq(" + index + ")").text(val.stockist.url);
                                 jQuery(".stockist_url:eq(" + index + ")").attr("href",val.stockist.url);
+
                                 jQuery(".stockist_result a:eq(" + index + ")").show();
+                                if (current_view == 'msp'){
+                                    jQuery(".stockist_map:eq(" + index + ")").show();
+                                }
+
 
 
                                 var image = new google.maps.MarkerImage(
