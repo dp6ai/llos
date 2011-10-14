@@ -66,6 +66,7 @@ fr:
   news: "Presse"
   projects: "Projets"
   stockists_link: "Stockists FR"
+  stockists_link_active: true
   showrooms: "Salles d'exposition"
 
   # footer
@@ -345,9 +346,11 @@ fr:
       enter_postcode: "Please enter your postcode FR"
       go: "Go FR"
       results_title: "Your nearest three premium stockist are: FR"
-      view_on_map: "view on map FR"
       no_data_found: "Sorry, Unable to find any stores within a 50 mile radius. Please call us to see how we can help you 01775 712111 FR"
       enquiries: "If these are not convenient or for enquiries outside the UK please call 01775 712111 FR"
+    stockist:
+      view_on_map: "view on map FR"
+
 
   # brochure
   # brochure_title: "Fiche &agrave; remplir pour pouvoir t&eacute;l&eacute;charger la catalogu"

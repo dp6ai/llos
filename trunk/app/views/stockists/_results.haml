@@ -12,40 +12,9 @@
 
     %p#title{:style =>  "display:none"}= t(".results_title")
 
-    .stockist_result{:style =>  "display:none"}
-      %p.stockist_name
-      %p.stockist_address_line_one
-      %p.stockist_address_line_two
-      %p.stockist_town
-      %p.stockist_city
-      %p.stockist_postcode
-      %a.stockist_url{:href => ""}
-      %br
-      %br
-      %a.stockist_map{:href => "javascript:void(0)"}= t(".view_on_map")
-        
-    .stockist_result{:style =>  "display:none"}
-      %p.stockist_name
-      %p.stockist_address_line_one
-      %p.stockist_address_line_two
-      %p.stockist_town
-      %p.stockist_city
-      %p.stockist_postcode
-      %a.stockist_url{:href => ""}
-      %br
-      %br
-      %a.stockist_map{:href => "javascript:void(0)"}= t(".view_on_map")
-    .stockist_result{:style =>  "display:none"}
-      %p.stockist_name
-      %p.stockist_address_line_one
-      %p.stockist_address_line_two
-      %p.stockist_town
-      %p.stockist_city
-      %p.stockist_postcode
-      %a.stockist_url{:href => ""}
-      %br
-      %br
-      %a.stockist_map{:href => "javascript:void(0)", :style =>  "display:none"}= t(".view_on_map")
+
+    - 3.times do
+      =render :partial => "stockist"
 
     %div{:style => "clear:both"}
     %p#message{:style =>  "display:none"}= t(".no_data_found")

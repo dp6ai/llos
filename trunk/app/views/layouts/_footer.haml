@@ -9,6 +9,7 @@
     %li= link_to(t(:design), 'http://www.nw1pc.co.uk' )
     - file = "#{RAILS_ROOT}/REVISION"
     %li= "#{RAILS_ENV} : " if RAILS_ENV != "production"
-    %li= `cat #{file}`
+    %li= `cat #{file}` if RAILS_ENV != "production"
+    %li= " [#{I18n.locale}]" if RAILS_ENV != "production"
 #mozscroll
   &nbsp;

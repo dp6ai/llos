@@ -72,13 +72,38 @@ jQuery(document).ready(function() {
                                 jQuery(".stockist_town:eq(" + index + ")").text(val.stockist.town);
                                 jQuery(".stockist_city:eq(" + index + ")").text(val.stockist.city);
                                 jQuery(".stockist_postcode:eq(" + index + ")").text(val.stockist.postcode);
+                                jQuery(".stockist_telephone:eq(" + index + ")").text(val.stockist.telephone);
                                 jQuery(".stockist_url:eq(" + index + ")").text(val.stockist.url);
                                 jQuery(".stockist_url:eq(" + index + ")").attr("href",val.stockist.url);
                                 jQuery(".stockist_result a:eq(" + index + ")").show();
 
+
+                                var image = new google.maps.MarkerImage(
+                                  '/images/markers/image.png',
+                                  new google.maps.Size(62,35),
+                                  new google.maps.Point(0,0),
+                                  new google.maps.Point(31,35)
+                                );
+
+                                var shadow = new google.maps.MarkerImage(
+                                  '/images/markers/shadow.png',
+                                  new google.maps.Size(84,35),
+                                  new google.maps.Point(0,0),
+                                  new google.maps.Point(31,35)
+                                );
+
+                                var shape = {
+                                  coord: [25,1,27,2,28,3,29,4,29,5,30,6,31,7,31,8,31,9,31,10,29,11,29,12,29,13,29,14,29,15,29,16,29,17,29,18,29,19,29,20,29,21,29,22,29,23,29,24,29,25,29,26,29,27,24,30,23,31,22,32,21,33,20,34,19,34,17,33,16,32,15,31,14,30,11,27,11,26,11,25,11,24,11,23,11,22,11,21,11,20,11,19,11,18,11,17,11,16,11,15,11,14,11,13,10,12,10,11,8,10,8,9,8,8,8,7,9,6,10,5,11,4,12,3,13,2,14,1,25,1],
+                                  type: 'poly'
+                                };
+
+
                                 var marker = new google.maps.Marker({
                                     position: new google.maps.LatLng(val.stockist.latitude, val.stockist.longitude),
                                     title: val.stockist.name + ", " + val.stockist.address_line_one + " " + val.stockist.postcode,
+                                    icon: image,
+                                    shadow: shadow,
+                                    shape: shape,
                                     map: map
                                 });
 

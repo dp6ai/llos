@@ -16,6 +16,8 @@
   %p
     = "#{@stockist.latitude} by #{@stockist.longitude}"
   %p
+    = @stockist.telephone
+  %p
     = link_to @stockist.url, @stockist.url if @stockist.url.present?
 
   = link_to('Edit', edit_admin_stockist_path(@stockist)) if logged_in?

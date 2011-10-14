@@ -66,6 +66,7 @@ en:
   news: "News"
   projects: "Projects"
   stockists_link: "Stockists"
+  stockists_link_active: true
   showrooms: "Contact Us"
 
   # footer
@@ -338,9 +339,10 @@ en:
       enter_postcode: "Please enter your postcode"
       go: "Go"
       results_title: "Your nearest three premium stockist are:"
-      view_on_map: "view on map"
       no_data_found: "Sorry, Unable to find any stores within a 50 mile radius. Please call us to see how we can help you 01775 712111"
       enquiries: "If these are not convenient or for enquiries outside the UK please <a href='/contact'>contact us</a>"
+    stockist:
+      view_on_map: "view on map"
 
   width: "Width:"
   depth: "Depth:"
