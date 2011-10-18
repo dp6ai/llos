@@ -5,8 +5,8 @@
     .flag
       %img{ :src => t(:flag), :alt => "Lloyd Loom Of Spalding" }
     %p.title= t(:brochure_download)
-    %p.brochure_link=link_to t(:brochure_download_now_link), t(:brochure_download_now_pdf)
-    %p.brochure_link=link_to t(:brochure_view_online_link), t(:brochure_download_now_pdf)
+    %p.brochure_link=link_to t(:brochure_download_now_link), t(:brochure_download_now_pdf), :target => "_blank"
+    %p.brochure_link=link_to t(:brochure_view_online_link), t(:brochure_download_now_pdf), :target => "_blank"
 
 
   - if I18n.locale == :en || I18n.locale == "en"
@@ -14,8 +14,8 @@
       .flag
         %img{ :src => t(:flag), :alt => "Lloyd Loom Of Spalding" }
       %p.title= t(:pricelist_download)
-      %p.brochure_link=link_to t(:brochure_download_now_link), t(:pricelist_download_now_pdf)
-      %p.brochure_link=link_to t(:brochure_view_online_link), t(:pricelist_download_now_pdf)
+      %p.brochure_link=link_to t(:brochure_download_now_link), t(:pricelist_download_now_pdf), :target => "_blank"
+      %p.brochure_link=link_to t(:brochure_view_online_link), t(:pricelist_download_now_pdf), :target => "_blank"
 
   .clearer
 

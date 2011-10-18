@@ -340,7 +340,7 @@ en:
       go: "Go"
       results_title: "Your nearest three premium stockist are:"
       no_data_found: "Sorry, Unable to find any stores within a 50 mile radius. Please call us to see how we can help you 01775 712111"
-      enquiries: "If these are not convenient or for enquiries outside the UK please <a href='/contact'>contact us</a>"
+      enquiries: "If these are not convenient or if you would like further information on where you can see our furniture, please call 01775 724358 or <a href='/contact'>contact us</a>"
     stockist:
       view_on_map: "view on map"
 
@@ -400,7 +400,7 @@ en:
   brochure_download_now_link: "Download Now"
   brochure_view_online_link: "View Online"
   brochure_download_now_pdf: "/downloads/Lloyd_Loom_Of_Spalding_2011_Brochure.pdf"
-  post_notice: "To receive these details by post, please fill out the form below:"
+  post_notice: "To receive by post, please fill out the form below:"
 
   pricelist_download: "UK PRICELIST"
   pricelist_download_now_pdf: "/downloads/Lloyd_Loom_Pricelist.pdf"

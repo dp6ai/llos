@@ -334,7 +334,7 @@ de:
       go: "Go DE"
       results_title: "Your nearest three premium stockist are: DE"
       no_data_found: "Sorry, Unable to find any stores within a 50 mile radius. Please call us to see how we can help you 01775 712111 DE"
-      enquiries: "If these are not convenient or for enquiries outside the UK please call 01775 712111 DE"
+      enquiries: "If these are not convenient or if you would like further information on where you can see our furniture, please call 01775 724358 or <a href='/contact'>contact us</a> DE"
     stockist:
       view_on_map: "view on map DE"
 
@@ -384,7 +384,7 @@ de:
   naturals_brochure_link: "Naturals"
 
   flag: "/images/drSmall.jpg"
-  brochure_download: "GERMAN BROCHURE"
+  brochure_download: "Prospekt auf Deutsch"
   brochure_download_now_link: "Jetzt herunterladen"
   brochure_view_online_link: "online nachschauen"
   brochure_download_now_pdf: "/downloads/Lloyd_Loom_Of_Spalding_2011_Brochure_DE.pdf"
