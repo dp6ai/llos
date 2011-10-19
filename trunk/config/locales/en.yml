@@ -66,7 +66,7 @@ en:
   news: "News"
   projects: "Projects"
   stockists_link: "Stockists"
-  stockists_link_active: true
+  stockists_link_active: false
   showrooms: "Contact Us"
 
   # footer
