@@ -118,7 +118,7 @@ ActiveRecord::Schema.define(:version => 20111014102638) do
 
   create_table "products", :force => true do |t|
     t.string   "name"
-    t.text     "description",        :limit => 255
+    t.text     "description"
     t.integer  "width"
     t.integer  "depth"
     t.integer  "height"

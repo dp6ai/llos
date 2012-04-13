@@ -43,6 +43,8 @@
         - css_class = controller.action_name == fabric.name.downcase ? "current" : ""
         %li{:class => css_class}= link_to fabric.name, fabric.url
 
+  %h2{:class => "headerbar_buy_outdoor"}= link_to t(:buy_outdoor), "http://www.lloydloom-outdoor.co.uk/"
+
 
   %script{:type => "text/javascript"}= "var LLOS = {};"
   - current_range = !params[:category].blank? ? params[:category].downcase : "_nil"

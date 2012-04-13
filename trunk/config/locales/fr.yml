@@ -68,6 +68,7 @@ fr:
   stockists_link: "Stockists FR"
   stockists_link_active: true
   showrooms: "Salles d'exposition"
+  buy_outdoor: "Buy Outdoor FR"
 
   # footer
   contact: "Contact"
