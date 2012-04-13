@@ -26,6 +26,12 @@ namespace :deploy do
   task :restart, :roles => :app, :except => { :no_release => true } do
     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
   end
+
+  desc "symlink images, auto for prod, forced for staging"
+  task :symlinks, :roles => :app do
+    run "ln -nfs #{shared_path}/system #{current_path}/public/system"
+  end
+
 end
 
 
@@ -45,5 +51,7 @@ task :staging do
 end
 
 
+
+after :deploy, "deploy:symlinks"
 after :deploy, "deploy:restart"
 after :deploy, "deploy:cleanup"
