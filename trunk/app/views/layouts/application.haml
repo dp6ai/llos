@@ -40,3 +40,11 @@
   :javascript
     current_controller = '#{@current_controller}';
     current_view = '#{@current_action}';
+
+    function cookiesDirectiveScriptWrapper(){
+    }
+
+    // The position of the disclosure ('top' or 'bottom')
+    // Number of times to display disclosure. Enter 0 to show it forever!!!!
+    // The URI of your privacy policy
+    cookiesDirective('top',5,'/legal');
