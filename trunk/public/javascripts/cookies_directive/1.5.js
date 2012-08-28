@@ -279,7 +279,7 @@ function cdHandler(disclosurePosition, privacyPolicyUri, cookieScripts) {
 	var disclosure = '<div id="cookiesdirective" style="position:'+ epdCSSPosition +';'+ epdDisclosurePosition + ':-300px;left:0px;width:100%;height:auto;background:#999;opacity:.80; -ms-filter: “alpha(opacity=80)”; filter: alpha(opacity=80);-khtml-opacity: .80; -moz-opacity: .80; color:#FFFFFF;font-family:arial;font-size:14px;text-align:center;z-index:1000;">';
 	
 	disclosure +='<div style="position:relative;height:auto;width:90%;padding:15px;margin-left:auto;margin-right:auto;">';	
-	disclosure += 'This site uses cookies. Some of the cookies we ';
+	disclosure += 'Our site may use cookies to enhance your browsing experience on our website. Some of the cookies we ';
 	disclosure += 'use are essential for parts of the site to operate and have already been set.'+ epdAppsDisclosure +' You may delete and block all ';
 	disclosure += 'cookies from this site, but parts of the site will not work. To find out more about cookies on this ';
 	disclosure += 'website, see our <a style="color:#ca0000;font-weight:bold;font-family:arial;font-size:14px;" href="'+ epdPrivacyPolicyUri + '">privacy policy</a>.<br/><br/>';
