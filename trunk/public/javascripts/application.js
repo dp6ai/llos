@@ -25,7 +25,7 @@ jQuery(document).ready(function() {
     jQuery('.slideshow').cycle({
 		fx: 'fade'
 	});
-    
+
     if (current_controller == "stockists") {
 
         if (current_view == "msp") {

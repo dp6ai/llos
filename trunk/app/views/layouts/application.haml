@@ -41,10 +41,12 @@
     current_controller = '#{@current_controller}';
     current_view = '#{@current_action}';
 
-    function cookiesDirectiveScriptWrapper(){
-    }
+  - if @current_controller != 'stockists';
+    :javascript
+      function cookiesDirectiveScriptWrapper(){
+      }
 
-    // The position of the disclosure ('top' or 'bottom')
-    // Number of times to display disclosure. Enter 0 to show it forever!!!!
-    // The URI of your privacy policy
-    cookiesDirective('bottom',5,'/legal');
+      // The position of the disclosure ('top' or 'bottom')
+      // Number of times to display disclosure. Enter 0 to show it forever!!!!
+      // The URI of your privacy policy
+      cookiesDirective('bottom',5,'/legal');

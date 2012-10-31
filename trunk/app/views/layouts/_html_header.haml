@@ -8,21 +8,31 @@
 %link{ :href => "/stylesheets/main.css", :rel => "stylesheet", :type => "text/css" }
 %link{ :href => "/javascripts/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css", :rel => "stylesheet", :type => "text/css" }
 = stylesheet_link_tag 'application'
-/[if IE 6] 
+/[if IE 6]
   %link{ :href => "/stylesheets/ie6stylesheet.css", :rel => "stylesheet", :type => "text/css" }
-%script{ :type => "text/javascript", :src => "/javascripts/jquery-1.3.2.min.js" }
+
+- if @current_controller == 'stockists'
+  %script{ :type => "text/javascript", :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" }
+- else
+  %script{ :type => "text/javascript", :src => "/javascripts/jquery-1.3.2.min.js" }
+
+
 %script{ :type => "text/javascript", :src => "/javascripts/ddaccordion.js" }
 %script{ :type => "text/javascript", :src => "/javascripts/menuControl.js" }
 %script{ :type => "text/javascript", :src => "/javascripts/swfobject.js" }
 %script{ :type => "text/javascript", :src => "/javascripts/jquery.form.js" }
-%script{ :type => "text/javascript", :src => "/javascripts/prototype.js" }
-%script{ :type => "text/javascript", :src => "/javascripts/tablesort/fastinit.js" }
-%script{ :type => "text/javascript", :src => "/javascripts/tablesort/tablesort.js" }
+
+- if @current_controller != 'stockists' && logged_in?
+  %script{ :type => "text/javascript", :src => "/javascripts/prototype.js" }
+  %script{ :type => "text/javascript", :src => "/javascripts/tablesort/fastinit.js" }
+  %script{ :type => "text/javascript", :src => "/javascripts/tablesort/tablesort.js" }
+
 %script{ :type => "text/javascript", :src => "/javascripts/jquery.scrollTo-1.4.2-min.js" }
 %script{ :type => "text/javascript", :src => "/javascripts/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.pack.js" }
 %script{ :type => "text/javascript", :src => "/javascripts/cycle/jquery.cycle.all.latest.js" }
 %script{ :type => "text/javascript", :src => "http://maps.googleapis.com/maps/api/js?sensor=true" }
-%script{ :type => "text/javascript", :src => "/javascripts/cookies_directive/1.5.js" }
+- if @current_controller != 'stockists'
+  %script{ :type => "text/javascript", :src => "/javascripts/cookies_directive/1.5.js" }
 %script{ :type => "text/javascript", :src => "/javascripts/application.js" }
 
 
