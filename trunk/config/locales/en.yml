@@ -116,7 +116,7 @@ en:
   # static
   static_content:
     standard:
-      1_h2: "Paint Colors"
+      1_h2: "Paint Colors "
       1_p1: "Our Environmentally friendly water based paints apply a slightly matt finish to our weave. These are our standard colours but we can also supply any RAL or Farrow & Ball colour you specify for a small surcharge."
       1_p2: "Please note that colours are as accurate as screen variance will allow."
       2_h2: "Stain Colors"
@@ -400,7 +400,7 @@ en:
   brochure_download: "UK BROCHURE"
   brochure_download_now_link: "Download Now"
   brochure_view_online_link: "View Online"
-  brochure_download_now_pdf: "/downloads/Lloyd_Loom_Of_Spalding_2011_Brochure.pdf"
+  brochure_download_now_pdf: "/downloads/Lloyd_Loom_Of_Spalding_2012-2013_Brochure.pdf"
   post_notice: "To receive by post, please fill out the form below:"
 
   pricelist_download: "UK PRICELIST"
